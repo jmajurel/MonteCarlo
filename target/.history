@@ -1,0 +1,129 @@
+run
+exit
+compile
+run ui.main
+run ui
+run ui.uimain
+run
+compile
+run
+compile
+run
+2
+run
+lastrun
+lastrunning
+run
+show discoveredMainClasses
+show 
+run ui
+run 2
+runlast compile:run
+compile:run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+clean
+compile 
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+package
+clearn
+clean
+compile
+run
+package
+run
+compile
+run
+compile
+run
+compile
+RUN
+run
+RUN
+run
+compile
+run
+clean
+run
+compile
+run
+clean
+compile
+run
+clean
+compile
+run
+re-run
+compile -deprecation
+run -deprecation
+compile
+run
+exit
+run
+compile
+run
+run -deprecation
+compile -deprecation
+compile
+run -deprecation
+run
+compile
+compile -details
+compile -detail
+clean
+run
+exit
+run
+compi;e
+compile
+run
+exit
+run
+exit
+run
+exit
+run
+RUN
+run
+RUN
+run
+RUN
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+compile
+run
+RUN
+run
+compile
+run
+run -deprecation
