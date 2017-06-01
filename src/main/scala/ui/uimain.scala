@@ -142,6 +142,5 @@ object uimain extends JFXApp{
 		})
 	}
 	}
-	stage.show()
 
 }
