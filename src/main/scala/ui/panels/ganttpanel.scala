@@ -62,30 +62,27 @@ class Ganttpanel (){
 		var t1 = new Task("OP1",
 				   new SimpleTimePeriod( date(1, Calendar.MAY, 2017),
 										 date(5, Calendar.MAY, 2017)))
-		t1.setPercentComplete(1)		
+		t1.setPercentComplete(1)
 		s1.add(t1)
-										 
 
 		s1.add(new Task("OP2",
 				   new SimpleTimePeriod( date(5, Calendar.MAY, 2017),
 										 date(8, Calendar.MAY, 2017))))
-										 
+
 		s1.add(new Task("OP4",
 				   new SimpleTimePeriod( date(8, Calendar.MAY, 2017),
 										 date(15, Calendar.MAY, 2017))))
 		s1.add(new Task("OP4",
 				   new SimpleTimePeriod( date(15, Calendar.MAY, 2017),
-										 date(29, Calendar.MAY, 2017))))										 
+										 date(29, Calendar.MAY, 2017))))
 		val s2 = new TaskSeries("Actual")
 		s2.add(new Task("OP3",
 				   new SimpleTimePeriod( date(8, Calendar.MAY, 2017),
 										 date(20, Calendar.MAY, 2017))))
-										
 		var collectiont = new TaskSeriesCollection()
 		collectiont.add(s1)
 		collectiont.add(s2)
 		collectiont
-									
 	}
 	def createChart(dataset : IntervalCategoryDataset):JFreeChart = {
 			

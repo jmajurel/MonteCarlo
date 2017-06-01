@@ -1,6 +1,6 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(C:\sbt_projects\montecarlo_demo01\src\main\resources\icons,C:\sbt_projects\montecarlo_demo01\target\scala-2.12\classes\icons)[0m
-[0m[[0mdebug[0m] [0m	(C:\sbt_projects\montecarlo_demo01\src\main\resources\icons\BPP.png,C:\sbt_projects\montecarlo_demo01\target\scala-2.12\classes\icons\BPP.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\sbt_projects\montecarlo_demo01\src\main\resources\icons\pause.png,C:\sbt_projects\montecarlo_demo01\target\scala-2.12\classes\icons\pause.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\sbt_projects\montecarlo_demo01\src\main\resources\icons\play.png,C:\sbt_projects\montecarlo_demo01\target\scala-2.12\classes\icons\play.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\sbt_projects\montecarlo_demo01\src\main\resources\icons\stop.png,C:\sbt_projects\montecarlo_demo01\target\scala-2.12\classes\icons\stop.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons,C:\MonteCarloSW\target\scala-2.12\classes\icons)[0m
+[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\BPP.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\BPP.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\pause.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\pause.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\play.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\play.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\stop.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\stop.png)[0m

@@ -127,3 +127,15 @@ run
 compile
 run
 run -deprecation
+run
+sbt
+exit
+run
+sbt console
+exit
+run
+RUN
+run
+RUN
+run
+exit

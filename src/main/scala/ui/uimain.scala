@@ -13,7 +13,9 @@ import scalafx.scene.text.{Font, FontWeight, Text}
 import scalafx.embed.swing.SwingNode
 import scalafx.geometry.Pos
 
+import java.awt.Dimension
 import javafx.scene.layout.{Border,BorderStroke,CornerRadii,BorderWidths,BorderStrokeStyle}
+import javax.swing.SwingUtilities
 import scalafx.scene.paint.{Color}
 
 import ui.viewer.Ganttpanel
@@ -23,11 +25,12 @@ import ui.controller.Controllerpanel
 import ui.templates.{TempTextFieldIndic}
 import ui.templates.Templates
 import ui.dependencies.Dependencies
-import project.constants._
+import project.constants.ProjectData
 import scala.io.Source
 
 
 object uimain extends JFXApp{
+
 	
 	stage = new PrimaryStage{
 	
@@ -43,16 +46,17 @@ object uimain extends JFXApp{
 		scene = new Scene {
 			
 			var viewer = new SwingNode()
-			viewer.setContent(Ganttpanel.gantt)
+			
+			createSwingContent(viewer)
 			
 			val mctitle = new Label("Monte Carlo Simulator"){font = Templates.titlefont}
 			val mcversion = new Label("Demo 01 - version v01.00")
 			
 			val mclabjct = new Label("Project")
-			val mcpjtname = new TempTextFieldIndic("JRP")
+			val mcpjtname = new TempTextFieldIndic(ProjectData.PROJECT_NAME)
 			
 			val mclabrunnb = new Label("Run #")
-			val mcrunnb= new TempTextFieldIndic("001")
+			val mcrunnb= new TempTextFieldIndic(ProjectData.RUN_NB)
 			
 			var bppicon = new ImageView(imageicon)
 			
@@ -67,15 +71,17 @@ object uimain extends JFXApp{
 			
 			var hbox_prj = new HBox(){padding = Insets(5)}
 			hbox_prj.setSpacing(2)
+			hbox_prj.setAlignment(Pos.CENTER)
 			hbox_prj.getChildren().addAll(mclabjct, mcpjtname)
 
 			var hbox_runnb = new HBox(){padding = Insets(5)}
 			hbox_runnb.setSpacing(2)
+			hbox_runnb.setAlignment(Pos.CENTER)
 			hbox_runnb.getChildren().addAll(mclabrunnb, mcrunnb)
 			
 			var vbox_bottomleft = new VBox(){padding = Insets(5)}
 			vbox_bottomleft.setSpacing(5)
-			vbox_bottomleft.setAlignment(Pos.CENTER_LEFT)
+			vbox_bottomleft.setAlignment(Pos.CENTER_RIGHT)
 			vbox_bottomleft.getChildren().addAll(hbox_prj, hbox_runnb)
 			
 			
@@ -122,7 +128,20 @@ object uimain extends JFXApp{
 			rootPane.left = vbox_left
 			rootPane.right = vbox_right
 			root = rootPane
-
+			
 		}
+		
+
+	def createSwingContent(node:SwingNode){
+
+		SwingUtilities.invokeLater(new Runnable{
+			def run(){
+				node.setContent(Ganttpanel.gantt)
+				//viewer = Ganttpanel.gantt
+			}
+		})
 	}
+	}
+	stage.show()
+
 }
