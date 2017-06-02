@@ -16,7 +16,12 @@ import org.jfree.chart.ChartFactory
 import org.jfree.chart.ChartPanel
 import org.jfree.chart.plot.CategoryPlot
 import org.jfree.chart.axis.DateAxis
+import org.jfree.chart.renderer.category.GanttRenderer
+import org.jfree.chart.renderer.category.BarRenderer
+import org.jfree.chart.renderer.category.StandardBarPainter
 import java.awt.Paint
+import java.awt.Font
+
 
 object Ganttpanel{
 
@@ -26,18 +31,35 @@ object Ganttpanel{
 	var gantt_chart = panel.createChart(dataset)
 			
 	var plot = new CategoryPlot()
-	var range = new DateAxis()
-	
+	var axis = new DateAxis()
+	var lightblue = new Color(0, 176, 240)
 	plot= gantt_chart.getPlot().asInstanceOf[CategoryPlot]
-	range = plot.getRangeAxis().asInstanceOf[DateAxis]
-	range.setDateFormatOverride(new SimpleDateFormat("EEE MM/dd/yyyy"))
-	//gantt_chart.setBorderVisible(false)
-	//br.setItemMargin(.01)
-	//setCategoryMargin(0)
-
-	//val lightblue = new Color(0, 176, 240)
+	axis = plot.getRangeAxis().asInstanceOf[DateAxis]
+	var valuesaxis = plot.getRangeAxis()
+	//valuesaxis.setVerticalTickLabels(true)
+	valuesaxis.setLabelAngle(0.01)
+	valuesaxis.setMinorTickCount(2)
+	//axis.setDateFormatOverride(new SimpleDateFormat("EEE MM/dd/yyyy"))
+	axis.setDateFormatOverride(new SimpleDateFormat("MM/dd/YY"))
+	//axis.setLabelAngle(0.349066)
+	axis.setLabelPaint(Color.lightGray)
+	axis.setVerticalTickLabels(true)
+	axis.setTickLabelFont(new Font(null, Font.PLAIN, 10))
+	plot.getRenderer().asInstanceOf[GanttRenderer].setShadowVisible(false)
+	plot.getRenderer().asInstanceOf[BarRenderer].setShadowVisible(false)
+	plot.getRenderer().asInstanceOf[BarRenderer].setBarPainter(new StandardBarPainter())
+	plot.getRenderer().asInstanceOf[BarRenderer].setMaximumBarWidth(1)
+	plot.getRenderer().asInstanceOf[BarRenderer].setItemMargin(0.001)
 	
-	//plot.getRenderer().setBasePaint(lightblue)
+	 //paintBar
+	//plot.getRenderer().asInstanceOf[GanttRenderer].setIncompletePaint(Color.Red)
+	//
+
+
+	
+	plot.getRenderer().setPaint(lightblue)
+	plot.getRenderer().setBaseOutlinePaint(lightblue)
+	plot.getRenderer().setOutlinePaint(lightblue)
 	plot.setBackgroundPaint(Color.white)
 	plot.setRangeGridlinePaint(Color.black)
 	plot.setDomainGridlinePaint(Color.black)
@@ -47,14 +69,13 @@ object Ganttpanel{
 }
 class Ganttpanel (){
 
-    def date( day : Int,  month: Int, year: Int):Date ={
-
-        var calendar = Calendar.getInstance()
-        calendar.set(year, month, day)
-        var result = calendar.getTime()
-        result
-
-    }
+	def date( day : Int,  month: Int, year: Int):Date ={
+		var calendar = Calendar.getInstance()
+		calendar.set(year, month, day)
+		var result = calendar.getTime()
+	result
+	}
+	
 	def createDataset():TaskSeriesCollection = {
 	
 		val s1 = new TaskSeries("Scheduled")
@@ -85,19 +106,17 @@ class Ganttpanel (){
 		collectiont
 	}
 	def createChart(dataset : IntervalCategoryDataset):JFreeChart = {
-			
-			var chart = ChartFactory.createGanttChart(
-				"",  // chart title
-				"",              // domain axis label
-				"",              // range axis label
-				dataset,             // data
-				true,                // include legend
-				true,                // tooltips
-				false                // urls
-			)
-			
-			chart
+		
+		var chart = ChartFactory.createGanttChart(
+			"",  // chart title
+			"",              // domain axis label
+			"",              // range axis label
+			dataset,             // data
+			true,                // include legend
+			true,                // tooltips
+			false                // urls
+		)
+		chart
 	}
-	
 
 }

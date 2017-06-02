@@ -17,8 +17,8 @@ import project.constants.ProjectData
 object Managerpanel{
 
 	val manager = new TempTabPane()
-	val tab_setup = new Tab{ closable=false }
-	val tab_op = new Tab{ closable=false }
+	val tab_setup = new Tab{closable=false }
+	val tab_op = new Tab{closable=false }
 	
 	
 	val lab_txtfprj = new Label ("Project")
@@ -124,8 +124,6 @@ object Managerpanel{
 	
 	hbox_scen.getChildren().addAll(labscen,scenchbox)
 	
-
-	
 	
 	val labesti = new Label("Estimation:")
 	val estimlist = new ObservableBuffer[String]
@@ -150,9 +148,6 @@ object Managerpanel{
 	
 	tab_op.text = "Operation"
 	tab_op.content = hbox_optop
-	
-	
-	
 	
 	manager.tabs = List(tab_setup, tab_op)
 	

@@ -22,17 +22,23 @@ object Controllerpanel{
 	val lab_simdate = new Label("Simulation Date:")
 	val simdate = new TempTextFieldIndic("01/05/2017")
 	
-	val hbox_simdate= new HBox(){padding = Insets(5)}
-	hbox_simdate.setSpacing(1)
-	hbox_simdate.setAlignment(Pos.CENTER_RIGHT)
+	val hbox_simdate= new HBox(){
+		padding = Insets(5)
+		spacing = 1
+		alignment = Pos.CENTER_RIGHT
+	}
+
 	hbox_simdate.getChildren().addAll(lab_simdate,simdate)
 	
 	val lab_currop = new Label("Current Operation:")
 	val currop = new TempTextFieldIndic("")
 	
-	val hbox_currop= new HBox(){padding = Insets(5)}
-	hbox_currop.setSpacing(1)
-	hbox_currop.setAlignment(Pos.CENTER_RIGHT)
+	val hbox_currop= new HBox(){
+		padding = Insets(5)
+		spacing = 1
+		alignment = Pos.CENTER_RIGHT
+	}
+
 	hbox_currop.getChildren().addAll(lab_currop,currop)
 	
 	val lab_currrun = new Label("Current Run Number:")
@@ -40,9 +46,12 @@ object Controllerpanel{
 	val lab_elaptime = new Label("Elapsed Time (hrs):")
 	val elaptime = new TempTextFieldIndic("0")
 	
-	val hbox_currrun= new HBox(){padding = Insets(5)}
-	hbox_currrun.setSpacing(1)
-	hbox_currrun.setAlignment(Pos.CENTER_RIGHT)
+	val hbox_currrun= new HBox(){
+		padding = Insets(5)
+		spacing = 1
+		alignment = Pos.CENTER_RIGHT
+	}
+
 	hbox_currrun.getChildren().addAll(lab_elaptime, elaptime, lab_currrun,currrun)
 	
 	
@@ -58,9 +67,12 @@ object Controllerpanel{
 	val reload_butt = new TempButton("Reload")
 	val stop_ext = new TempButton("Exit")
 	
-	val hbox_bottom= new HBox(){padding = Insets(5)}
-	hbox_bottom.setSpacing(35)
-	hbox_bottom.setAlignment(Pos.CENTER_RIGHT)
+	val hbox_bottom= new HBox(){
+		padding = Insets(5)
+		spacing = 35
+		alignment = Pos.CENTER_RIGHT
+	}
+
 	hbox_bottom.getChildren().addAll(pause_butt,stop_butt,play_butt,stop_ext)
 	
 	var slidetimeacc = new Slider(0,100,100){
@@ -69,17 +81,21 @@ object Controllerpanel{
 	maxWidth=250
 	}
 	
-	val hbox_middle= new HBox(){padding = Insets(5)}
-	hbox_middle.setSpacing(35)
-	hbox_middle.setAlignment(Pos.CENTER_RIGHT)
+	val hbox_middle= new HBox(){
+		padding = Insets(5)
+		spacing = 35
+		alignment = Pos.CENTER_RIGHT
+	}
 	hbox_middle.getChildren().addAll(slidetimeacc, reload_butt)
 	
 	
-	val vbox_rigth = new VBox(){padding = Insets(5)}
-	vbox_rigth.setSpacing(5)
-	vbox_rigth.setAlignment(Pos.CENTER_RIGHT)
+	val vbox_rigth = new VBox(){
+		padding = Insets(5)
+		spacing = 5
+		alignment =Pos.CENTER_RIGHT
+	}
+
 	vbox_rigth.getChildren().addAll(hbox_simdate, hbox_currop,hbox_currrun,hbox_middle,hbox_bottom)
 	controller.right = vbox_rigth
 	
-
-	}
+}
