@@ -1,2 +1,6 @@
 [0m[[0mdebug[0m] [0mjavaOptions: List()[0m
-[0m[[0minfo[0m] [0mRunning ui.UiMain [0m
+[0m[[0minfo[0m] [0mRunning view.View [0m
+[0m[[0minfo[0m] [0mDevice "Intel(R) HD Graphics 3000" (\\.\DISPLAY1) initialization failed : [0m
+[0m[[0minfo[0m] [0mWARNING: bad driver version detected, device disabled. Please update your driver to at least version 8.15.10.2302[0m
+[0m[[0minfo[0m] [0mDevice "Intel(R) HD Graphics 3000" (\\.\DISPLAY2) initialization failed : [0m
+[0m[[0minfo[0m] [0mWARNING: bad driver version detected, device disabled. Please update your driver to at least version 8.15.10.2302[0m

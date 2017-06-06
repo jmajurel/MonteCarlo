@@ -144,3 +144,32 @@ exigt
 exit
 run
 exit
+run
+clean
+run
+package
+sbt assembly
+exit
+assembly
+exit
+eclipse
+run
+compile
+run
+exit
+compile
+run
+scaladoc -help
+exit
+compile
+run
+exit
+doc
+exit
+clean
+compile
+run
+exiy
+exit
+run
+exit

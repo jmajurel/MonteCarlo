@@ -1,0 +1,24 @@
+<classpath>
+  <classpathentry kind="src" path="src\main\scala"/>
+  <classpathentry kind="src" path="src\main\resources"/>
+  <classpathentry kind="src" path="src\test\scala"/>
+  <classpathentry kind="lib" path="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+  <classpathentry sourcepath="C:\Users\j.majurel\.ivy2\cache\org.scalafx\scalafx_2.12\srcs\scalafx_2.12-8.0.102-R11-sources.jar" kind="lib" path="C:\Users\j.majurel\.ivy2\cache\org.scalafx\scalafx_2.12\jars\scalafx_2.12-8.0.102-R11.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:C:\Users\j.majurel\.ivy2\cache\org.scalafx\scalafx_2.12\docs\scalafx_2.12-8.0.102-R11-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:\Users\j.majurel\.ivy2\cache\org.jfree\jcommon\srcs\jcommon-1.0.23-sources.jar" kind="lib" path="C:\Users\j.majurel\.ivy2\cache\org.jfree\jcommon\jars\jcommon-1.0.23.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:C:\Users\j.majurel\.ivy2\cache\org.jfree\jcommon\docs\jcommon-1.0.23-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="C:\Users\j.majurel\.ivy2\cache\org.jfree\jfreechart\srcs\jfreechart-1.0.19-sources.jar" kind="lib" path="C:\Users\j.majurel\.ivy2\cache\org.jfree\jfreechart\jars\jfreechart-1.0.19.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:C:\Users\j.majurel\.ivy2\cache\org.jfree\jfreechart\docs\jfreechart-1.0.19-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="output" path="bin"/>
+</classpath>
