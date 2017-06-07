@@ -47,10 +47,11 @@ object Gantt{
 	
   gantt.configAxis(ganttchart)
 	gantt.configGanttStyle(ganttchart)
-
+	
 	var viewer = new ChartPanel(ganttchart) 
 	viewer.setPreferredSize(viewerdimension)
-	
+	dataset.getSeries(0).get(2).setPercentComplete(0.1)
+
 }
 
 class Gantt{
@@ -115,14 +116,14 @@ class Gantt{
       override def generateLabel( dataset:CategoryDataset, row: Int, column: Int) :String = {
         var percentage = dataset.asInstanceOf[TaskSeriesCollection].getPercentComplete(row,column).asInstanceOf[Double]*100
         
-        return percentage.toString + "%"
+        return percentage.toInt.toString + "%"
       }
 
 
     })    
   	//plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBaseItemLabelGenerator(new StandardCategoryItemLabelGenerator())
   	plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBaseItemLabelsVisible(true)
-	  plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBaseItemLabelPaint(Color.BLACK)
+	  plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBaseItemLabelPaint(Color.black)
 	  plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBasePositiveItemLabelPosition(new ItemLabelPosition(
 	          ItemLabelAnchor.INSIDE6, 
 	          TextAnchor.BOTTOM_CENTER)

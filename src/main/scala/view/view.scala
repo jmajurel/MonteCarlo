@@ -39,7 +39,7 @@ object View extends JFXApp{
 		height = 780
 		var viewer = new SwingNode()
 		viewer.setContent(Gantt.viewer)
-		val imageicon = new Image(Dependencies.pathbppicon,requestedWidth = 120, requestedHeight = 120, preserveRatio = true, smooth = true)
+		val imageicon = new Image(Dependencies.pathbppicon,requestedWidth = 125, requestedHeight = 125, preserveRatio = true, smooth = true)
 		icons += imageicon
 		
 		centerOnScreen()

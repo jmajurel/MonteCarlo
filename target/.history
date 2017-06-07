@@ -182,3 +182,31 @@ run
 inspect name 
 reload
 exit
+sbt stage
+stage
+sbt universal:packageBin
+reload
+sbt universal:packageBin
+sbt stage
+sbt windows:packageBin
+sbt universal:packageBin
+exit
+sbt stage
+sbt 
+reload
+sbt universal:packageBin
+reload
+stage
+sbt universal:packageBin
+universal:packageBin
+reload
+universal:packageBin
+sbt universal:packageBin
+universal:package-bin
+reaload
+reload
+assembly
+clean
+assembly
+run
+exit
