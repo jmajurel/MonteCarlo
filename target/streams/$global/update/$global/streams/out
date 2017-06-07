@@ -827,7 +827,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.2!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1087ms :: artifacts dl 20ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 270ms :: artifacts dl 10ms[0m
 [0m[[0mdebug[0m] [0m	report for BPP-TECH#montecarlo_demo01_2.12;0.1.0-SNAPSHOT compile produced in C:\MonteCarloSW\target\resolution-cache\reports\BPP-TECH-montecarlo_demo01_2.12-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for BPP-TECH#montecarlo_demo01_2.12;0.1.0-SNAPSHOT runtime produced in C:\MonteCarloSW\target\resolution-cache\reports\BPP-TECH-montecarlo_demo01_2.12-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for BPP-TECH#montecarlo_demo01_2.12;0.1.0-SNAPSHOT test produced in C:\MonteCarloSW\target\resolution-cache\reports\BPP-TECH-montecarlo_demo01_2.12-test.xml[0m
@@ -841,5 +841,5 @@
 [0m[[0mdebug[0m] [0m	report for BPP-TECH#montecarlo_demo01_2.12;0.1.0-SNAPSHOT docs produced in C:\MonteCarloSW\target\resolution-cache\reports\BPP-TECH-montecarlo_demo01_2.12-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for BPP-TECH#montecarlo_demo01_2.12;0.1.0-SNAPSHOT pom produced in C:\MonteCarloSW\target\resolution-cache\reports\BPP-TECH-montecarlo_demo01_2.12-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for BPP-TECH#montecarlo_demo01_2.12;0.1.0-SNAPSHOT scala-tool produced in C:\MonteCarloSW\target\resolution-cache\reports\BPP-TECH-montecarlo_demo01_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1087ms resolve - 20ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (270ms resolve - 10ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
