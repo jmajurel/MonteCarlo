@@ -1,4 +1,6 @@
 [0m[[0mdebug[0m] [0mjavaOptions: List()[0m
 [0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
 [0m[[0minfo[0m] [0mnbrow in sheet:37[0m
-[0m[[0minfo[0m] [0mcellvalue:OP1[0m
+[0m[[0minfo[0m] [0mopname:OP4[0m
+[0m[[0minfo[0m] [0moppreop:EP0, OP3[0m
+[0m[[0minfo[0m] [0mopduration:[0m

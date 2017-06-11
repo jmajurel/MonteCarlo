@@ -2,8 +2,8 @@ package com.montecarlo
 
 trait GanttModel { this: Models =>
   
-  class GanttModel extends Scenario{
-    var scenario = new Scenario()
+  class GanttModel{
+    var scenario = new Scenario(id=1, name="scenario001", path="C:")
     scenario.load()
     var scenarios:String ="sceneriolist"
     //var scenarios : Array[Scenario]
