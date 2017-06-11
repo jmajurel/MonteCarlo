@@ -16,7 +16,7 @@ import scalafx.geometry.Pos
 import java.awt.Dimension
 import javafx.scene.layout.{Border,BorderStroke,CornerRadii,BorderWidths,BorderStrokeStyle}
 import javax.swing.SwingUtilities
-import scalafx.scene.paint.{Color}
+import scalafx.scene.paint.Color
 
 trait GeneralView { this: Views =>
 

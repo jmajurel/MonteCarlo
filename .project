@@ -1,5 +1,5 @@
 <projectDescription>
-  <name>Montecarlo_demo01</name>
+  <name>Monte Carlo</name>
   <buildSpec>
     <buildCommand>
       <name>org.scala-ide.sdt.core.scalabuilder</name>
