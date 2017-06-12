@@ -2,6 +2,7 @@ package com.montecarlo
 
 import java.util.Date
 import java.util.Calendar
+import java.util.GregorianCalendar
 import java.text.SimpleDateFormat
 import java.awt.Dimension
 import java.awt.Color
@@ -32,7 +33,7 @@ trait GanttView { this: Views =>
     
     var dataset = createDataset
     var ganttchart = createChart(dataset)
-    val viewerdimension = new Dimension(550, 300)
+    val viewerdimension = new Dimension(700, 300)
     val lightblue = new Color(0, 176, 240)
     var taskscollection = new TaskSeriesCollection()
     configAxis(ganttchart)
@@ -40,7 +41,7 @@ trait GanttView { this: Views =>
     
     var viewer = new ChartPanel(ganttchart) 
     viewer.setPreferredSize(viewerdimension)
-    dataset.getSeries(0).get(2).setPercentComplete(0.1)
+    //dataset.getSeries(0).get(2).setPercentComplete(0.1)
     
     var ganttpanel = new SwingNode()
     ganttpanel.setContent(viewer)
@@ -123,45 +124,37 @@ trait GanttView { this: Views =>
     }
     def createDataset :TaskSeriesCollection = {
       
-      val s1 = new TaskSeries("Scheduled")
-      var t1 = new Task(
-        "OP1",
-        new SimpleTimePeriod( date(1, Calendar.MAY, 2017),
-          date(5, Calendar.MAY, 2017)
+      val bpptaskseries = new TaskSeries("BPP")
+      val calendar = new GregorianCalendar()
+      
+      calendar.setTime(date(3, Calendar.APRIL, 2017))
+      calendar.add(Calendar.DATE, 3)
+      val enddate = calendar.getTime()
+      var op1 = new Task(
+        "ID 01 - Survey for OLB",
+        new SimpleTimePeriod( 
+          date(3, Calendar.APRIL, 2017),
+          enddate
         )
       )
-      t1.setPercentComplete(1)
-      s1.add(t1)
-      s1.add(new Task(
-        "OP2",
-        new SimpleTimePeriod( date(5, Calendar.MAY, 2017),
-          date(8, Calendar.MAY, 2017)
-          )
-        ))
+      var op11 = new Task(
+        "ID 01.01 - Vessel Mob",
+        new SimpleTimePeriod( 
+          date(6, Calendar.APRIL, 2017),
+          date(7, Calendar.APRIL, 2017)
+        )
+      )
 
-      s1.add(new Task(
-        "OP4",
-        new SimpleTimePeriod( date(8, Calendar.MAY, 2017),
-          date(15, Calendar.MAY, 2017))))
-          s1.add(new Task(
-            "OP4",
-            new SimpleTimePeriod( date(15, Calendar.MAY, 2017),
-              date(29, Calendar.MAY, 2017)
-            )
-          ))
-
-      val s2 = new TaskSeries("Actual")
-      s2.add(new Task(
-        "OP3",
-        new SimpleTimePeriod( date(8, Calendar.MAY, 2017),
-          date(20, Calendar.MAY, 2017))))
+        
+      bpptaskseries.add(op1)
+      //bpptaskseries.add(op2)
       var collectiont = new TaskSeriesCollection()
-      collectiont.add(s1)
-      collectiont.add(s2)
+      collectiont.add(bpptaskseries)
+
       collectiont
     }
-    def createChart(dataset : IntervalCategoryDataset):JFreeChart = {
-      var chart = ChartFactory.createGanttChart(
+    def createChart(dataset : IntervalCategoryDataset):JFreeChart =
+      ChartFactory.createGanttChart(
       "",  // chart title
       "",  // domain axis label
       "",  // range axis label
@@ -170,7 +163,6 @@ trait GanttView { this: Views =>
       true,  // tooltips
       false  // urls
       )
-      chart
-    }
+   
   }
 }

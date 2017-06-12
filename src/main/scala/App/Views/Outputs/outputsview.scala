@@ -18,7 +18,7 @@ trait OutputsView { this: Views =>
     val tab_outcharts = new Tab{ closable=false }
     val tab_outres = new Tab{ closable=false }
     
-    tab_ts.text = "Time Series"
+    tab_ts.text = "Estimations"
     tab_outcharts.text = "Output Charts"
     tab_outres.text = "Output Results"
     outputspanel.tabs += tab_ts
@@ -51,7 +51,7 @@ trait OutputsView { this: Views =>
     hbox_top.getChildren().addAll(hbox_scen,hbox_costlimit)
 
     val xAxis = NumberAxis("Duration (hrs)", 0, 100, 10)
-    val yAxis = NumberAxis("Cost Estimation (USD)", 0, 10000, 1000)
+    val yAxis = NumberAxis("Cost Estimation (MUSD)", 0, 10000, 1000)
     val toChartData = (xy: (Double, Double)) => XYChart.Data[Number, Number](xy._1, xy._2)
     val series1 = new XYChart.Series[Number, Number] {
     name = ""

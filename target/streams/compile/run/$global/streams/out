@@ -1,6 +1,6 @@
 [0m[[0mdebug[0m] [0mjavaOptions: List()[0m
 [0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
-[0m[[0minfo[0m] [0mnbrow in sheet:37[0m
-[0m[[0minfo[0m] [0mopname:OP4[0m
-[0m[[0minfo[0m] [0moppreop:EP0, OP3[0m
-[0m[[0minfo[0m] [0mopduration:[0m
+[0m[[0minfo[0m] [0mDevice "Intel(R) HD Graphics 3000" (\\.\DISPLAY1) initialization failed : [0m
+[0m[[0minfo[0m] [0mWARNING: bad driver version detected, device disabled. Please update your driver to at least version 8.15.10.2302[0m
+[0m[[0minfo[0m] [0mDevice "Intel(R) HD Graphics 3000" (\\.\DISPLAY2) initialization failed : [0m
+[0m[[0minfo[0m] [0mWARNING: bad driver version detected, device disabled. Please update your driver to at least version 8.15.10.2302[0m

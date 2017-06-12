@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/JeanFelix/Documents/SBT/MonteCarloSW/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/MonteCarloSW/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -116,21 +116,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.poi#poi;3.16 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.poi#poi;3.16 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.poi#poi;3.16 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.poi#poi;3.16 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.poi\poi\3.16\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.poi#poi;3.16[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.poi#poi;3.16[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.pom (3.16)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.poi#poi;3.16!poi.pom(pom.original) (94ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.poi\poi\3.16\jars\poi.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.poi#poi;3.16 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.poi#poi;3.16[0m
+[0m[[0mdebug[0m] [0m	found org.apache.poi#poi;3.16 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT->org.apache.poi#poi;3.16 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT->org.apache.poi#poi;3.16 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->commons-codec#commons-codec;1.10 [compile->master(compile)][0m
@@ -138,59 +125,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving commons-codec#commons-codec;1.10 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving commons-codec#commons-codec;1.10 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: commons-codec#commons-codec;1.10 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\commons-codec\commons-codec\1.10\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for commons-codec#commons-codec;1.10[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for commons-codec#commons-codec;1.10[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom (1.10)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] commons-codec#commons-codec;1.10!commons-codec.pom(pom.original) (109ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;35 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;35 {}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;35 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;35 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.commons\commons-parent\35\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.commons#commons-parent;35[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.commons#commons-parent;35[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom (35)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-parent;35!commons-parent.pom(pom.original) (94ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache#apache;15 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache#apache;15 {}[0m
-[0m[[0minfo[0m] [0mResolving org.apache#apache;15 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache#apache;15 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache\apache\15\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache#apache;15[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache#apache;15[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom (15)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache#apache;15!apache.pom(pom.original) (62ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache\apache\15\jars\apache.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/15/apache-15.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.sbt\preloaded\org.apache\apache\15\jars\apache.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/JeanFelix/.sbt/preloaded/org/apache/apache/15/apache-15.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.commons\commons-parent\35\jars\commons-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/35/commons-parent-35.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.sbt\preloaded\org.apache.commons\commons-parent\35\jars\commons-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/JeanFelix/.sbt/preloaded/org/apache/commons/commons-parent/35/commons-parent-35.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\commons-codec\commons-codec\1.10\jars\commons-codec.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar[0m
-[0m[[0mdebug[0m] [0m	found commons-codec#commons-codec;1.10 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-codec#commons-codec;1.10[0m
+[0m[[0mdebug[0m] [0m	found commons-codec#commons-codec;1.10 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->commons-codec#commons-codec;1.10 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->commons-codec#commons-codec;1.10 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->commons-codec#commons-codec;1.10 [compile->compile][0m
@@ -199,59 +135,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.commons#commons-collections4;4.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-collections4;4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-collections4;4.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-collections4;4.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.commons\commons-collections4\4.1\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.commons#commons-collections4;4.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.commons#commons-collections4;4.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom (4.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-collections4;4.1!commons-collections4.pom(pom.original) (78ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;38 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-parent;38 {}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-parent;38 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.commons#commons-parent;38 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.commons\commons-parent\38\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.commons#commons-parent;38[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.commons#commons-parent;38[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.pom (38)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-parent;38!commons-parent.pom(pom.original) (94ms)[0m
-[0m[[0minfo[0m] [0mResolving org.apache#apache;16 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache#apache;16 {}[0m
-[0m[[0minfo[0m] [0mResolving org.apache#apache;16 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache#apache;16 {}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache\apache\16\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache#apache;16[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache#apache;16[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom (16)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache#apache;16!apache.pom(pom.original) (79ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache\apache\16\jars\apache.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/apache/16/apache-16.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.sbt\preloaded\org.apache\apache\16\jars\apache.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/JeanFelix/.sbt/preloaded/org/apache/apache/16/apache-16.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.commons\commons-parent\38\jars\commons-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/org/apache/commons/commons-parent/38/commons-parent-38.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.sbt\preloaded\org.apache.commons\commons-parent\38\jars\commons-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/C:/Users/JeanFelix/.sbt/preloaded/org/apache/commons/commons-parent/38/commons-parent-38.jar[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.commons\commons-collections4\4.1\jars\commons-collections4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.commons#commons-collections4;4.1 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-collections4;4.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.commons#commons-collections4;4.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->org.apache.commons#commons-collections4;4.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->org.apache.commons#commons-collections4;4.1 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi;3.16->org.apache.commons#commons-collections4;4.1 [compile->compile][0m
@@ -265,21 +150,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.poi#poi-ooxml;3.16 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.poi#poi-ooxml;3.16 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.poi#poi-ooxml;3.16 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.poi#poi-ooxml;3.16 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.poi\poi-ooxml\3.16\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.poi#poi-ooxml;3.16[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.poi#poi-ooxml;3.16[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.pom (3.16)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.poi#poi-ooxml;3.16!poi-ooxml.pom(pom.original) (63ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.poi\poi-ooxml\3.16\jars\poi-ooxml.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.poi#poi-ooxml;3.16 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.poi#poi-ooxml;3.16[0m
+[0m[[0mdebug[0m] [0m	found org.apache.poi#poi-ooxml;3.16 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT->org.apache.poi#poi-ooxml;3.16 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT->org.apache.poi#poi-ooxml;3.16 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->org.apache.poi#poi;3.16 [compile->master(compile)][0m
@@ -291,63 +163,24 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.poi#poi-ooxml-schemas;3.16 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.poi#poi-ooxml-schemas;3.16 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.poi#poi-ooxml-schemas;3.16 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.poi#poi-ooxml-schemas;3.16 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.poi\poi-ooxml-schemas\3.16\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.poi#poi-ooxml-schemas;3.16[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.poi#poi-ooxml-schemas;3.16[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.pom (3.16)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.poi#poi-ooxml-schemas;3.16!poi-ooxml-schemas.pom(pom.original) (78ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.poi\poi-ooxml-schemas\3.16\jars\poi-ooxml-schemas.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.poi#poi-ooxml-schemas;3.16 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.poi#poi-ooxml-schemas;3.16[0m
+[0m[[0mdebug[0m] [0m	found org.apache.poi#poi-ooxml-schemas;3.16 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->org.apache.poi#poi-ooxml-schemas;3.16 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml-schemas;3.16->org.apache.xmlbeans#xmlbeans;2.6.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.xmlbeans#xmlbeans;2.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.xmlbeans#xmlbeans;2.6.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.apache.xmlbeans#xmlbeans;2.6.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.apache.xmlbeans#xmlbeans;2.6.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.xmlbeans\xmlbeans\2.6.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.apache.xmlbeans#xmlbeans;2.6.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.apache.xmlbeans#xmlbeans;2.6.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom (2.6.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.xmlbeans#xmlbeans;2.6.0!xmlbeans.pom(pom.original) (63ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\org.apache.xmlbeans\xmlbeans\2.6.0\jars\xmlbeans.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.apache.xmlbeans#xmlbeans;2.6.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.xmlbeans#xmlbeans;2.6.0[0m
+[0m[[0mdebug[0m] [0m	found org.apache.xmlbeans#xmlbeans;2.6.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml-schemas;3.16->org.apache.xmlbeans#xmlbeans;2.6.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.xmlbeans#xmlbeans;2.6.0->stax#stax-api;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]} => dependency: org.scala-lang#scala-compiler;2.12.1 {scala-tool=[default, optional(default)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving stax#stax-api;1.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: stax#stax-api;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving stax#stax-api;1.0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: stax#stax-api;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\stax\stax-api\1.0.1\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for stax#stax-api;1.0.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for stax#stax-api;1.0.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom (1.0.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] stax#stax-api;1.0.1!stax-api.pom(pom.original) (47ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\stax\stax-api\1.0.1\jars\stax-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	found stax#stax-api;1.0.1 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: stax#stax-api;1.0.1[0m
+[0m[[0mdebug[0m] [0m	found stax#stax-api;1.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.xmlbeans#xmlbeans;2.6.0->stax#stax-api;1.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->org.apache.poi#poi-ooxml-schemas;3.16 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->org.apache.poi#poi-ooxml-schemas;3.16 [compile->compile][0m
@@ -360,21 +193,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: MergedDescriptors(dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)]},dependency: org.scala-lang#scala-library;2.12.1 {compile=[default(compile)]}) => dependency: org.scala-lang#scala-library;2.12.1 {scala-tool=[default, optional(default)], compile=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving com.github.virtuald#curvesapi;1.04 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.virtuald#curvesapi;1.04 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving com.github.virtuald#curvesapi;1.04 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.github.virtuald#curvesapi;1.04 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\com.github.virtuald\curvesapi\1.04\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.github.virtuald#curvesapi;1.04[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.github.virtuald#curvesapi;1.04[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom (1.04)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.virtuald#curvesapi;1.04!curvesapi.pom(pom.original) (62ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\JeanFelix\.ivy2\local\com.github.virtuald\curvesapi\1.04\jars\curvesapi.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar[0m
-[0m[[0mdebug[0m] [0m	found com.github.virtuald#curvesapi;1.04 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.virtuald#curvesapi;1.04[0m
+[0m[[0mdebug[0m] [0m	found com.github.virtuald#curvesapi;1.04 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->com.github.virtuald#curvesapi;1.04 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->com.github.virtuald#curvesapi;1.04 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.poi#poi-ooxml;3.16->com.github.virtuald#curvesapi;1.04 [compile->compile][0m
@@ -1581,71 +1401,31 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalafx#scalafx_2.12;8.0.102-R11!scalafx_2.12.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jfree#jcommon;1.0.23!jcommon.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jfree#jfreechart;1.0.19!jfreechart.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/poi/poi/3.16/poi-3.16.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.poi#poi;3.16!poi.jar (1194ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.16/poi-ooxml-3.16.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.poi#poi-ooxml;3.16!poi-ooxml.jar (641ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.poi#poi;3.16!poi.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.poi#poi-ooxml;3.16!poi-ooxml.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.1!scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] commons-codec#commons-codec;1.10!commons-codec.jar (172ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.commons#commons-collections4;4.1!commons-collections4.jar (344ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.16/poi-ooxml-schemas-3.16.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.poi#poi-ooxml-schemas;3.16!poi-ooxml-schemas.jar (2320ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.04/curvesapi-1.04.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.github.virtuald#curvesapi;1.04!curvesapi.jar (111ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.apache.xmlbeans#xmlbeans;2.6.0!xmlbeans.jar (1206ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] stax#stax-api;1.0.1!stax-api.jar (219ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-codec#commons-codec;1.10!commons-codec.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-collections4;4.1!commons-collections4.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.poi#poi-ooxml-schemas;3.16!poi-ooxml-schemas.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.virtuald#curvesapi;1.04!curvesapi.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.xmlbeans#xmlbeans;2.6.0!xmlbeans.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] stax#stax-api;1.0.1!stax-api.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3438ms :: artifacts dl 6263ms[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT compile produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT runtime produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT test produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT provided produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT optional produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT compile-internal produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT runtime-internal produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT test-internal produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT plugin produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT sources produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT docs produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT pom produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT scala-tool produced in C:\Users\JeanFelix\Documents\SBT\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3438ms resolve - 6263ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 330ms :: artifacts dl 20ms[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT compile produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT runtime produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT test produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT provided produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT optional produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT compile-internal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT runtime-internal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT test-internal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT plugin produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT sources produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT docs produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT pom produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT scala-tool produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (330ms resolve - 20ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

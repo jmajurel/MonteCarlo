@@ -13,7 +13,7 @@ object Main extends JFXApp {
   
   stage = new JFXApp.PrimaryStage {
     title.value = "Monte Carlo SW - Demo01"
-    width = 1050
+    width = 1200
     height = 780
     icons += imageicon	
     centerOnScreen()

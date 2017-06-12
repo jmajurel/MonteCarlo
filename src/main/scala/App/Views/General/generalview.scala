@@ -31,16 +31,20 @@ trait GeneralView { this: Views =>
     helpmenu.items = List(itemhelp)
     menubar.menus = List(filemenu, helpmenu)
     
-    
+    val bppimg = new Image(Dependencies.pathbppicon, requestedWidth = 125, requestedHeight = 125, preserveRatio = true, smooth = true)
     val mctitle = new Label("Monte Carlo Simulator"){
       font = Templates.titlefont
     }
-    val mcversion = new Label("Demo 01 - version v01.00")
-    val mclabjct = new Label("Project")
-    val mcpjtname = new TempTextFieldIndic(ProjectData.PROJECT_NAME)
-    val mclabrunnb = new Label("Run #")
-    val mcrunnb= new TempTextFieldIndic(ProjectData.RUN_NB)
-    var bppicon = new ImageView(Main.imageicon)
+    val mcversion = new Label("version v02.01")
+    val mclabjct = new Label("BPP Project:")
+    val mcpjtname = new TempTextFieldIndic(ProjectData.BPPPROJECT){maxWidth = 140}
+
+    val mclabcustm = new Label("Customer:")
+    val mccustom= new TempTextFieldIndic(ProjectData.CUSTOMERNAME){maxWidth = 140}
+    val mclabruntitle = new Label("Title:")
+    val mcruntitle= new TempTextFieldIndic("Test run 001"){maxWidth = 140}
+    
+    var bppicon = new ImageView(bppimg)
     var hbox_top = new HBox(){
       padding = Insets(5)
       spacing = 40
@@ -56,41 +60,53 @@ trait GeneralView { this: Views =>
         bppicon
       )
     }
-
-    var hbox_runnb = new HBox(){
+    var hbox_prjt = new HBox(){
       padding = Insets(5)
       spacing = 2
-      alignment = Pos.CENTER
+      alignment = Pos.BottomRight
       children = List(
-        mclabrunnb,
-        mcrunnb
+        mclabjct,
+        mcpjtname
+       )
+    }
+    var hbox_custom = new HBox(){
+      padding = Insets(5)
+      spacing = 2
+      alignment = Pos.BottomRight
+      children = List(
+        mclabcustm,
+        mccustom
       )
     }
 
+    var hbox_runtitle = new HBox(){
+      padding = Insets(5)
+      spacing = 2
+      alignment = Pos.BottomRight
+      children = List(
+        mclabruntitle,
+        mcruntitle
+      )
+    }    
     var vbox_bottomleft = new VBox(){
       padding = Insets(5)
-      spacing = 5
-      alignment = Pos.CENTER_RIGHT
+      spacing = 2
+      alignment = Pos.BottomRight
       children = List(
-        new HBox(){
-          padding = Insets(5)
-          spacing = 2
-          alignment = Pos.CENTER
-          children = List(
-            mclabjct,
-            mcpjtname
-          )
-        },
-        hbox_runnb
+        hbox_prjt,
+        hbox_custom,
+        hbox_runtitle
       )
     }
 
-    var mclabtimedate = new Label("Time & Date")
-    var mctimedate = new TempTextFieldIndic("23:01 \n29/05/2017")
+    var mclabtimedate = new Label("Run Time/Date")
+    var mctimedate = new TempTextFieldIndic("23:01 \n29/05/2017"){
+      maxWidth = 110
+    }
     var vbox_bottomrigth = new VBox(){
       padding = Insets(1)
       spacing = 5
-      alignment = Pos.CENTER
+      alignment = Pos.Center
       children = List(
         mclabtimedate,
         mctimedate
@@ -99,13 +115,13 @@ trait GeneralView { this: Views =>
 
     var vbox_mcgen = new VBox(){
       padding = Insets(1)
-      border = new Border(new BorderStroke(Color.LIGHTGREY, BorderStrokeStyle.SOLID,CornerRadii.EMPTY, BorderWidths.DEFAULT))
+      border = new Border(new BorderStroke(Color.LightGrey, BorderStrokeStyle.SOLID,CornerRadii.EMPTY, BorderWidths.DEFAULT))
       children = List(
         hbox_top,
         new HBox(){
           padding = Insets(1)
-          spacing = 120
-          alignment = Pos.BOTTOM_LEFT
+          spacing = 50
+          //alignment = Pos.BOTTOM_LEFT
           children = List(
             vbox_bottomleft,
             vbox_bottomrigth
