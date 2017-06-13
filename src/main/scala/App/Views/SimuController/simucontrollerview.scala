@@ -14,73 +14,58 @@ trait SimuControllerView { this: Views =>
   
   class SimuControllerView{
     val simuctrpanel = new TempBorderPane()
-    val labctr = new Label("Simulator Controller"){font = Font.font(null, FontWeight.Bold, 20)}
-    val lab_simdate = new Label("Simulation Date:")
-    val simdate = new TempTextFieldIndic("01/05/2017")
-    val hbox_simdate= new HBox(){
-      padding = Insets(5)
-      spacing = 1
-      alignment = Pos.CENTER_RIGHT
-    }
+    val labctr = new Label("Simulator Controller"){font = Font.font(null, FontWeight.Bold, 13)}
 
-    hbox_simdate.getChildren().addAll(lab_simdate,simdate)
-    
-    val lab_currop = new Label("Current Operation:")
-    val currop = new TempTextFieldIndic("")
-	
-    val hbox_currop= new HBox(){
-      padding = Insets(5)
-      spacing = 1
-      alignment = Pos.CENTER_RIGHT
-    }
 
-    hbox_currop.getChildren().addAll(lab_currop,currop)
-    val lab_currrun = new Label("Current Run Number:")
-    val currrun = new TempTextFieldIndic("")
     val lab_elaptime = new Label("Elapsed Time (hrs):")
     val elaptime = new TempTextFieldIndic("0")
-    val hbox_currrun= new HBox(){
+    val hbox_elaptime= new HBox(){
       padding = Insets(5)
-      spacing = 1
-      alignment = Pos.CENTER_RIGHT
+      spacing = 15
+      alignment = Pos.CenterRight
+      children = List(
+          lab_elaptime,
+          elaptime
+      )
     }
 
-    hbox_currrun.getChildren().addAll(lab_elaptime, elaptime, lab_currrun,currrun)
     
-    val imageplayicon = new Image(Dependencies.pathplayicon,requestedWidth = 40, requestedHeight = 40, preserveRatio = true, smooth = false)
-    val imagestopicon = new Image(Dependencies.pathstopicon,requestedWidth = 40, requestedHeight = 40, preserveRatio = true, smooth = false)
-    val imagepauseicon = new Image(Dependencies.pathpauseicon,requestedWidth = 40, requestedHeight = 40, preserveRatio = true, smooth = false)
+    val imageplayicon = new Image(Dependencies.pathplayicon,requestedWidth = 45, requestedHeight = 45, preserveRatio = true, smooth = true)
+    val imagestopicon = new Image(Dependencies.pathstopicon,requestedWidth = 45, requestedHeight = 45, preserveRatio = true, smooth = false)
+    val imagepauseicon = new Image(Dependencies.pathpauseicon,requestedWidth = 45, requestedHeight = 45, preserveRatio = true, smooth = false)
     val play_butt = new Button("",new ImageView(imageplayicon))
     val stop_butt = new Button("",new ImageView(imagestopicon))
     val pause_butt = new Button("",new ImageView(imagepauseicon))
-    val reload_butt = new TempButton("Reload")
-    val stop_ext = new TempButton("Exit")
-    val hbox_bottom= new HBox(){
+    
+    val hbox_playerclt= new HBox(){
       padding = Insets(5)
-      spacing = 35
-      alignment = Pos.CENTER_RIGHT
+      spacing = 40
+      alignment = Pos.CenterRight
+      children = List(
+          pause_butt,
+          stop_butt,
+          play_butt
+      )
     }
 
-    hbox_bottom.getChildren().addAll(pause_butt,stop_butt,play_butt,stop_ext)
     var slidetimeacc = new Slider(0,100,100){
       showTickLabels=true
-      minWidth=250
-      maxWidth=250
-    }
-    val hbox_middle= new HBox(){
-      padding = Insets(5)
-      spacing = 35
-      alignment = Pos.CENTER_RIGHT
-    }
-    hbox_middle.getChildren().addAll(slidetimeacc, reload_butt)
-
-    val vbox_rigth = new VBox(){
-      padding = Insets(5)
-      spacing = 5
-      alignment =Pos.CENTER_RIGHT
+      minWidth=300
+      maxWidth=300
     }
 
-    vbox_rigth.getChildren().addAll(hbox_simdate, hbox_currop,hbox_currrun,hbox_middle,hbox_bottom)
-    simuctrpanel.right = vbox_rigth
+    val vbox_simuclt = new VBox(){
+      padding = Insets(20)
+      spacing = 10
+      alignment =Pos.CenterLeft
+      children = List(
+          labctr,
+          hbox_elaptime,
+          slidetimeacc,
+          hbox_playerclt
+      )
+    }
+    
+    simuctrpanel.left = vbox_simuclt
   }
 }

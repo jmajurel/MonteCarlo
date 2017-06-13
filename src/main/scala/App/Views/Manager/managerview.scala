@@ -8,6 +8,7 @@ import scalafx.scene.paint.Color
 import scalafx.scene.shape.Rectangle
 import scalafx.scene.text.{Font,FontWeight,Text}
 import scalafx.collections.ObservableBuffer
+import javafx.scene.layout.{Border,BorderStroke,CornerRadii,BorderWidths,BorderStrokeStyle}
 
 trait ManagerView { this: Views =>
 
@@ -16,10 +17,7 @@ trait ManagerView { this: Views =>
     
     val tab_setup = new Tab{closable=false }
     val tab_slt = new Tab{closable=false }
-    val lab_txtfprj = new Label ("Project")
-    var txtfprj = new TempTextFieldCtr(ProjectData.BPPPROJECT)
-    val lab_txtfrunnb = new Label ("Run #")
-    var txtfrunnb = new TempTextFieldCtr(ProjectData.RUN_NB)
+
     val lab_srtdate = new Label ("Start Date")
     var txtfsrtdate = new TempTextFieldCtr("11/12/2015")
     val lab_nbofrun = new Label ("Number of Runs")
@@ -29,16 +27,13 @@ trait ManagerView { this: Views =>
     var chkA = new CheckBox("A: Interim works"){
       selected = true
     }
-    var chkB = new CheckBox("B: Option 1 - Convert to perm spread")
-    var chkC = new CheckBox("C: Option 2a - Turret repair EU")
-    var chkD = new CheckBox("D: Option 2a - Turret repair SING")
-    var chkE = new CheckBox("E: Option 2c - Turret replace SING")
-    var chkF = new CheckBox("F: Option 2c - Turret replace EU")   
-    var chkG = new CheckBox("G: In-situ - Turret repair")
-    val vbox_pjt = new VBox(){
-      spacing = 5
-    }
-    vbox_pjt.getChildren().addAll(lab_txtfprj, txtfprj)
+    var chkB = new CheckBox("B: Option 1")
+    var chkC = new CheckBox("C: Option 2a -EU")
+    var chkD = new CheckBox("D: Option 2a -SING")
+    var chkE = new CheckBox("E: Option 2c -SING")
+    var chkF = new CheckBox("F: Option 2c -EU")
+    var chkG = new CheckBox("G: In-situ")
+
     
     val vbox_nbofrun = new VBox(){
       spacing = 5
@@ -55,39 +50,19 @@ trait ManagerView { this: Views =>
       )
     }
     val hbox_top = new HBox(){
-      spacing = 25
+      spacing = 40
       children = List(
-        vbox_pjt,
-        vbox_nbofrun, 
-        vbox_startdate
+        vbox_startdate,
+        vbox_nbofrun
       )
     }
-    val vbox_topcenter = new VBox(){
-      spacing = 5
-      children = List(
-        lab_txtfrunnb,
-        txtfrunnb
-      )  
-    }
 
-    val vhbox_setup = new VBox(){
-      padding = Insets(20,20,100,20)
-      spacing = 12
-      alignment=Pos.CenterLeft
-      children = List(
-        hbox_top,
-        vbox_topcenter
-      ) 
-    }
-
-    tab_setup.text = "Setup"
-    tab_setup.content = vhbox_setup
-    
-    
     val gridselection = new GridPane(){
-      hgap = 10
+      hgap = 20
       vgap = 10
-      padding = Insets(10,10,10,10)
+      padding = Insets(0,0,10,0)
+      maxWidth = 320
+      border = new Border(new BorderStroke(Color.LIGHTGREY, BorderStrokeStyle.SOLID,CornerRadii.EMPTY, BorderWidths.DEFAULT))
     }
     gridselection.add(lab_options,1,1)
     gridselection.add(chkallops,1,2)
@@ -99,7 +74,22 @@ trait ManagerView { this: Views =>
     gridselection.add(chkF,2,4)
     gridselection.add(chkG,2,5)
     
-    val labscen = new Label("Scenario:")
+
+    
+    val vhbox_setup = new VBox(){
+      padding = Insets(20,20,100,20)
+      spacing = 12
+      alignment=Pos.CenterLeft
+      children = List(
+        hbox_top,
+        gridselection
+      ) 
+    }
+
+    tab_setup.text = "Setup"
+    tab_setup.content = vhbox_setup
+    
+/*	val labscen = new Label("Scenario:")
     val scenachlist = new ObservableBuffer[String]
     scenachlist ++= ProjectData.SCENARIO_SEQ
     val scenchbox = new ChoiceBox(scenachlist)
@@ -111,9 +101,11 @@ trait ManagerView { this: Views =>
         labscen,
         scenchbox
       ) 
-    }
+    }    
+*/    
 
-    val labesti = new Label("Estimation:")
+
+/*    val labesti = new Label("Estimation:")
     val estimlist = new ObservableBuffer[String]
     estimlist ++= Seq("Cost", "Time")
     val estichbox = new ChoiceBox(estimlist)
@@ -136,10 +128,9 @@ trait ManagerView { this: Views =>
         hbox_scen,
         hbox_esti
       )   
-    }
+    }*/
 
-    tab_slt.text = "Selection"
-    tab_slt.content = gridselection
+    tab_slt.text = "Control"
     managerpanel.tabs = List(tab_setup, tab_slt)
   }
 }

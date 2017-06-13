@@ -31,11 +31,11 @@ trait GeneralView { this: Views =>
     helpmenu.items = List(itemhelp)
     menubar.menus = List(filemenu, helpmenu)
     
-    val bppimg = new Image(Dependencies.pathbppicon, requestedWidth = 125, requestedHeight = 125, preserveRatio = true, smooth = true)
+    val bppimg = new Image(Dependencies.pathbppicon, requestedWidth = 110, requestedHeight = 110, preserveRatio = true, smooth = true)
     val mctitle = new Label("Monte Carlo Simulator"){
       font = Templates.titlefont
     }
-    val mcversion = new Label("version v02.01")
+    val mcversion = new Label("v02.01")
     val mclabjct = new Label("BPP Project:")
     val mcpjtname = new TempTextFieldIndic(ProjectData.BPPPROJECT){maxWidth = 140}
 
@@ -46,8 +46,8 @@ trait GeneralView { this: Views =>
     
     var bppicon = new ImageView(bppimg)
     var hbox_top = new HBox(){
-      padding = Insets(5)
-      spacing = 40
+      padding = Insets(10)
+      spacing = 25
       children = List(
         new VBox(){
           padding = Insets(5)
@@ -104,7 +104,7 @@ trait GeneralView { this: Views =>
       maxWidth = 110
     }
     var vbox_bottomrigth = new VBox(){
-      padding = Insets(1)
+      padding = Insets(5)
       spacing = 5
       alignment = Pos.Center
       children = List(
@@ -114,13 +114,13 @@ trait GeneralView { this: Views =>
     }
 
     var vbox_mcgen = new VBox(){
-      padding = Insets(1)
+      //padding = Insets(5)
       border = new Border(new BorderStroke(Color.LightGrey, BorderStrokeStyle.SOLID,CornerRadii.EMPTY, BorderWidths.DEFAULT))
       children = List(
         hbox_top,
         new HBox(){
           padding = Insets(1)
-          spacing = 50
+          spacing = 28
           //alignment = Pos.BOTTOM_LEFT
           children = List(
             vbox_bottomleft,

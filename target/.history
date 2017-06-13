@@ -234,3 +234,7 @@ run
 RUN
 run
 exit
+run
+clean
+run
+exit

@@ -6,12 +6,7 @@ import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.layout.{BorderPane,VBox}
 
-object ProjectData{
-  val BPPPROJECT = "L56719 Jubilee"
-  val CUSTOMERNAME = "XL Catlin"
-  val RUN_NB = "001"
-  val SCENARIO_SEQ = Seq("All Options", "Option 1", "Option 2a (Europe)", "Option 2a (Singapore)", "Option 2c (Europe)", "Option 2c (Singapore)")
-}
+
 
 trait Views extends GanttView with OutputsView with SimuControllerView with ManagerView with GeneralView{ this: MVC =>
   

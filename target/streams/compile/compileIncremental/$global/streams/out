@@ -2,32 +2,28 @@
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set(C:\MonteCarloSW\src\main\scala\App\Views\Gantt\ganttview.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set(C:\MonteCarloSW\src\main\scala\App\Models\projectdata.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(C:\MonteCarloSW\src\main\scala\App\Views\Gantt\ganttview.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(C:\MonteCarloSW\src\main\scala\App\Models\projectdata.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\MonteCarloSW\src\main\scala\App\Views\Gantt\ganttview.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(C:\MonteCarloSW\src\main\scala\App\Views\Gantt\ganttview.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Including C:\MonteCarloSW\src\main\scala\App\Views\views.scala by C:\MonteCarloSW\src\main\scala\App\Views\Gantt\ganttview.scala[0m
-[0m[[0mdebug[0m] [0m[naha] Including C:\MonteCarloSW\src\main\scala\App\mvc.scala by C:\MonteCarloSW\src\main\scala\App\Views\views.scala[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\MonteCarloSW\src\main\scala\App\Models\projectdata.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(C:\MonteCarloSW\src\main\scala\App\Models\projectdata.scala)[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\MonteCarloSW\target\scala-2.12\classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 437c3aca, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 1077f7ea, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes;C:\Users\j.majurel\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	C:\MonteCarloSW\target\scala-2.12\classes;C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar;C:\Users\j.majurel\.ivy2\cache\org.scalafx\scalafx_2.12\jars\scalafx_2.12-8.0.102-R11.jar;C:\Users\j.majurel\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.1.jar;C:\Users\j.majurel\.ivy2\cache\org.jfree\jcommon\jars\jcommon-1.0.23.jar;C:\Users\j.majurel\.ivy2\cache\org.jfree\jfreechart\jars\jfreechart-1.0.19.jar;C:\Users\j.majurel\.ivy2\cache\org.apache.poi\poi\jars\poi-3.16.jar;C:\Users\j.majurel\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\j.majurel\.ivy2\cache\org.apache.commons\commons-collections4\jars\commons-collections4-4.1.jar;C:\Users\j.majurel\.ivy2\cache\org.apache.poi\poi-ooxml\jars\poi-ooxml-3.16.jar;C:\Users\j.majurel\.ivy2\cache\org.apache.poi\poi-ooxml-schemas\jars\poi-ooxml-schemas-3.16.jar;C:\Users\j.majurel\.ivy2\cache\org.apache.xmlbeans\xmlbeans\jars\xmlbeans-2.6.0.jar;C:\Users\j.majurel\.ivy2\cache\stax\stax-api\jars\stax-api-1.0.1.jar;C:\Users\j.majurel\.ivy2\cache\com.github.virtuald\curvesapi\jars\curvesapi-1.04.jar[0m
-[0m[[33mwarn[0m] [0mthere were two deprecation warnings; re-run with -deprecation for details[0m
-[0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 5.864156701 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 0.455204075 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
