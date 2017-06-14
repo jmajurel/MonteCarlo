@@ -1,8 +1,18 @@
 [0m[[0minfo[0m] [0mUpdating {file:/C:/MonteCarloSW/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT[0m
-[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	confs: [universal, universal-docs, universal-src, windows, docker, compile, runtime, test, provided, optional, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'universal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [universal][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'universal-docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [universal-docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'universal-src'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [universal-src][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'windows'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [windows][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docker'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [docker][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT->org.scala-lang#scala-library;2.12.1 [compile->default(compile)][0m
@@ -554,6 +564,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'linux'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [linux][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'rpm'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [rpm][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [linux][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'debian'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [debian][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [linux][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [compile-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT [compile][0m
@@ -1413,12 +1431,20 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.1!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1561ms :: artifacts dl 20ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 290ms :: artifacts dl 20ms[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT universal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-universal.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT universal-docs produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-universal-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT universal-src produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-universal-src.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT windows produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-windows.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT docker produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-docker.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT compile produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT runtime produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT test produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-test.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT provided produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-provided.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT optional produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT linux produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-linux.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT rpm produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-rpm.xml[0m
+[0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT debian produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-debian.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT compile-internal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-compile-internal.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT runtime-internal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-runtime-internal.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT test-internal produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-test-internal.xml[0m
@@ -1427,5 +1453,5 @@
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT docs produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT pom produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for com.montecarlo#monte-carlo_2.12;0.1.0-SNAPSHOT scala-tool produced in C:\MonteCarloSW\target\resolution-cache\reports\com.montecarlo-monte-carlo_2.12-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1561ms resolve - 20ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (290ms resolve - 20ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

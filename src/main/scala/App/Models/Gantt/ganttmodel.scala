@@ -8,4 +8,9 @@ trait GanttModel { this: Models =>
     var scenarios:String ="sceneriolist"
     //var scenarios : Array[Scenario]
   }
+  object GanttData{
+    
+    
+    
+  }
 }

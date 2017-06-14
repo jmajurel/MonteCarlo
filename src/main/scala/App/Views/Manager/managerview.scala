@@ -23,16 +23,14 @@ trait ManagerView { this: Views =>
     val lab_nbofrun = new Label ("Number of Runs")
     var txtfnbofruns = new TempTextFieldCtr("100")
     val lab_options = new Label ("Options:")
-    var chkallops = new CheckBox("All Options")
-    var chkA = new CheckBox("A: Interim works"){
-      selected = true
-    }
-    var chkB = new CheckBox("B: Option 1")
-    var chkC = new CheckBox("C: Option 2a -EU")
-    var chkD = new CheckBox("D: Option 2a -SING")
-    var chkE = new CheckBox("E: Option 2c -SING")
-    var chkF = new CheckBox("F: Option 2c -EU")
-    var chkG = new CheckBox("G: In-situ")
+    var chkallops = new CheckBox(ProjectData.SCENARIO_SEQ(0))
+    var chkA = new CheckBox(ProjectData.SCENARIO_SEQ(1))
+    var chkB = new CheckBox(ProjectData.SCENARIO_SEQ(2)){selected = true}
+    var chkC = new CheckBox(ProjectData.SCENARIO_SEQ(3))
+    var chkD = new CheckBox(ProjectData.SCENARIO_SEQ(4))
+    var chkE = new CheckBox(ProjectData.SCENARIO_SEQ(5))
+    var chkF = new CheckBox(ProjectData.SCENARIO_SEQ(6))
+    var chkG = new CheckBox(ProjectData.SCENARIO_SEQ(7))
 
     
     val vbox_nbofrun = new VBox(){

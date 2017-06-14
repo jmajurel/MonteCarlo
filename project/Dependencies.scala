@@ -8,7 +8,13 @@ object Dependencies {
   lazy val jfreechart = "org.jfree" % "jfreechart" % "1.0.19"
   lazy val poi = "org.apache.poi" % "poi" % "3.16"
   lazy val poiooxml = "org.apache.poi" % "poi-ooxml" % "3.16"
+  
   // Projects
-  val projectDeps = 
-    Seq(scalafx,jcommon,jfreechart,poi,poiooxml)  
+  val projectDeps = Seq(
+    scalafx,
+    jcommon,
+    jfreechart,
+    poi,
+    poiooxml
+  )
 }

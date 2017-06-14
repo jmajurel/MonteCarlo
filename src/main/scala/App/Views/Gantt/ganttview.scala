@@ -33,7 +33,7 @@ trait GanttView { this: Views =>
     
     var dataset = createDataset
     var ganttchart = createChart(dataset)
-    val viewerdimension = new Dimension(700, 300)
+    val viewerdimension = new Dimension(100, 400)
     val lightblue = new Color(0, 176, 240)
     var taskscollection = new TaskSeriesCollection()
     configAxis(ganttchart)
@@ -59,13 +59,20 @@ trait GanttView { this: Views =>
       var valuesaxis = plot.getRangeAxis()
       valuesaxis.setLabelAngle(0.01)
       valuesaxis.setMinorTickCount(2)
+      
       var axis = new DateAxis() 	  	
+      axis = plot.getRangeAxis().asInstanceOf[DateAxis]
+      axis.setDateFormatOverride(new SimpleDateFormat("MM/dd/YY"))
+      
+      //Configure Horizontal axis to timescale
+      /*var axis = new DateAxis() 	  	
       axis = plot.getRangeAxis().asInstanceOf[DateAxis]
       axis.setDateFormatOverride(new SimpleDateFormat("MM/dd/YY"))
       axis.setLabelPaint(Color.lightGray)
       axis.setVerticalTickLabels(true)
-      axis.setTickLabelFont(new Font(null, Font.PLAIN, 10))
+      axis.setTickLabelFont(new Font(null, Font.PLAIN, 10))*/
     }
+    
     def configGanttStyle(ganttchart : JFreeChart)={
       var plot = new CategoryPlot()
       plot= ganttchart.getPlot().asInstanceOf[CategoryPlot]
@@ -81,8 +88,9 @@ trait GanttView { this: Views =>
       plot.setRangeGridlinePaint(Color.gray)
       plot.setDomainGridlinePaint(Color.gray)
       //getEndPercent()
-  
-      plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBaseItemLabelGenerator( new StandardCategoryItemLabelGenerator("{1}",NumberFormat.getPercentInstance()) {
+      
+      //Display percentage of completion in tasks
+     /* plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBaseItemLabelGenerator( new StandardCategoryItemLabelGenerator("{1}",NumberFormat.getPercentInstance()) {
         override def  generateRowLabel( dataset: CategoryDataset, row: Int) :String = {
           return "Your Row Text  " + row;
         }
@@ -100,10 +108,10 @@ trait GanttView { this: Views =>
       plot.getRenderer().asInstanceOf[CategoryItemRenderer].setBasePositiveItemLabelPosition(new ItemLabelPosition(
         ItemLabelAnchor.INSIDE6, 
         TextAnchor.BOTTOM_CENTER)
-      )
+      )*/
     }
 	
-  /** Creates a new task
+    /** Creates a new task
     *
     *  @param name its name
     *  @param startdate its start date
@@ -130,23 +138,80 @@ trait GanttView { this: Views =>
       calendar.setTime(date(3, Calendar.APRIL, 2017))
       calendar.add(Calendar.DATE, 3)
       val enddate = calendar.getTime()
+      
       var op1 = new Task(
-        "ID 01 - Survey for OLB",
+        "ID 01-Sail to Site, DP trials",
         new SimpleTimePeriod( 
           date(3, Calendar.APRIL, 2017),
-          enddate
+          date(4, Calendar.APRIL, 2017)
         )
       )
-      var op11 = new Task(
-        "ID 01.01 - Vessel Mob",
+      var op2 = new Task(
+        "ID 02-Seabed Survey",
         new SimpleTimePeriod( 
-          date(6, Calendar.APRIL, 2017),
+          date(4, Calendar.APRIL, 2017),
+          date(6, Calendar.APRIL, 2017)
+        )
+      )
+      var op3 = new Task(
+        "ID 03-Geotechnical Survey",
+        new SimpleTimePeriod( 
+          date(4, Calendar.APRIL, 2017),
           date(7, Calendar.APRIL, 2017)
         )
       )
-
-        
+      var op4 = new Task(
+        "ID 04-Sail to Port/ Demob",
+        new SimpleTimePeriod( 
+          date(7, Calendar.APRIL, 2017),
+          date(9, Calendar.APRIL, 2017)
+        )
+      )
+      var op5 = new Task(
+        "ID 05-Hang-off fab.",
+        new SimpleTimePeriod( 
+          date(17, Calendar.JULY, 2018),
+          date(1, Calendar.FEBRUARY, 2019)
+        )
+      )
+      var op6 = new Task(
+        "ID 06-EPCI for OLB/OOL",
+        new SimpleTimePeriod( 
+          date(3, Calendar.APRIL, 2017),
+          date(4, Calendar.MARCH, 2019)
+        )
+      )
+      var op7 = new Task(
+        "ID 07-Test/Comm OOL ",
+        new SimpleTimePeriod( 
+          date(4, Calendar.MARCH, 2019),
+          date(6, Calendar.MARCH, 2019)
+        )
+      )
+      var op8 = new Task(
+        "ID 08-Certify OOL",
+        new SimpleTimePeriod( 
+          date(3, Calendar.APRIL, 2017),
+          date(6, Calendar.MARCH, 2019)
+        )
+      )
+      var op9 = new Task(
+        "ID 09-Marine Warranty Services",
+        new SimpleTimePeriod( 
+          date(19, Calendar.AUGUST, 2018),
+          date(6, Calendar.MARCH, 2019)
+        )
+      )       
       bpptaskseries.add(op1)
+      bpptaskseries.add(op2)
+      bpptaskseries.add(op3)
+      bpptaskseries.add(op4)
+      bpptaskseries.add(op5)
+      bpptaskseries.add(op6)
+      bpptaskseries.add(op7)
+      bpptaskseries.add(op8)
+      bpptaskseries.add(op9)
+
       //bpptaskseries.add(op2)
       var collectiont = new TaskSeriesCollection()
       collectiont.add(bpptaskseries)

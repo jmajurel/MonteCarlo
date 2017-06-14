@@ -238,3 +238,18 @@ run
 clean
 run
 exit
+run
+eclipse
+reload
+sbt universal:packageBin
+universal:packageBin
+windows:packageBin
+reload
+windows:packageBin
+reload
+windows:packageBin
+exit
+run
+eclipse
+run
+exit

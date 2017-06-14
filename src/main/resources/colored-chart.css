@@ -1,0 +1,33 @@
+/** 
+ * file: colored-chart.css 
+ *   Place in same directory as DynamicallyColoredBarChartWithLabel.java
+ *   Ensure that the build system copies this file to the build output directory. 
+ */
+.default-color0.chart-series-line { -fx-stroke: rgb(192,0,0); }
+.default-color1.chart-series-line { -fx-stroke: rgb(0,176,240); }
+.default-color2.chart-series-line { -fx-stroke: black; }
+
+.default-color0.chart-line-symbol { -fx-background-color: rgb(192,0,0), white; }
+.default-color1.chart-line-symbol { -fx-background-color: rgb(0,176,240), white; }
+.default-color2.chart-line-symbol { -fx-background-color: black, white; }
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-translate-y: -100;
+   -fx-translate-x: 200;
+   -fx-background-size: 10px;
+   -fx-wrap-text:true;
+   -fx-padding: 10px;
+   
+}
+ 
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
