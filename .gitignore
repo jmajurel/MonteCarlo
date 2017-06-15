@@ -1,2 +1,14 @@
-/bin/
+### SBT ###
+# Simple Build Tool
 target/
+*.class
+
+### Eclipse (Scala)###
+# IDE
+build
+.cache-main
+.classpath
+.project
+.settings
+org.scala-ide.sdt.core/META-INF/MANIFEST.MF
+org.scala-ide.sdt.update-site/site.xml`
