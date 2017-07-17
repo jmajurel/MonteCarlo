@@ -42,7 +42,7 @@ trait GeneralView { this: Views =>
     val mclabcustm = new Label("Customer:")
     val mccustom= new TempTextFieldIndic(ProjectData.CUSTOMERNAME){maxWidth = 140}
     val mclabruntitle = new Label("Title:")
-    val mcruntitle= new TempTextFieldIndic("Test run 001"){maxWidth = 140}
+    val mcruntitle= new TempTextFieldIndic("Test run 002"){maxWidth = 140}
     
     var bppicon = new ImageView(bppimg)
     var hbox_top = new HBox(){

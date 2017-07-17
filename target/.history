@@ -254,3 +254,32 @@ eclipse
 run
 exit
 run
+compile
+eval print("30b00e2a-a451-4797-89af-d8429a7cab66\n")
+compile
+eval print("646fb721-8317-4fed-ad5f-e499ecd57825\n")
+compile
+eval print("9447ba05-c819-4c67-8e60-b6ada6f1a1af\n")
+compile
+eval print("bf3ebd3c-5181-4d2a-937c-b58685acc457\n")
+run
+compile
+eval print("1286bbd3-3fce-4291-a08d-ef6e5395564f\n")
+compile
+eval print("ad8a9b79-a947-4511-bd24-2e376db7eb35\n")
+compile
+eval print("12ad3a5d-be4b-4bfb-a759-73999462f5a0\n")
+run
+compile
+run
+exit
+run
+doc
+exit
+run
+exit
+q
+exit
+run
+exit
+run

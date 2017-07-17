@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook
 class Scenario(id: Int, name:String, path:String){
 
   def load(){
-    var file = new FileInputStream("inputfile.xlsx")
+    var file = new FileInputStream("Scenario_Operations_Overview_DEV.xlsx")
     var wb = new XSSFWorkbook(file)
     var sheet = wb.getSheetAt(0)
     var nbrow = sheet.getPhysicalNumberOfRows()
@@ -19,12 +19,12 @@ class Scenario(id: Int, name:String, path:String){
     var cellduration = row.getCell(15)
     var opname = cellop.getStringCellValue()
     var oppreop = cellpreop.getStringCellValue()
-    var opduration = cellduration.getStringCellValue()
+    // var opduration = cellduration.getStringCellValue()
     //var op1 = Operation(id=1 , name:String, statedate:Date, duration:Int, cost:Double)
     
     println("opname:"+opname)
     println("oppreop:"+oppreop)
-    println("opduration:"+opduration)
+    //println("opduration:"+opduration)
   }
   def store() = println("store")
 }

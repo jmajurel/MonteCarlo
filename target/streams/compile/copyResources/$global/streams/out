@@ -1,7 +1,7 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\colored-chart.css,C:\MonteCarloSW\target\scala-2.12\classes\colored-chart.css)[0m
-[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons,C:\MonteCarloSW\target\scala-2.12\classes\icons)[0m
-[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\BPP.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\BPP.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\pause.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\pause.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\play.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\play.png)[0m
-[0m[[0mdebug[0m] [0m	(C:\MonteCarloSW\src\main\resources\icons\stop.png,C:\MonteCarloSW\target\scala-2.12\classes\icons\stop.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/jmajurel/MonteCarloSW/src/main/resources/icons,/home/jmajurel/MonteCarloSW/target/scala-2.12/classes/icons)[0m
+[0m[[0mdebug[0m] [0m	(/home/jmajurel/MonteCarloSW/src/main/resources/colored-chart.css,/home/jmajurel/MonteCarloSW/target/scala-2.12/classes/colored-chart.css)[0m
+[0m[[0mdebug[0m] [0m	(/home/jmajurel/MonteCarloSW/src/main/resources/icons/stop.png,/home/jmajurel/MonteCarloSW/target/scala-2.12/classes/icons/stop.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/jmajurel/MonteCarloSW/src/main/resources/icons/play.png,/home/jmajurel/MonteCarloSW/target/scala-2.12/classes/icons/play.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/jmajurel/MonteCarloSW/src/main/resources/icons/pause.png,/home/jmajurel/MonteCarloSW/target/scala-2.12/classes/icons/pause.png)[0m
+[0m[[0mdebug[0m] [0m	(/home/jmajurel/MonteCarloSW/src/main/resources/icons/BPP.png,/home/jmajurel/MonteCarloSW/target/scala-2.12/classes/icons/BPP.png)[0m
