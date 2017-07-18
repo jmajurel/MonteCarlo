@@ -10,7 +10,7 @@ import scalafx.scene.layout.{BorderPane,VBox}
 
 trait Views extends GanttView with OutputsView with SimuControllerView with ManagerView with GeneralView{ this: MVC =>
   
-  class Views {
+  class View {
     
     val rootPane = new BorderPane
     

@@ -2,7 +2,7 @@ package com.montecarlo
 
 trait Models extends GanttModel{ this: MVC =>
   
-  class Models {
+  class Model{
     
     var gantmodel = new GanttModel()
   }

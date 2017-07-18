@@ -1,6 +1,12 @@
 package com.montecarlo
 
-class MVC extends Views with Models{
-  val views = new Views()
-  val models = new Models()
+import akka.actor.{ActorRef,ActorSystem}
+
+class MVC extends Views with Models with Controllers{
+
+  val system:ActorSystem = ActorSystem("mvc")
+  val view = new View()
+  val model = new Model()
+  val controller = new Controller()
+  system.terminate()
 }

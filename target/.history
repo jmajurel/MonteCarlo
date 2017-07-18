@@ -307,3 +307,11 @@ clean
 compile
 run
 exit
+run
+reload
+run
+update
+exit
+run
+reload
+run

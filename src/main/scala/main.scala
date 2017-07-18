@@ -18,7 +18,7 @@ object Main extends JFXApp {
     icons += imageicon	
     centerOnScreen()
     scene = new Scene {
-      root = mvc.views.rootPane
+      root = mvc.view.rootPane
     }
   }
 }

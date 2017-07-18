@@ -1,3 +1,6 @@
+[0m[[0mdebug[0m] [0m[naha] Invalidating /root/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.13.jar: class sbt.ModuleID now provided by /home/jmajurel/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.13.jar[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /root/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.13.jar: class sbt.package$ now provided by /home/jmajurel/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.13.jar[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /root/.sbt/boot/scala-2.10.6/lib/scala-library.jar: class scala.collection.Seq$ now provided by /home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
@@ -5,11 +8,590 @@
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set(/root/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.13.jar, /root/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.13.jar, /root/.sbt/boot/scala-2.10.6/lib/scala-library.jar)[0m
 [0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set(/home/jmajurel/MonteCarloSW/project/Dependencies.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/jmajurel/MonteCarloSW/project/Dependencies.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/jmajurel/MonteCarloSW/project/Dependencies.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/jmajurel/MonteCarloSW/project/target/scala-2.10/sbt-0.13/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.10.6[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.10.6[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3a8d6741, interfacing (CompilerInterface) with Scala compiler version 2.10.6[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/jmajurel/MonteCarloSW/project/target/scala-2.10/sbt-0.13/classes:/home/jmajurel/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-5.1.0.jar:/home/jmajurel/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.2.5.jar:/home/jmajurel/.ivy2/cache/org.scalaz/scalaz-effect_2.10/bundles/scalaz-effect_2.10-7.2.5.jar:/home/jmajurel/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-native-packager/jars/sbt-native-packager-1.2.0.jar:/home/jmajurel/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar:/home/jmajurel/.ivy2/cache/org.tukaani/xz/jars/xz-1.0.jar:/home/jmajurel/.ivy2/cache/org.apache.ant/ant/jars/ant-1.9.6.jar:/home/jmajurel/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.6.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/actions/jars/actions-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/classpath/jars/classpath-0.13.13.jar:/home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-compiler.jar:/home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-reflect.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/interface/jars/interface-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/control/jars/control-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/launcher-interface/jars/launcher-interface-1.0.0-M1.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/completion/jars/completion-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.13.jar:/home/jmajurel/.ivy2/cache/jline/jline/jars/jline-2.13.jar:/home/jmajurel/.ivy2/cache/org.fusesource.jansi/jansi/jars/jansi-1.11.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/api/jars/api-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/classfile/jars/classfile-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/logging/jars/logging-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/process/jars/process-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compiler-integration/jars/compiler-integration-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/incremental-compiler/jars/incremental-compiler-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/relation/jars/relation-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compile/jars/compile-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/persist/jars/persist-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.10/jars/sbinary_2.10-0.4.2.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compiler-ivy-integration/jars/compiler-ivy-integration-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/cross/jars/cross-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt.ivy/ivy/jars/ivy-2.3.0-sbt-2cf13e211b2cb31f0d3b317289dca70eca3362f6.jar:/home/jmajurel/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.50.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/serialization_2.10/jars/serialization_2.10-0.1.2.jar:/home/jmajurel/.ivy2/cache/org.scala-lang.modules/scala-pickling_2.10/jars/scala-pickling_2.10-0.10.1.jar:/home/jmajurel/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.1.jar:/home/jmajurel/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.10.jar:/home/jmajurel/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.10.jar:/home/jmajurel/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar:/home/jmajurel/.ivy2/cache/org.spire-math/jawn-parser_2.10/jars/jawn-parser_2.10-0.6.0.jar:/home/jmajurel/.ivy2/cache/org.spire-math/json4s-support_2.10/jars/json4s-support_2.10-0.6.0.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/run/jars/run-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/tasks/jars/tasks-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/tracking/jars/tracking-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/cache/jars/cache-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/testing/jars/testing-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/test-agent/jars/test-agent-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/command/jars/command-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/template-resolver/jars/template-resolver-0.1.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/logic/jars/logic-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compiler-interface/jars/compiler-interface-0.13.13.jar[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m     while compiling: /home/jmajurel/MonteCarloSW/project/Dependencies.scala[0m
+[0m[[31merror[0m] [0m        during phase: jvm[0m
+[0m[[31merror[0m] [0m     library version: version 2.10.6[0m
+[0m[[31merror[0m] [0m    compiler version: version 2.10.6[0m
+[0m[[31merror[0m] [0m  reconstructed args: -bootclasspath /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-library.jar -deprecation -classpath /home/jmajurel/MonteCarloSW/project/target/scala-2.10/sbt-0.13/classes:/home/jmajurel/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-5.1.0.jar:/home/jmajurel/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.2.5.jar:/home/jmajurel/.ivy2/cache/org.scalaz/scalaz-effect_2.10/bundles/scalaz-effect_2.10-7.2.5.jar:/home/jmajurel/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbt/sbt-native-packager/jars/sbt-native-packager-1.2.0.jar:/home/jmajurel/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.4.1.jar:/home/jmajurel/.ivy2/cache/org.tukaani/xz/jars/xz-1.0.jar:/home/jmajurel/.ivy2/cache/org.apache.ant/ant/jars/ant-1.9.6.jar:/home/jmajurel/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.9.6.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/actions/jars/actions-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/classpath/jars/classpath-0.13.13.jar:/home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-compiler.jar:/home/jmajurel/.sbt/boot/scala-2.10.6/lib/scala-reflect.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/interface/jars/interface-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/control/jars/control-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/launcher-interface/jars/launcher-interface-1.0.0-M1.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/completion/jars/completion-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.13.jar:/home/jmajurel/.ivy2/cache/jline/jline/jars/jline-2.13.jar:/home/jmajurel/.ivy2/cache/org.fusesource.jansi/jansi/jars/jansi-1.11.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/api/jars/api-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/classfile/jars/classfile-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/logging/jars/logging-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/process/jars/process-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compiler-integration/jars/compiler-integration-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/incremental-compiler/jars/incremental-compiler-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/relation/jars/relation-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compile/jars/compile-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/persist/jars/persist-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-tools.sbinary/sbinary_2.10/jars/sbinary_2.10-0.4.2.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compiler-ivy-integration/jars/compiler-ivy-integration-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/cross/jars/cross-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt.ivy/ivy/jars/ivy-2.3.0-sbt-2cf13e211b2cb31f0d3b317289dca70eca3362f6.jar:/home/jmajurel/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.50.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/serialization_2.10/jars/serialization_2.10-0.1.2.jar:/home/jmajurel/.ivy2/cache/org.scala-lang.modules/scala-pickling_2.10/jars/scala-pickling_2.10-0.10.1.jar:/home/jmajurel/.ivy2/cache/org.scalamacros/quasiquotes_2.10/jars/quasiquotes_2.10-2.0.1.jar:/home/jmajurel/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.10.jar:/home/jmajurel/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.10.jar:/home/jmajurel/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar:/home/jmajurel/.ivy2/cache/org.spire-math/jawn-parser_2.10/jars/jawn-parser_2.10-0.6.0.jar:/home/jmajurel/.ivy2/cache/org.spire-math/json4s-support_2.10/jars/json4s-support_2.10-0.6.0.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/run/jars/run-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/tasks/jars/tasks-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/tracking/jars/tracking-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/cache/jars/cache-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/testing/jars/testing-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/test-agent/jars/test-agent-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/command/jars/command-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/template-resolver/jars/template-resolver-0.1.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/logic/jars/logic-0.13.13.jar:/home/jmajurel/.ivy2/cache/org.scala-sbt/compiler-interface/jars/compiler-interface-0.13.13.jar[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m  last tree to typer: TypeTree(class Byte)[0m
+[0m[[31merror[0m] [0m              symbol: class Byte in package scala (flags: final abstract)[0m
+[0m[[31merror[0m] [0m   symbol definition: final abstract class Byte extends [0m
+[0m[[31merror[0m] [0m                 tpe: Byte[0m
+[0m[[31merror[0m] [0m       symbol owners: class Byte -> package scala[0m
+[0m[[31merror[0m] [0m      context owners: object Dependencies -> package <empty>[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m== Enclosing template or block ==[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0mTemplate( // val <local Dependencies>: <notype> in object Dependencies, tree.tpe=Dependencies.type[0m
+[0m[[31merror[0m] [0m  "java.lang.Object" // parents[0m
+[0m[[31merror[0m] [0m  ValDef([0m
+[0m[[31merror[0m] [0m    private[0m
+[0m[[31merror[0m] [0m    "_"[0m
+[0m[[31merror[0m] [0m    <tpt>[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  // 22 statements[0m
+[0m[[31merror[0m] [0m  ValDef( // private[this] var bitmap$0: Byte in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> <triedcooking> @{ volatile }[0m
+[0m[[31merror[0m] [0m    "bitmap$0"[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m    Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m      TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m        0."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m        <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Nil[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // private def scalafx$lzycompute(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> private <triedcooking>[0m
+[0m[[31merror[0m] [0m    "scalafx$lzycompute"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Apply( // final def synchronized(x$1: Object): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m          Dependencies.this."synchronized" // final def synchronized(x$1: Object): Object in class Object, tree.tpe=(x$1: Object)Object[0m
+[0m[[31merror[0m] [0m          Block( // tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m            If( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m              Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m                Dependencies.this.bitmap$0.&(1).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m                0[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                // 2 statements[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."scalafx " // lazy private[this] var scalafx: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                  Apply( // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    sbt.`package`.toGroupID("org.scalafx").%%("scalafx")."$percent" // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=(revision: String)sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    "8.0.102-R11"[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."bitmap$0" // private[this] var bitmap$0: Byte in object Dependencies, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                  Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m                      Dependencies.this.bitmap$0.|(1)."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m                      <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    )[0m
+[0m[[31merror[0m] [0m                    Nil[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                ()[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              <empty>[0m
+[0m[[31merror[0m] [0m            )[0m
+[0m[[31merror[0m] [0m            "scala"."runtime"."BoxedUnit"."UNIT" // final val UNIT: runtime.BoxedUnit in object BoxedUnit, tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m        ()[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."scalafx " // lazy private[this] var scalafx: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // private def jcommon$lzycompute(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> private <triedcooking>[0m
+[0m[[31merror[0m] [0m    "jcommon$lzycompute"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Apply( // final def synchronized(x$1: Object): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m          Dependencies.this."synchronized" // final def synchronized(x$1: Object): Object in class Object, tree.tpe=(x$1: Object)Object[0m
+[0m[[31merror[0m] [0m          Block( // tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m            If( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m              Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m                Dependencies.this.bitmap$0.&(2).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m                0[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                // 2 statements[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."jcommon " // lazy private[this] var jcommon: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                  Apply( // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    sbt.`package`.toGroupID("org.jfree").%("jcommon")."$percent" // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=(revision: String)sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    "1.0.23"[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."bitmap$0" // private[this] var bitmap$0: Byte in object Dependencies, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                  Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m                      Dependencies.this.bitmap$0.|(2)."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m                      <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    )[0m
+[0m[[31merror[0m] [0m                    Nil[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                ()[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              <empty>[0m
+[0m[[31merror[0m] [0m            )[0m
+[0m[[31merror[0m] [0m            "scala"."runtime"."BoxedUnit"."UNIT" // final val UNIT: runtime.BoxedUnit in object BoxedUnit, tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m        ()[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."jcommon " // lazy private[this] var jcommon: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // private def jfreechart$lzycompute(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> private <triedcooking>[0m
+[0m[[31merror[0m] [0m    "jfreechart$lzycompute"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Apply( // final def synchronized(x$1: Object): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m          Dependencies.this."synchronized" // final def synchronized(x$1: Object): Object in class Object, tree.tpe=(x$1: Object)Object[0m
+[0m[[31merror[0m] [0m          Block( // tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m            If( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m              Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m                Dependencies.this.bitmap$0.&(4).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m                0[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                // 2 statements[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."jfreechart " // lazy private[this] var jfreechart: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                  Apply( // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    sbt.`package`.toGroupID("org.jfree").%("jfreechart")."$percent" // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=(revision: String)sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    "1.0.19"[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."bitmap$0" // private[this] var bitmap$0: Byte in object Dependencies, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                  Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m                      Dependencies.this.bitmap$0.|(4)."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m                      <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    )[0m
+[0m[[31merror[0m] [0m                    Nil[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                ()[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              <empty>[0m
+[0m[[31merror[0m] [0m            )[0m
+[0m[[31merror[0m] [0m            "scala"."runtime"."BoxedUnit"."UNIT" // final val UNIT: runtime.BoxedUnit in object BoxedUnit, tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m        ()[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."jfreechart " // lazy private[this] var jfreechart: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // private def poi$lzycompute(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> private <triedcooking>[0m
+[0m[[31merror[0m] [0m    "poi$lzycompute"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Apply( // final def synchronized(x$1: Object): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m          Dependencies.this."synchronized" // final def synchronized(x$1: Object): Object in class Object, tree.tpe=(x$1: Object)Object[0m
+[0m[[31merror[0m] [0m          Block( // tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m            If( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m              Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m                Dependencies.this.bitmap$0.&(8).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m                0[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                // 2 statements[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."poi " // lazy private[this] var poi: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                  Apply( // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    sbt.`package`.toGroupID("org.apache.poi").%("poi")."$percent" // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=(revision: String)sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    "3.16"[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."bitmap$0" // private[this] var bitmap$0: Byte in object Dependencies, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                  Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m                      Dependencies.this.bitmap$0.|(8)."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m                      <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    )[0m
+[0m[[31merror[0m] [0m                    Nil[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                ()[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              <empty>[0m
+[0m[[31merror[0m] [0m            )[0m
+[0m[[31merror[0m] [0m            "scala"."runtime"."BoxedUnit"."UNIT" // final val UNIT: runtime.BoxedUnit in object BoxedUnit, tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m        ()[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."poi " // lazy private[this] var poi: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // private def poiooxml$lzycompute(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> private <triedcooking>[0m
+[0m[[31merror[0m] [0m    "poiooxml$lzycompute"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Apply( // final def synchronized(x$1: Object): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m          Dependencies.this."synchronized" // final def synchronized(x$1: Object): Object in class Object, tree.tpe=(x$1: Object)Object[0m
+[0m[[31merror[0m] [0m          Block( // tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m            If( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m              Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m                Dependencies.this.bitmap$0.&(16).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m                0[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                // 2 statements[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."poiooxml " // lazy private[this] var poiooxml: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                  Apply( // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    sbt.`package`.toGroupID("org.apache.poi").%("poi-ooxml")."$percent" // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=(revision: String)sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    "3.16"[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."bitmap$0" // private[this] var bitmap$0: Byte in object Dependencies, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                  Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m                      Dependencies.this.bitmap$0.|(16)."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m                      <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    )[0m
+[0m[[31merror[0m] [0m                    Nil[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                ()[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              <empty>[0m
+[0m[[31merror[0m] [0m            )[0m
+[0m[[31merror[0m] [0m            "scala"."runtime"."BoxedUnit"."UNIT" // final val UNIT: runtime.BoxedUnit in object BoxedUnit, tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m        ()[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."poiooxml " // lazy private[this] var poiooxml: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // private def akka$lzycompute(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> private <triedcooking>[0m
+[0m[[31merror[0m] [0m    "akka$lzycompute"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Apply( // final def synchronized(x$1: Object): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m          Dependencies.this."synchronized" // final def synchronized(x$1: Object): Object in class Object, tree.tpe=(x$1: Object)Object[0m
+[0m[[31merror[0m] [0m          Block( // tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m            If( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m              Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m                Dependencies.this.bitmap$0.&(32).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m                0[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                // 2 statements[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."akka " // lazy private[this] var akka: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                  Apply( // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    sbt.`package`.toGroupID("com.typesafe.akka").%%("akka-actor")."$percent" // def %(revision: String): sbt.ModuleID in class GroupArtifactID, tree.tpe=(revision: String)sbt.ModuleID[0m
+[0m[[31merror[0m] [0m                    "2.5.3"[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m                  Dependencies.this."bitmap$0" // private[this] var bitmap$0: Byte in object Dependencies, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                  Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Byte[0m
+[0m[[31merror[0m] [0m                      Dependencies.this.bitmap$0.|(32)."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m                      <tpt> // tree.tpe=Byte[0m
+[0m[[31merror[0m] [0m                    )[0m
+[0m[[31merror[0m] [0m                    Nil[0m
+[0m[[31merror[0m] [0m                  )[0m
+[0m[[31merror[0m] [0m                )[0m
+[0m[[31merror[0m] [0m                ()[0m
+[0m[[31merror[0m] [0m              )[0m
+[0m[[31merror[0m] [0m              <empty>[0m
+[0m[[31merror[0m] [0m            )[0m
+[0m[[31merror[0m] [0m            "scala"."runtime"."BoxedUnit"."UNIT" // final val UNIT: runtime.BoxedUnit in object BoxedUnit, tree.tpe=runtime.BoxedUnit[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m        ()[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."akka " // lazy private[this] var akka: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // lazy private[this] var scalafx: sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "scalafx "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // lazy val scalafx(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "scalafx"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    If( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m        Dependencies.this.bitmap$0.&(1).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m        0[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Apply( // private def scalafx$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Dependencies.this."scalafx$lzycompute" // private def scalafx$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=()sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."scalafx " // lazy private[this] var scalafx: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // lazy private[this] var jcommon: sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "jcommon "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // lazy val jcommon(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "jcommon"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    If( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m        Dependencies.this.bitmap$0.&(2).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m        0[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Apply( // private def jcommon$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Dependencies.this."jcommon$lzycompute" // private def jcommon$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=()sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."jcommon " // lazy private[this] var jcommon: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // lazy private[this] var jfreechart: sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "jfreechart "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // lazy val jfreechart(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "jfreechart"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    If( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m        Dependencies.this.bitmap$0.&(4).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m        0[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Apply( // private def jfreechart$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Dependencies.this."jfreechart$lzycompute" // private def jfreechart$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=()sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."jfreechart " // lazy private[this] var jfreechart: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // lazy private[this] var poi: sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "poi "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // lazy val poi(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "poi"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    If( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m        Dependencies.this.bitmap$0.&(8).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m        0[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Apply( // private def poi$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Dependencies.this."poi$lzycompute" // private def poi$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=()sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."poi " // lazy private[this] var poi: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // lazy private[this] var poiooxml: sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "poiooxml "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // lazy val poiooxml(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "poiooxml"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    If( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m        Dependencies.this.bitmap$0.&(16).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m        0[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Apply( // private def poiooxml$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Dependencies.this."poiooxml$lzycompute" // private def poiooxml$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=()sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."poiooxml " // lazy private[this] var poiooxml: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // lazy private[this] var akka: sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <mutable> <local> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "akka "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // lazy val akka(): sbt.ModuleID in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor> lazy <triedcooking>[0m
+[0m[[31merror[0m] [0m    "akka"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    If( // tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m      Apply( // def ==(x: Int): Boolean in class Byte, tree.tpe=Boolean[0m
+[0m[[31merror[0m] [0m        Dependencies.this.bitmap$0.&(32).$asInstanceOf[Byte]()."$eq$eq" // def ==(x: Int): Boolean in class Byte, tree.tpe=(x: Int)Boolean[0m
+[0m[[31merror[0m] [0m        0[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Apply( // private def akka$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Dependencies.this."akka$lzycompute" // private def akka$lzycompute(): sbt.ModuleID in object Dependencies, tree.tpe=()sbt.ModuleID[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Dependencies.this."akka " // lazy private[this] var akka: sbt.ModuleID in object Dependencies, tree.tpe=sbt.ModuleID[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  ValDef( // private[this] val projectDeps: Seq in object Dependencies[0m
+[0m[[31merror[0m] [0m    private <local> <triedcooking>[0m
+[0m[[31merror[0m] [0m    "projectDeps "[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=Seq[0m
+[0m[[31merror[0m] [0m    <empty>[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // val projectDeps(): Seq in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method> <stable> <accessor>[0m
+[0m[[31merror[0m] [0m    "projectDeps"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=Seq[0m
+[0m[[31merror[0m] [0m    Dependencies.this."projectDeps " // private[this] val projectDeps: Seq in object Dependencies, tree.tpe=Seq[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m  DefDef( // def <init>(): Dependencies.type in object Dependencies[0m
+[0m[[31merror[0m] [0m    <method>[0m
+[0m[[31merror[0m] [0m    "<init>"[0m
+[0m[[31merror[0m] [0m    [][0m
+[0m[[31merror[0m] [0m    List(Nil)[0m
+[0m[[31merror[0m] [0m    <tpt> // tree.tpe=Dependencies.type[0m
+[0m[[31merror[0m] [0m    Block( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m      // 2 statements[0m
+[0m[[31merror[0m] [0m      Apply( // def <init>(): Object in class Object, tree.tpe=Object[0m
+[0m[[31merror[0m] [0m        Dependencies.super."<init>" // def <init>(): Object in class Object, tree.tpe=()Object[0m
+[0m[[31merror[0m] [0m        Nil[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      Assign( // tree.tpe=Unit[0m
+[0m[[31merror[0m] [0m        Dependencies.this."projectDeps " // private[this] val projectDeps: Seq in object Dependencies, tree.tpe=Seq[0m
+[0m[[31merror[0m] [0m        Apply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=Seq[0m
+[0m[[31merror[0m] [0m          TypeApply( // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=()Seq[0m
+[0m[[31merror[0m] [0m            collection.this.Seq.apply(scala.this.Predef.wrapRefArray(Array[sbt.ModuleID]{Dependencies.this.scalafx(), Dependencies.this.jcommon(), Dependencies.this.jfreechart(), Dependencies.this.poi(), Dependencies.this.poiooxml(), Dependencies.this.akka()}.$asInstanceOf[Array[Object]]()))."$asInstanceOf" // final def $asInstanceOf[T0 >: ? <: ?](): T0 in class Object, tree.tpe=[T0 >: ? <: ?]()T0[0m
+[0m[[31merror[0m] [0m            <tpt> // tree.tpe=Seq[0m
+[0m[[31merror[0m] [0m          )[0m
+[0m[[31merror[0m] [0m          Nil[0m
+[0m[[31merror[0m] [0m        )[0m
+[0m[[31merror[0m] [0m      )[0m
+[0m[[31merror[0m] [0m      ()[0m
+[0m[[31merror[0m] [0m    )[0m
+[0m[[31merror[0m] [0m  )[0m
+[0m[[31merror[0m] [0m)[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m== Expanded type of tree ==[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0mTypeRef(TypeSymbol(final abstract class Byte extends ))[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0muncaught exception during compilation: java.io.FileNotFoundException[0m
+[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class (Permission denied)[0m
+[0m[[31merror[0m] [0mtwo errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+java.io.FileNotFoundException: /home/jmajurel/MonteCarloSW/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class (Permission denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at sbt.Using$$anonfun$fileOutputChannel$1.apply(Using.scala:75)
+	at sbt.Using$$anonfun$fileOutputChannel$1.apply(Using.scala:75)
+	at sbt.Using$$anon$2.openImpl(Using.scala:65)
+	at sbt.OpenFile$class.open(Using.scala:43)
+	at sbt.Using$$anon$2.open(Using.scala:64)
+	at sbt.Using$$anon$2.open(Using.scala:64)
+	at sbt.Using.apply(Using.scala:23)
+	at sbt.IO$$anonfun$copyFile$3.apply(IO.scala:639)
+	at sbt.IO$$anonfun$copyFile$3.apply(IO.scala:638)
+	at sbt.Using.apply(Using.scala:24)
+	at sbt.IO$.copyFile(IO.scala:638)
+	at sbt.IO$.move(IO.scala:839)
+	at sbt.inc.ClassfileManager$$anonfun$transactional$1$$anon$2$$anonfun$complete$5.apply(ClassfileManager.scala:66)
+	at sbt.inc.ClassfileManager$$anonfun$transactional$1$$anon$2$$anonfun$complete$5.apply(ClassfileManager.scala:66)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:98)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:98)
+	at scala.collection.mutable.HashTable$class.foreachEntry(HashTable.scala:226)
+	at scala.collection.mutable.HashMap.foreachEntry(HashMap.scala:39)
+	at scala.collection.mutable.HashMap.foreach(HashMap.scala:98)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+	at sbt.inc.ClassfileManager$$anonfun$transactional$1$$anon$2.complete(ClassfileManager.scala:66)
+	at sbt.inc.Incremental$.manageClassfiles(Incremental.scala:101)
+	at sbt.inc.Incremental$.compile(Incremental.scala:71)
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:54)
+	at sbt.compiler.IC$.compileInternal(IncrementalCompiler.scala:160)
+	at sbt.compiler.IC$.incrementalCompile(IncrementalCompiler.scala:138)
+	at sbt.Compiler$.compile(Compiler.scala:155)
+	at sbt.Compiler$.compile(Compiler.scala:141)
+	at sbt.Defaults$.sbt$Defaults$$compileIncrementalTaskImpl(Defaults.scala:879)
+	at sbt.Defaults$$anonfun$compileIncrementalTask$1.apply(Defaults.scala:870)
+	at sbt.Defaults$$anonfun$compileIncrementalTask$1.apply(Defaults.scala:868)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:228)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:228)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) java.io.FileNotFoundException: /home/jmajurel/MonteCarloSW/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class (Permission denied)[0m
