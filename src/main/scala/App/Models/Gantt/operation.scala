@@ -1,5 +1,8 @@
 package com.montecarlo
 
 import java.util.Date
-
-case class Task(id:Int , name:String, statedate:Date, duration:Int, cost:Double)
+/**
+ * this is the documentation of the Operation case class
+ * can you read it ? cool! I am carry on so. 
+ */
+case class Operation(id:Int , name:String, statedate:Date, duration:Int, cost:Double)
