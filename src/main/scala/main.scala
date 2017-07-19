@@ -5,7 +5,6 @@ import scalafx.application.JFXApp
 import scalafx.scene.Scene
 import scalafx.scene.Scene
 import scalafx.scene.image.Image
-
 object Main extends JFXApp {
   
   var mvc = new MVC
