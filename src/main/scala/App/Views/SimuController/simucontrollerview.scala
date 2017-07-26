@@ -8,15 +8,14 @@ import scalafx.geometry.Insets
 import scalafx.geometry.Pos
 import scalafx.scene.image.Image
 import scalafx.scene.image.ImageView
+import scalafx.event.{EventHandler, ActionEvent}
 
+trait SimuControllerView { this: MVC =>
 
-trait SimuControllerView { this: Views =>
-  
-  class SimuControllerView{
+  class SimuControllerView {
+
     val simuctrpanel = new TempBorderPane()
     val labctr = new Label("Simulator Controller"){font = Font.font(null, FontWeight.Bold, 13)}
-
-
     val lab_elaptime = new Label("Elapsed Time (hrs):")
     val elaptime = new TempTextFieldIndic("0")
     val hbox_elaptime= new HBox(){
@@ -34,6 +33,7 @@ trait SimuControllerView { this: Views =>
     val imagestopicon = new Image(Dependencies.pathstopicon,requestedWidth = 45, requestedHeight = 45, preserveRatio = true, smooth = false)
     val imagepauseicon = new Image(Dependencies.pathpauseicon,requestedWidth = 45, requestedHeight = 45, preserveRatio = true, smooth = false)
     val play_butt = new Button("",new ImageView(imageplayicon))
+    play_butt.onAction = handle{controller.actionRun}
     val stop_butt = new Button("",new ImageView(imagestopicon))
     val pause_butt = new Button("",new ImageView(imagepauseicon))
     
