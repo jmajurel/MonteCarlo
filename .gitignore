@@ -6,3 +6,6 @@ target/
 # Other stuff related to project
 *.xlsx
 *.xls
+
+# Linux stuff
+*.swp
