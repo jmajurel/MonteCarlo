@@ -1,1 +1,158 @@
 [0m[[0mdebug[0m] [0mjavaOptions: List()[0m
+[0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation(Survey of Wet Storage Areas)[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation(OP1)[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation()[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation()[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation(Vessel Mob)[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation(OP1-1)[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation(<OP1-1>)[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():STRING[0m
+[0m[[0minfo[0m] [0mNew Operation object loaded:Operation()[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():NUMERIC[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
+[0m[[0minfo[0m] [0mgetCellTypeEnum():BLANK[0m
+[0m[[0minfo[0m] [0mdata not a string[0m
