@@ -6,7 +6,6 @@ import scalax.collection.GraphEdge._
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{Cell, CellType}
 import org.apache.poi.ss.usermodel.DataFormat
-import breeze.stats.distributions.{LogNormal,Gaussian}
 import java.io.{File, FileOutputStream}
 
 
@@ -14,6 +13,7 @@ trait Models extends GanttModel{ this: MVC =>
 
   class Model{
 
+    var graphdata = Graph[Operation,DiEdge]()
     var gantmodel = new GanttModel()
 
     /** 
@@ -70,16 +70,19 @@ trait Models extends GanttModel{ this: MVC =>
       "normal" -> "Gaussian"
      )
 
-            
+    /**
+     * display the graph data loaded in the software
+     */
+    def displayData = println("graph:"+(graphdata.nodes mkString "\n" ))
+
     /**
      * load the input file containing the data related to a scenario
      */
-    def loadData(filename: String):Graph[Operation,DiEdge]= {
+    def loadData(filename: String) {
 
       val workbook = WorkbookFactory.create(new File(filename))
       val sheet = workbook.getSheetAt(0)
       var row = 6 //This is hardcoded Bad!! need some times to improve it.
-      var g = Graph[Operation,DiEdge]()
       var endfile = false
 
      /**
@@ -261,19 +264,17 @@ trait Models extends GanttModel{ this: MVC =>
           opmap+=(name -> newOperation)
 
           if (predecessor.isEmpty){
-            g = g + (opmap("root") ~> newOperation)
+            graphdata  = graphdata + (opmap("root") ~> newOperation)
           }
           else{ 
             for (pred <- predecessor){
-              g = g + (opmap(pred) ~> newOperation)
+              graphdata = graphdata + (opmap(pred) ~> newOperation)
             }
           }
         }
         row = row + 1
       }
     }
-    println("graph:"+(g.nodes mkString "\n" ))
-    g
     }
   }
 }
