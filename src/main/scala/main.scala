@@ -7,7 +7,7 @@ import scalafx.scene.Scene
 import scalafx.scene.image.Image
 
 object Main extends JFXApp {
-  
+
   var mvc = new MVC
   val imageicon = new Image(Dependencies.pathbppicon, requestedWidth = 125, requestedHeight = 125, preserveRatio = true, smooth = true)
   

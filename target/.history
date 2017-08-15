@@ -1,337 +1,58 @@
 run
-exit
-compile
-run ui.main
-run ui
-run ui.uimain
+reload
 run
-compile
+reload
 run
-compile
+reload
 run
-2
+reload
 run
-lastrun
-lastrunning
+reload
 run
-show discoveredMainClasses
-show 
-run ui
-run 2
-runlast compile:run
-compile:run
-compile
+reload
 run
-compile
+reload
 run
-compile
+reload
 run
-compile
+reload
 run
-compile
+reload
 run
-compile
+reload
+clear
 clean
-compile 
 run
-compile
+clean
+reload
 run
-compile
+clean
+reload
 run
-compile
+clean
+reload
 run
-compile
+reload
 run
+reload
+run
+reload
+run
+clear
+clean
+run
+exit
 package
-clearn
-clean
-compile
-run
-package
-run
-compile
-run
-compile
-run
-compile
-RUN
-run
-RUN
-run
-compile
-run
-clean
-run
-compile
-run
-clean
-compile
-run
-clean
-compile
-run
-re-run
-compile -deprecation
-run -deprecation
-compile
-run
-exit
-run
-compile
-run
-run -deprecation
-compile -deprecation
-compile
-run -deprecation
-run
-compile
-compile -details
-compile -detail
-clean
-run
-exit
-run
-compi;e
-compile
-run
-exit
-run
-exit
-run
-exit
-run
-RUN
-run
-RUN
-run
-RUN
-run
-compile
-run
-compile
-run
-compile
-run
-compile
-run
-compile
-run
-compile
-run
-compile
-run
-compile
-run
-RUN
-run
-compile
-run
-run -deprecation
-run
-sbt
-exit
-run
-sbt console
-exit
-run
-RUN
-run
-RUN
-run
-exit
-run
-exigt
-exit
-run
 exit
 run
 clean
 run
-package
-sbt assembly
-exit
-assembly
-exit
-eclipse
-run
-compile
-run
-exit
-compile
-run
-scaladoc -help
-exit
-compile
-run
-exit
-doc
-exit
-clean
-compile
-run
-exiy
-exit
-run
-exit
-clean
-compile
-clean
-console
 reload
-run
-inspect name 
-reload
-exit
-sbt stage
-stage
-sbt universal:packageBin
-reload
-sbt universal:packageBin
-sbt stage
-sbt windows:packageBin
-sbt universal:packageBin
-exit
-sbt stage
-sbt 
-reload
-sbt universal:packageBin
-reload
-stage
-sbt universal:packageBin
-universal:packageBin
-reload
-universal:packageBin
-sbt universal:packageBin
-universal:package-bin
-reaload
-reload
-assembly
-clean
-assembly
-run
-exit
-run
-exit
-run
-reload
-exit
-reload
-run
-reload
-run
-reload
-run
-exit
-run
-eclipse
-run
-exit
-run
-exit
-run
-exit
-run
-RUN
-run
-exit
 run
 clean
 run
-exit
-run
-eclipse
-reload
-sbt universal:packageBin
-universal:packageBin
-windows:packageBin
-reload
-windows:packageBin
-reload
-windows:packageBin
-exit
-run
-eclipse
-run
-exit
-run
-compile
-eval print("30b00e2a-a451-4797-89af-d8429a7cab66\n")
-compile
-eval print("646fb721-8317-4fed-ad5f-e499ecd57825\n")
-compile
-eval print("9447ba05-c819-4c67-8e60-b6ada6f1a1af\n")
-compile
-eval print("bf3ebd3c-5181-4d2a-937c-b58685acc457\n")
-run
-compile
-eval print("1286bbd3-3fce-4291-a08d-ef6e5395564f\n")
-compile
-eval print("ad8a9b79-a947-4511-bd24-2e376db7eb35\n")
-compile
-eval print("12ad3a5d-be4b-4bfb-a759-73999462f5a0\n")
-run
-compile
-run
-exit
-run
-doc
-exit
-run
-exit
-q
-exit
-run
-exit
-run
-doc
-run
-doc
-clear
-clean
-compile
-exit
-compile
-doc
-doc 
-exit
-doc
-clear
-clean
-doc
-exit
-clear
-clean
-compile
-run
-clean
-compile
-run
-exit
-run
-reload
-run
-update
-exit
-run
 reload
 run
 exit
 run
-exit
-run
-exit
-run
-reload
-run
-exit
-run
-exit
-run
-clear
-run
-runrun
-run
-jrun
-run
-runexit
 exit

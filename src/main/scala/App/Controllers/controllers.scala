@@ -4,7 +4,7 @@ trait Controllers { mvc: MVC =>
 
   class Controller { 
     def actionRun { 
-      model.load()
+      model.loadData("Scenario_Operations_Overview_DEV.xlsx")
     }
   }
 }
