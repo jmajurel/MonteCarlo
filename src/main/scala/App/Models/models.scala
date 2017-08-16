@@ -9,33 +9,53 @@ import org.apache.poi.ss.usermodel.DataFormat
 import java.io.{File, FileOutputStream}
 
 
-trait Models extends GanttModel{ this: MVC =>
+trait Models extends GanttModel with MonteCarlo { this: MVC =>
 
-  class Model{
+  /** 
+   *  Operation class represents the task operations contain in the input file.
+   */
+  case class Operation(
+    name:String, 
+    startdate: Option[String],      
+
+    bcdurext:Double,
+    bcdurbpp: Double,
+
+    bconeoffcostext: Option[Double],
+    bcdayratext: Option[Double],    
+    bconeoffcostbpp: Option[Double],
+    bcdayratebpp: Option[Double],   
+
+    pdffuncdur: String,
+    pdfdurargs: Array[String],      
+    pdffunccost: String,
+    pdfcostargs: Array[String]      
+  )
+
+  /**
+   * create root task instance
+   */
+   val root = Operation(
+     name = "root",
+     startdate=None,
+     bcdurext = 0,
+     bcdurbpp = 0,
+     bconeoffcostext = None,
+     bcdayratext = None,
+     bconeoffcostbpp = None,
+     bcdayratebpp = None,
+     pdffuncdur = "",
+     pdfdurargs = Array[String](),
+     pdffunccost = "",
+     pdfcostargs = Array[String]()
+  )
+
+
+  class Model {
 
     var graphdata = Graph[Operation,DiEdge]()
     var gantmodel = new GanttModel()
 
-    /** 
-     *  Operation class represents the task operations contain in the input file.
-     */
-    case class Operation(
-      name:String, 
-      startdate: Option[String],      
-
-      bcdurext:Double,
-      bcdurbpp: Double,
-
-      bconeoffcostext: Option[Double],
-      bcdayratext: Option[Double],    
-      bconeoffcostbpp: Option[Double],
-      bcdayratebpp: Option[Double],   
-
-      pdffuncdur: String,
-      pdfdurargs: Array[String],      
-      pdffunccost: String,
-      pdfcostargs: Array[String]      
-    )
 
     /* useful regex which analyse the text */
     val regexop = raw"([a-zA-Z]+\d+(\-\d+)?)".r 
@@ -70,6 +90,10 @@ trait Models extends GanttModel{ this: MVC =>
       "normal" -> "Gaussian"
      )
 
+    def runMonteCarlo {
+      MonteCarlo.simulator(100000, graphdata) 
+    }
+
     /**
      * display the graph data loaded in the software
      */
@@ -85,24 +109,7 @@ trait Models extends GanttModel{ this: MVC =>
       var row = 6 //This is hardcoded Bad!! need some times to improve it.
       var endfile = false
 
-     /**
-     * create root task instance
-     */
-     val root = Operation(
-       name = "root",
-       startdate=None,
-       bcdurext = 0,
-       bcdurbpp = 0,
-       bconeoffcostext = None,
-       bcdayratext = None,
-       bconeoffcostbpp = None,
-       bcdayratebpp = None,
-       pdffuncdur = "",
-       pdfdurargs = Array[String](),
-       pdffunccost = "",
-       pdfcostargs = Array[String]()
-    )
-
+     
     var opmap:Map[String,Operation] = Map("root" -> root)
 
     while (row < sheet.getPhysicalNumberOfRows() & endfile!=true){
@@ -274,7 +281,9 @@ trait Models extends GanttModel{ this: MVC =>
         }
         row = row + 1
       }
+      }
+      workbook.close()
     }
-    }
+
   }
 }
