@@ -1,5 +1,6 @@
 package com.montecarlo
 
+import scala.collection.mutable.ListBuffer
 import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
@@ -7,7 +8,6 @@ import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{Cell, CellType}
 import org.apache.poi.ss.usermodel.DataFormat
 import java.io.{File, FileOutputStream}
-
 
 trait Models extends GanttModel with MonteCarlo { this: MVC =>
 
@@ -30,7 +30,10 @@ trait Models extends GanttModel with MonteCarlo { this: MVC =>
     pdfdurargs: Array[String],      
     pdffunccost: String,
     pdfcostargs: Array[String]      
-  )
+  ){
+    var mcresdur: ListBuffer[Double] = ListBuffer()
+    var mcrescost: ListBuffer[Double] = ListBuffer()
+  }
 
   /**
    * create root task instance
@@ -50,10 +53,10 @@ trait Models extends GanttModel with MonteCarlo { this: MVC =>
      pdfcostargs = Array[String]()
   )
 
+    var graphdata = Graph[Operation,DiEdge]()
 
   class Model {
 
-    var graphdata = Graph[Operation,DiEdge]()
     var gantmodel = new GanttModel()
 
 
@@ -90,8 +93,8 @@ trait Models extends GanttModel with MonteCarlo { this: MVC =>
       "normal" -> "Gaussian"
      )
 
-    def runMonteCarlo {
-      MonteCarlo.simulator(100000, graphdata) 
+    def runMonteCarlo(numberofrun: Int) {
+      MonteCarlo.simulator(numberofrun) 
     }
 
     /**

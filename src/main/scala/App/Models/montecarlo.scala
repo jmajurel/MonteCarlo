@@ -1,31 +1,66 @@
 package com.montecarlo
 
+import scala.annotation.tailrec
+import scala.collection.mutable.ListBuffer
 import breeze.stats.distributions.{LogNormal, Gaussian, Uniform}
 import breeze.linalg.randomDouble
-import scala.annotation.tailrec
 import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
+import scalax.collection.GraphTraversal.Successors
 
 trait MonteCarlo {this: Models =>
 
   object MonteCarlo {
 
-    def simulator(runs: Int, data: Graph[Operation,DiEdge]) {
-      
-      @tailrec
-      def mc(its: Int, acc:List[Double]):List[Double]= its match {
-        case 0 => acc
-        case _ => {
-          val x = Gaussian(0.1, 0.2).cdf(Uniform(0, 1).sample)*data.get(root).bcdurext
-          mc(its-1, x :: acc)
-        }
-      }
+      def simulator(runs: Int) {
+        println("welcome in the simulator") 
 
-      val res = mc(runs, Nil)
-      println("res.max:" +res.max)
-      println("res.min:" +res.min)
-      println("mean: "+ (res.max - res.min)/runs)
+/*        @tailrec
+        def mc(its: Int) {
+          if (its > 0) {
+            val traverser = (graphdata get root).outerNodeTraverser.withDirection(Successors)
+            traverser.foreach((node: Operation) => {
+
+              val res = (Gaussian(0.1, 0.2).cdf(Uniform(0,1).sample) * node.bcdurbpp)
+              node.mcresdur = node.mcresdur :+ res 
+
+              if(node.bconeoffcostbpp.isDefined)
+                node.mcrescost = node.mcrescost :+ (Gaussian(0.1, 0.2).cdf(Uniform(0,1).sample) * node.bconeoffcostbpp.getOrElse(0.0))
+              else if(node.bcdayratebpp.isDefined)
+                node.mcrescost = node.mcrescost :+ (Gaussian(0.1, 0.2).cdf(Uniform(0,1).sample) * node.bcdayratebpp.getOrElse(0.0) * res)
+              } 
+            )
+            mc(its-1)
+          }
+        }node*/
+
+       @tailrec
+       def mc(its: Int) {
+         if(its >0) {
+           val mylist = (graphdata get root).outerNodeTraverser.withDirection(Successors).toList
+
+           @tailrec
+           def calc(listofnode: List[Operation]):Int = {
+             listofnode match {
+               case node::rest => {
+                val res = (Gaussian(0.1, 0.2).cdf(Uniform(0,1).sample) * node.bcdurbpp)
+                node.mcresdur = node.mcresdur :+ res 
+
+                if(node.bconeoffcostbpp.isDefined)
+                  node.mcrescost = node.mcrescost :+ (Gaussian(0.1, 0.2).cdf(Uniform(0,1).sample) * node.bconeoffcostbpp.getOrElse(0.0))
+                else if(node.bcdayratebpp.isDefined)
+                  node.mcrescost = node.mcrescost :+ (Gaussian(0.1, 0.2).cdf(Uniform(0,1).sample) * node.bcdayratebpp.getOrElse(0.0) * res)
+                 calc(rest)
+               }
+               case Nil => 0
+             }
+           }
+        calc(mylist)
+        mc(its-1)
+      }
     }
+    mc(runs)
   }
+}
 }

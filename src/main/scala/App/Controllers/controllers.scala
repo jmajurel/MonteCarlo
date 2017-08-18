@@ -6,7 +6,7 @@ trait Controllers { mvc: MVC =>
     def actionRun { 
       model.loadData("Scenario_Operations_Overview_DEV.xlsx")
       model.displayData
-      model.runMonteCarlo 
+      model.runMonteCarlo(100000)
     }
   }
 }
