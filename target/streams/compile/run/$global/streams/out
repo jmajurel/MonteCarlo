@@ -1,65 +1,191 @@
 [0m[[0mdebug[0m] [0mjavaOptions: List()[0m
 [0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
-[0m[[0minfo[0m] [0mgraph:Operation(OP7-4,None,18.0,18.0,None,Some(198000.0),None,Some(198000.0),LogNormal,[Ljava.lang.String;@4f68482,LogNormal,[Ljava.lang.String;@28432826)[0m
-[0m[[0minfo[0m] [0mOperation(OP12-1,None,24.0,24.0,None,Some(11250.0),None,Some(11250.0),LogNormal,[Ljava.lang.String;@131bcc65,Gaussian,[Ljava.lang.String;@39fc9edd)[0m
-[0m[[0minfo[0m] [0mOperation(SY5,None,14.0,14.0,Some(64889.0),None,Some(64889.0),None,LogNormal,[Ljava.lang.String;@6372a3fd,LogNormal,[Ljava.lang.String;@398075fd)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-6,None,18.0,18.0,None,Some(128000.0),None,Some(128000.0),LogNormal,[Ljava.lang.String;@1de7f32e,LogNormal,[Ljava.lang.String;@154ec56c)[0m
-[0m[[0minfo[0m] [0mOperation(OP12-4,None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),LogNormal,[Ljava.lang.String;@1be852b2,LogNormal,[Ljava.lang.String;@1684adc5)[0m
-[0m[[0minfo[0m] [0mOperation(EP3-1,None,180.0,180.0,Some(1.0E7),None,Some(1.0E7),None,LogNormal,[Ljava.lang.String;@7d61b2e5,Gaussian,[Ljava.lang.String;@4cd2b777)[0m
-[0m[[0minfo[0m] [0mOperation(OP5-2,None,2.0,2.0,None,Some(0.0),None,Some(0.0),Gaussian,[Ljava.lang.String;@1e2a82bc,Gaussian,[Ljava.lang.String;@5edd5137)[0m
-[0m[[0minfo[0m] [0mOperation(OP7-5,None,4.0,4.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@45bdbecc,LogNormal,[Ljava.lang.String;@4d03fd53)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-8,None,32.0,32.0,None,Some(72000.0),None,Some(72000.0),LogNormal,[Ljava.lang.String;@165b17a3,LogNormal,[Ljava.lang.String;@75ddc5a1)[0m
-[0m[[0minfo[0m] [0mOperation(OP13,None,60.0,60.0,None,Some(40000.0),None,Some(40000.0),LogNormal,[Ljava.lang.String;@7ab8b2d7,Gaussian,[Ljava.lang.String;@70fd768f)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-4,None,1.0,1.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@68b32ce9,LogNormal,[Ljava.lang.String;@1a02547a)[0m
-[0m[[0minfo[0m] [0mOperation(OP8-1,None,4.0,4.0,None,Some(198000.0),None,Some(198000.0),LogNormal,[Ljava.lang.String;@64312bff,Gaussian,[Ljava.lang.String;@368abb4f)[0m
-[0m[[0minfo[0m] [0mOperation(OP1-3,None,4.0,4.0,None,Some(99000.0),None,Some(99000.0),LogNormal,[Ljava.lang.String;@6d05aac2,LogNormal,[Ljava.lang.String;@1a22331f)[0m
-[0m[[0minfo[0m] [0mOperation(OP8-2,None,1.0,1.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@468cc1e1,LogNormal,[Ljava.lang.String;@1f3caf48)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-7,None,32.0,32.0,None,Some(209250.0),None,Some(209250.0),Gaussian,[Ljava.lang.String;@4a4ac07a,Gaussian,[Ljava.lang.String;@3487ec9e)[0m
-[0m[[0minfo[0m] [0mOperation(OP10-2,None,31.0,31.0,Some(2940000.0),None,Some(2940000.0),None,Gaussian,[Ljava.lang.String;@777c4750,Gaussian,[Ljava.lang.String;@3e9c33fb)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-1,None,2.0,2.0,None,Some(128000.0),None,Some(128000.0),LogNormal,[Ljava.lang.String;@58bb58fa,LogNormal,[Ljava.lang.String;@293d550e)[0m
-[0m[[0minfo[0m] [0mOperation(OP1-4,None,2.0,2.0,None,Some(99000.0),None,Some(99000.0),LogNormal,[Ljava.lang.String;@628f9fc1,Gaussian,[Ljava.lang.String;@693ef244)[0m
-[0m[[0minfo[0m] [0mOperation(OP3-1,None,0.0,75.0,None,None,Some(1000000.0),None,LogNormal,[Ljava.lang.String;@568a7e54,LogNormal,[Ljava.lang.String;@7e452fcc)[0m
-[0m[[0minfo[0m] [0mOperation(SY6,None,0.0,0.0,Some(8875364.0),None,Some(8875364.0),None,Gaussian,[Ljava.lang.String;@5a34e954,Gaussian,[Ljava.lang.String;@4671eb17)[0m
-[0m[[0minfo[0m] [0mOperation(root,None,0.0,0.0,None,None,None,None,,[Ljava.lang.String;@6b44893,,[Ljava.lang.String;@4c3da624)[0m
-[0m[[0minfo[0m] [0mOperation(OP9-1,None,1.0,1.0,Some(90000.0),None,Some(90000.0),None,Gaussian,[Ljava.lang.String;@412a482b,LogNormal,[Ljava.lang.String;@34b1628a)[0m
-[0m[[0minfo[0m] [0mOperation(OP12-3,None,4.0,4.0,None,Some(0.0),None,Some(0.0),LogNormal,[Ljava.lang.String;@2df8251f,Gaussian,[Ljava.lang.String;@702f5c0b)[0m
-[0m[[0minfo[0m] [0mOperation(SY4-2,None,2.0,2.0,None,None,None,None,Gaussian,[Ljava.lang.String;@6cf1e4d5,LogNormal,[Ljava.lang.String;@439bf855)[0m
-[0m[[0minfo[0m] [0mOperation(OP2-1,None,3.0,3.0,None,Some(99000.0),None,Some(99000.0),LogNormal,[Ljava.lang.String;@637bd245,Gaussian,[Ljava.lang.String;@2f481388)[0m
-[0m[[0minfo[0m] [0mOperation(OP12-2,None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),Gaussian,[Ljava.lang.String;@e4cbc00,LogNormal,[Ljava.lang.String;@60cdb587)[0m
-[0m[[0minfo[0m] [0mOperation(OP2-3,None,4.0,4.0,None,Some(99000.0),None,Some(99000.0),Gaussian,[Ljava.lang.String;@735c2689,Gaussian,[Ljava.lang.String;@1ce7bf39)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-2,None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),LogNormal,[Ljava.lang.String;@3ceed1be,Gaussian,[Ljava.lang.String;@63b22e33)[0m
-[0m[[0minfo[0m] [0mOperation(OP6-3,None,1.0,1.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@2c1dbce3,Gaussian,[Ljava.lang.String;@14ca957d)[0m
-[0m[[0minfo[0m] [0mOperation(OP2-2,None,1.0,1.0,None,Some(99000.0),None,Some(99000.0),Gaussian,[Ljava.lang.String;@42795e6f,LogNormal,[Ljava.lang.String;@4e083cf7)[0m
-[0m[[0minfo[0m] [0mOperation(OP8-3,None,27.0,27.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@723f0183,Gaussian,[Ljava.lang.String;@118c8c48)[0m
-[0m[[0minfo[0m] [0mOperation(OP6-1,None,16.0,16.0,None,Some(11250.0),None,Some(11250.0),LogNormal,[Ljava.lang.String;@4f95016e,LogNormal,[Ljava.lang.String;@35f1a3ce)[0m
-[0m[[0minfo[0m] [0mOperation(OP6-4,None,32.0,32.0,None,Some(209250.0),None,Some(209250.0),LogNormal,[Ljava.lang.String;@4cd3ded2,LogNormal,[Ljava.lang.String;@258a2d82)[0m
-[0m[[0minfo[0m] [0mOperation(OP7-3,None,18.0,18.0,None,Some(128000.0),None,Some(128000.0),Gaussian,[Ljava.lang.String;@6d100072,LogNormal,[Ljava.lang.String;@4a1855d5)[0m
-[0m[[0minfo[0m] [0mOperation(OP7-1,None,18.0,18.0,None,Some(209250.0),None,Some(209250.0),Gaussian,[Ljava.lang.String;@64316774,Gaussian,[Ljava.lang.String;@249067f2)[0m
-[0m[[0minfo[0m] [0mOperation(OP4-2,None,8.0,8.0,None,Some(11250.0),None,Some(11250.0),LogNormal,[Ljava.lang.String;@4eeb5a31,Gaussian,[Ljava.lang.String;@59b6ba58)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-9,None,6.0,6.0,None,Some(198000.0),None,Some(198000.0),LogNormal,[Ljava.lang.String;@69889270,Gaussian,[Ljava.lang.String;@626060c3)[0m
-[0m[[0minfo[0m] [0mOperation(OP2-4,None,3.0,3.0,None,Some(99000.0),None,Some(99000.0),Gaussian,[Ljava.lang.String;@146500ec,Gaussian,[Ljava.lang.String;@1b857913)[0m
-[0m[[0minfo[0m] [0mOperation(OP8-4,None,2.0,2.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@312fc451,Gaussian,[Ljava.lang.String;@4b136bd3)[0m
-[0m[[0minfo[0m] [0mOperation(SY4-1,None,2.0,2.0,Some(0.0),Some(0.0),Some(0.0),Some(0.0),Gaussian,[Ljava.lang.String;@5c5f82d1,Gaussian,[Ljava.lang.String;@1e38921c)[0m
-[0m[[0minfo[0m] [0mOperation(OP4-3,None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),LogNormal,[Ljava.lang.String;@2669c0d0,Gaussian,[Ljava.lang.String;@6d6c5bed)[0m
-[0m[[0minfo[0m] [0mOperation(OP1-5,None,2.0,2.0,None,Some(99000.0),None,Some(99000.0),LogNormal,[Ljava.lang.String;@5560a4f7,LogNormal,[Ljava.lang.String;@4bd2d0cd)[0m
-[0m[[0minfo[0m] [0mOperation(OP2-5,None,2.0,2.0,None,Some(99000.0),None,Some(99000.0),Gaussian,[Ljava.lang.String;@9ff6c84,LogNormal,[Ljava.lang.String;@284014f5)[0m
-[0m[[0minfo[0m] [0mOperation(OP6-2,None,3.0,3.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@7f84e8ae,Gaussian,[Ljava.lang.String;@4be44a80)[0m
-[0m[[0minfo[0m] [0mOperation(OP1-2,None,1.0,1.0,None,Some(99000.0),None,Some(99000.0),LogNormal,[Ljava.lang.String;@5dc14423,LogNormal,[Ljava.lang.String;@20a814fd)[0m
-[0m[[0minfo[0m] [0mOperation(OP9-2,None,43.0,43.0,Some(7170000.0),None,Some(7170000.0),None,LogNormal,[Ljava.lang.String;@7bf32501,Gaussian,[Ljava.lang.String;@2b6e945f)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-3,None,4.0,4.0,None,Some(198000.0),None,Some(198000.0),LogNormal,[Ljava.lang.String;@614cc637,Gaussian,[Ljava.lang.String;@221a7a35)[0m
-[0m[[0minfo[0m] [0mOperation(SY3-1,None,2.0,2.0,None,Some(200000.0),None,Some(200000.0),Gaussian,[Ljava.lang.String;@35ef4314,LogNormal,[Ljava.lang.String;@51527ef8)[0m
-[0m[[0minfo[0m] [0mOperation(EP1-1,None,0.0,75.0,None,None,Some(1000000.0),None,Gaussian,[Ljava.lang.String;@149e1371,LogNormal,[Ljava.lang.String;@2463ad10)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-5,None,18.0,18.0,None,Some(209250.0),None,Some(209250.0),LogNormal,[Ljava.lang.String;@1d785473,Gaussian,[Ljava.lang.String;@6cc24e3b)[0m
-[0m[[0minfo[0m] [0mOperation(SY2,None,7.0,7.0,Some(66970.0),None,Some(66970.0),None,Gaussian,[Ljava.lang.String;@65358c7e,LogNormal,[Ljava.lang.String;@3a2630eb)[0m
-[0m[[0minfo[0m] [0mOperation(OP4-1,None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),Gaussian,[Ljava.lang.String;@266b397f,LogNormal,[Ljava.lang.String;@71074931)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-10,None,2.0,2.0,None,Some(198000.0),None,Some(198000.0),Gaussian,[Ljava.lang.String;@2cc88523,LogNormal,[Ljava.lang.String;@37a3bdd6)[0m
-[0m[[0minfo[0m] [0mOperation(EP2,None,60.0,60.0,Some(2400000.0),None,Some(2400000.0),None,LogNormal,[Ljava.lang.String;@1a24beee,LogNormal,[Ljava.lang.String;@23169b97)[0m
-[0m[[0minfo[0m] [0mOperation(OP4-4,None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),Gaussian,[Ljava.lang.String;@7942aea3,LogNormal,[Ljava.lang.String;@154aafa9)[0m
-[0m[[0minfo[0m] [0mOperation(OP10-1,None,43.0,43.0,Some(7170000.0),None,Some(7170000.0),None,Gaussian,[Ljava.lang.String;@30eac56f,LogNormal,[Ljava.lang.String;@aff6112)[0m
-[0m[[0minfo[0m] [0mOperation(SY3-2,None,2.0,2.0,Some(23550.0),None,Some(23550.0),None,LogNormal,[Ljava.lang.String;@184d5ed0,Gaussian,[Ljava.lang.String;@13e7945a)[0m
-[0m[[0minfo[0m] [0mOperation(OP7-2,None,8.0,8.0,None,Some(128000.0),None,Some(128000.0),Gaussian,[Ljava.lang.String;@766708fc,LogNormal,[Ljava.lang.String;@275cd8f)[0m
-[0m[[0minfo[0m] [0mOperation(OP11-11,None,2.0,2.0,None,Some(72000.0),None,Some(72000.0),LogNormal,[Ljava.lang.String;@1a95a240,LogNormal,[Ljava.lang.String;@7b92afa9)[0m
-[0m[[0minfo[0m] [0mOperation(SY1-1,None,16.0,16.0,Some(1500000.0),None,Some(1500000.0),None,LogNormal,[Ljava.lang.String;@3816fa09,Gaussian,[Ljava.lang.String;@70c7ab3)[0m
-[0m[[0minfo[0m] [0mOperation(OP5-1,None,4.0,4.0,None,Some(0.0),None,Some(0.0),Gaussian,[Ljava.lang.String;@7dcd9290,Gaussian,[Ljava.lang.String;@72f11df7)[0m
-[0m[[0minfo[0m] [0mOperation(OP1-1,None,3.0,3.0,None,Some(99000.0),None,Some(99000.0),LogNormal,[Ljava.lang.String;@226603ee,Gaussian,[Ljava.lang.String;@6ac13ebe)[0m
-[0m[[0minfo[0m] [0mwelcome in the simulator[0m
+[0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
+[0m[[31merror[0m] [0mException in thread "JavaFX Application Thread" java.util.NoSuchElementException[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListBase$NodeSet.get(AdjacencyListBase.scala:205)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListBase$NodeSet.get$(AdjacencyListBase.scala:203)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListGraph$NodeSet.get(AdjacencyListGraph.scala:37)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListGraph$NodeSet.get(AdjacencyListGraph.scala:37)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphLike.get(Graph.scala:246)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphLike.get$(Graph.scala:246)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.DefaultGraphImpl.get(Graph.scala:42)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel$.mc$1(businessmodel.scala:56)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel$.mcSimulator(businessmodel.scala:153)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Models$Model.runMonteCarlo(models.scala:115)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Controllers$Controller.actionRun(controllers.scala:10)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.SimuControllerView$SimuControllerView.$anonfun$new$1(simucontrollerview.scala:36)[0m
+[0m[[31merror[0m] [0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)[0m
+[0m[[31merror[0m] [0m	at scalafx.event.EventIncludes$$anon$4.handle(EventIncludes.scala:113)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Node.fireEvent(Node.java:8411)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.control.Button.fire(Button.java:185)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:352)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:275)[0m
+[0m[[31merror[0m] [0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$300(GlassViewEventHandler.java:388)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.notifyMouse(View.java:937)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$450(GtkApplication.java:139)[0m
+[0m[[31merror[0m] [0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
+[0m[[31merror[0m] [0mException in thread "JavaFX Application Thread" java.util.NoSuchElementException[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListBase$NodeSet.get(AdjacencyListBase.scala:205)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListBase$NodeSet.get$(AdjacencyListBase.scala:203)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListGraph$NodeSet.get(AdjacencyListGraph.scala:37)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListGraph$NodeSet.get(AdjacencyListGraph.scala:37)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphLike.get(Graph.scala:246)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphLike.get$(Graph.scala:246)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.DefaultGraphImpl.get(Graph.scala:42)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel$.mc$1(businessmodel.scala:56)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel$.mcSimulator(businessmodel.scala:153)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Models$Model.runMonteCarlo(models.scala:115)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Controllers$Controller.actionRun(controllers.scala:10)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.SimuControllerView$SimuControllerView.$anonfun$new$1(simucontrollerview.scala:36)[0m
+[0m[[31merror[0m] [0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)[0m
+[0m[[31merror[0m] [0m	at scalafx.event.EventIncludes$$anon$4.handle(EventIncludes.scala:113)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Node.fireEvent(Node.java:8411)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.control.Button.fire(Button.java:185)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:352)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:275)[0m
+[0m[[31merror[0m] [0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$300(GlassViewEventHandler.java:388)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.notifyMouse(View.java:937)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$450(GtkApplication.java:139)[0m
+[0m[[31merror[0m] [0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
+[0m[[31merror[0m] [0mException in thread "JavaFX Application Thread" java.util.NoSuchElementException[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListBase$NodeSet.get(AdjacencyListBase.scala:205)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListBase$NodeSet.get$(AdjacencyListBase.scala:203)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListGraph$NodeSet.get(AdjacencyListGraph.scala:37)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.AdjacencyListGraph$NodeSet.get(AdjacencyListGraph.scala:37)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphLike.get(Graph.scala:246)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphLike.get$(Graph.scala:246)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.immutable.DefaultGraphImpl.get(Graph.scala:42)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel$.mc$1(businessmodel.scala:56)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel$.mcSimulator(businessmodel.scala:153)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Models$Model.runMonteCarlo(models.scala:115)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Controllers$Controller.actionRun(controllers.scala:10)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.SimuControllerView$SimuControllerView.$anonfun$new$1(simucontrollerview.scala:36)[0m
+[0m[[31merror[0m] [0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)[0m
+[0m[[31merror[0m] [0m	at scalafx.event.EventIncludes$$anon$4.handle(EventIncludes.scala:113)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Node.fireEvent(Node.java:8411)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.control.Button.fire(Button.java:185)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:352)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:275)[0m
+[0m[[31merror[0m] [0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$300(GlassViewEventHandler.java:388)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.notifyMouse(View.java:937)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$450(GtkApplication.java:139)[0m
+[0m[[31merror[0m] [0m	at java.lang.Thread.run(Thread.java:748)[0m
