@@ -8,7 +8,7 @@ trait Controllers { mvc: MVC =>
       model.loadData(filename)
       //model.displayData
       model.runMonteCarlo(filename, 100000)
-      model.geneOutputFile(filename)
+      //model.geneOutputFile(filename)
     }
   }
 }

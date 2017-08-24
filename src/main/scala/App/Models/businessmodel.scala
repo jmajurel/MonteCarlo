@@ -27,16 +27,16 @@ trait BusinessModel {this: Models =>
         traverser.foreach ((node: Operation) => if(node!=root){
           if (node.mcresdur.nonEmpty){
             sumres.maxdur += node.mcresdur.max  
-            println(f"node: ${node.name}, maxdur: ${node.mcresdur.max.toInt}")
+            //println(f"node: ${node.name}, maxdur: ${node.mcresdur.max.toInt}")
             sumres.mindur += node.mcresdur.min
-            println(f"node: ${node.name}, mindur: ${node.mcresdur.min.toInt}")
+            //println(f"node: ${node.name}, mindur: ${node.mcresdur.min.toInt}")
             sumres.meandur += ((node.mcresdur.max - node.mcresdur.min) / node.mcresdur.size)
           }
           if (node.mcrescost.nonEmpty){
             sumres.maxcost += node.mcrescost.max  
-            println(f"node: ${node.name}, maxcost: ${node.mcrescost.max}")
+            //println(f"node: ${node.name}, maxcost: ${node.mcrescost.max}")
             sumres.mincost += node.mcrescost.min
-            println(f"node: ${node.name}, mincost: ${node.mcrescost.min}")
+            //println(f"node: ${node.name}, mincost: ${node.mcrescost.min}")
             sumres.meancost += ((node.mcrescost.max - node.mcrescost.min) / node.mcrescost.size)
           }
         })

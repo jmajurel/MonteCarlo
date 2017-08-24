@@ -8,7 +8,7 @@ import scalax.collection.GraphEdge._
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
 import org.apache.poi.ss.usermodel.{Row, Cell, CellType}
 import org.apache.poi.ss.usermodel.DataFormat
-import org.apache.poi.xssf.usermodel.{XSSFWorkbook, XSSFSheet}
+//import org.apache.poi.xssf.usermodel.{XSSFWorkbook, XSSFSheet}
 import java.io.{File, FileInputStream, FileOutputStream}
 
 trait Models extends GanttModel with BusinessModel { this: MVC =>
@@ -121,15 +121,17 @@ trait Models extends GanttModel with BusinessModel { this: MVC =>
      */
     def displayData = println("graph:"+(graphdata.nodes mkString "\n" ))
     
-    def geneOutputFile(filename: String){
-      val myworkbook = new XSSFWorkbook
-      val sheet = myworkbook.createSheet("Summary")
-      val row = sheet.createRow(0)
-      val cell = row.createCell(0).setCellValue("Monte Carlo Simulator - Summary of Result")
-      val fileoutstream = new FileOutputStream(filename + ".xlsx")
-      myworkbook.write(fileoutstream)
-      fileoutstream.close
-    }
+    //def geneOutputFile(filename: String){
+    //  var myworkbook = new XSSFWorkbook
+    //  var sheet = myworkbook.createSheet("Summary")
+      /*var row = sheet.createRow(1)
+      var cell = row.createCell(1)
+      cell.setAsActiveCell()
+      cell.setCellValue("Monte Carlo Simulator Summary of Result")*/
+    //  var fileoutstream = new FileOutputStream(filename + "_out.xlsx")
+    //  myworkbook.write(fileoutstream)
+    //  fileoutstream.close
+    //}
 
     /**
      * load the input file containing the data related to a scenario
@@ -203,17 +205,24 @@ trait Models extends GanttModel with BusinessModel { this: MVC =>
           }
 
           if(cbcdurext != null){
-            if(cbcdurext.getCellTypeEnum() == CellType.NUMERIC){
-              bcdurext = cbcdurext.getNumericCellValue()
+            cbcdurext.getCellTypeEnum() match { 
+              case CellType.NUMERIC => bcdurext = cbcdurext.getNumericCellValue()
+              case CellType.STRING =>  {
+                if (cbcdurext.getStringCellValue() == "<END>")
+                  endfile = true
+              }
+              case _ => println('unreadable ${columnrefitems("<day_c>")}')
             }
-            else if (cbcdurext.getCellTypeEnum() == CellType.STRING & cbcdurext.getStringCellValue() == "<END>") endfile = true
           }
 
           if(cbcdurbpp != null){
-            if(cbcdurbpp.getCellTypeEnum() == CellType.NUMERIC){
-              bcdurbpp = cbcdurbpp.getNumericCellValue()
+            cbcdurbpp.getCellTypeEnum() match {
+              case CellType.NUMERIC => bcdurbpp = cbcdurbpp.getNumericCellValue()
+              case CellType.STRING => {
+                if (cbcdurbpp.getStringCellValue() == "<END>")
+                  endfile = true
+              }
             }
-            else if (cbcdurbpp.getCellTypeEnum() == CellType.STRING & cbcdurbpp.getStringCellValue() == "<END>") endfile = true
           }
 
           if(cbconeoffcostext != null){
