@@ -1,6 +1,8 @@
 ### SBT ###
 # Simple Build Tool
-target/
+target/*
+project/project/
+project/target/
 *.class
 
 # Other stuff related to project
