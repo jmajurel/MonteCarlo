@@ -1,97 +1,228 @@
 [0m[[0minfo[0m] [0mLoading project definition from /home/jmajurel/MonteCarloSW/project[0m
 [0m[[0minfo[0m] [0mSet current project to Monte Carlo (in build file:/home/jmajurel/MonteCarloSW/)[0m
-[0m[[0minfo[0m] [0mCompiling 4 Scala sources to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:25: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m          if (node.mcresdur.rowresults.nonEmpty) {[0m
-[0m[[31merror[0m] [0m                            ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:26: value max is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.max += node.mcresdur.rowresults.max  [0m
-[0m[[31merror[0m] [0m                       ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:26: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.max += node.mcresdur.rowresults.max  [0m
-[0m[[31merror[0m] [0m                                            ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:27: value min is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.min += node.mcresdur.rowresults.min[0m
-[0m[[31merror[0m] [0m                       ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:27: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.min += node.mcresdur.rowresults.min[0m
-[0m[[31merror[0m] [0m                                            ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:28: value mean is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.mean += ((node.mcresdur.rowresults.max - node.mcresdur.rowresults.min) / node.mcresdur.rowresults.size)[0m
-[0m[[31merror[0m] [0m                       ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:28: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.mean += ((node.mcresdur.rowresults.max - node.mcresdur.rowresults.min) / node.mcresdur.rowresults.size)[0m
-[0m[[31merror[0m] [0m                                               ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:28: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.mean += ((node.mcresdur.rowresults.max - node.mcresdur.rowresults.min) / node.mcresdur.rowresults.size)[0m
-[0m[[31merror[0m] [0m                                                                              ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:28: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.mean += ((node.mcresdur.rowresults.max - node.mcresdur.rowresults.min) / node.mcresdur.rowresults.size)[0m
-[0m[[31merror[0m] [0m                                                                                                              ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:29: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m            sumres.dur.rowresults = sumres.dur.rowresults.zip(node.mcresdur.rowresults).map{ case(x, y) => x+y }[0m
-[0m[[31merror[0m] [0m                       ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:32: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m          if (node.mcrescost.rowresults.nonEmpty) {[0m
-[0m[[31merror[0m] [0m                             ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:33: value max is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.max += node.mcrescost.rowresults.max  [0m
-[0m[[31merror[0m] [0m                        ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:33: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.max += node.mcrescost.rowresults.max  [0m
-[0m[[31merror[0m] [0m                                              ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:34: value min is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.min += node.mcrescost.rowresults.min[0m
-[0m[[31merror[0m] [0m                        ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:34: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.min += node.mcrescost.rowresults.min[0m
-[0m[[31merror[0m] [0m                                              ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:35: value mean is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.mean += ((node.mcrescost.rowresults.max - node.mcrescost.rowresults.min) / node.mcrescost.rowresults.size)[0m
-[0m[[31merror[0m] [0m                        ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:35: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.mean += ((node.mcrescost.rowresults.max - node.mcrescost.rowresults.min) / node.mcrescost.rowresults.size)[0m
-[0m[[31merror[0m] [0m                                                 ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:35: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.mean += ((node.mcrescost.rowresults.max - node.mcrescost.rowresults.min) / node.mcrescost.rowresults.size)[0m
-[0m[[31merror[0m] [0m                                                                                 ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:35: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.mean += ((node.mcrescost.rowresults.max - node.mcrescost.rowresults.min) / node.mcrescost.rowresults.size)[0m
-[0m[[31merror[0m] [0m                                                                                                                  ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:36: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m            sumres.cost.rowresults = sumres.cost.rowresults.zip(node.mcrescost.rowresults).map{ case(x, y) => x+y }[0m
-[0m[[31merror[0m] [0m                        ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:68: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m                  node.mcresdur.rowresults += resdur[0m
-[0m[[31merror[0m] [0m                                ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:76: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m                  node.mcresdur.rowresults += resdur[0m
-[0m[[31merror[0m] [0m                                ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:84: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m                  node.mcresdur.rowresults += resdur[0m
-[0m[[31merror[0m] [0m                                ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:92: value rowresults is not a member of object BusinessModel.this.DurRes[0m
-[0m[[31merror[0m] [0m                  node.mcresdur.rowresults += resdur[0m
-[0m[[31merror[0m] [0m                                ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:111: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m                    node.mcrescost.rowresults += rescost [0m
-[0m[[31merror[0m] [0m                                   ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:122: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m                    node.mcrescost.rowresults += rescost [0m
-[0m[[31merror[0m] [0m                                   ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:131: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0mError occurred in an application involving default arguments.[0m
-[0m[[31merror[0m] [0m                    node.mcrescost.rowresults += rescost [0m
-[0m[[31merror[0m] [0m                                   ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/businessmodel.scala:142: value rowresults is not a member of object BusinessModel.this.CostRes[0m
-[0m[[31merror[0m] [0m                    node.mcrescost.rowresults += rescost [0m
-[0m[[31merror[0m] [0m                                   ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/filemanager.scala:249: not found: type Results[0m
-[0m[[31merror[0m] [0m    def write(filename: String, resultsmc: Results) {[0m
-[0m[[31merror[0m] [0m                                           ^[0m
-[0m[[31merror[0m] [0m/home/jmajurel/MonteCarloSW/src/main/scala/App/Models/filemanager.scala:254: not found: type Results[0m
-[0m[[31merror[0m] [0m      def createSummaryTable(sheet: XSSFSheet, results: Results) {[0m
-[0m[[31merror[0m] [0m                                                        ^[0m
-[0m[[31merror[0m] [0m30 errors found[0m
-[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
-[0m[[31merror[0m] [0mTotal time: 7 s, completed 29-Aug-2017 15:33:32[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
+[0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 11 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 17 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 20 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 25 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 28 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 33 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 39 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 45 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 50 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 53 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 58 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 61 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 73 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
+[0m[[0minfo[0m] [0m******* End of the simulation *******[0m
+[0m[[32msuccess[0m] [0mTotal time: 6716 s, completed 06-Sep-2017 13:59:36[0m

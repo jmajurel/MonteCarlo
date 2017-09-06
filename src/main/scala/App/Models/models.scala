@@ -15,7 +15,7 @@ trait Models extends Database with GanttModel with BusinessModel { this: MVC =>
     def runMonteCarlo(scenario:String, numberofrun: Int) {
       database.loadIO(scenario)
       database.writeDB(businessmodel.mcSimulator(numberofrun, database.readDB))
-      database.writeResultDB(businessmodel.statistic(scenario, database.readDB))
+      database.writeDB(businessmodel.statistic(scenario, database.readDB))
       database.extractIO(scenario)
     }
   }

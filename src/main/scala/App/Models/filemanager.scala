@@ -1,11 +1,13 @@
 package com.montecarlo
 
 import scala.collection.mutable.{Map => MMap}
-import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter}
-import org.apache.poi.ss.usermodel.{Row, Cell, CellType}
-import org.apache.poi.ss.usermodel.DataFormat
-import org.apache.poi.xssf.usermodel.{XSSFWorkbook, XSSFSheet}
+import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter, DataFormat, Row, Cell, CellType}
+import org.apache.poi.ss.util.{AreaReference, CellReference}
+import org.apache.poi.xssf.usermodel.{XSSFWorkbook, XSSFSheet, XSSFCell, XSSFRow, XSSFTable}
 import java.io.{File, FileInputStream, FileOutputStream}
+import scalax.collection.Graph
+import scalax.collection.GraphPredef._
+import scalax.collection.GraphEdge._
 
 trait FileManager {this: Database =>
   
@@ -17,7 +19,7 @@ trait FileManager {this: Database =>
     def read(filename: String): Map[String, Operation]={
 
       /* useful regex which analyse the text */
-      val regexop = raw"([a-zA-Z]+\d+(\-\d+)?)".r 
+      val regexop = raw"([a-zA-Z]+\d+(?:\-\d+)?)".r 
       val regexpre = raw"([a-zA-Z]+\d+(?:\-\d+)?)".r
       val regexpdfarg = raw"(\d+(?:\.\d+)?),(\d+(?:\.\d+)?)".r
       
@@ -25,7 +27,7 @@ trait FileManager {this: Database =>
        * This map contains the column reference of each items contain in the input file.
        * Unfortunately, the autodetection of items in the input file is not yet implemented, the follo    wing column numbers are hardcoded in the following map.
        */
-      val columnrefitems = Map(
+      /*val columnrefitems = Map(
         "<op>" -> 6,
         "<pre_op>" -> 7,
         "<start_date>" -> 8,
@@ -39,32 +41,29 @@ trait FileManager {this: Database =>
         "<pdf_parameters_durations>" -> 18,
         "<pdf_type_cost>" -> 19,
         "<pdf_parameters_cost>" -> 20
+       )*/ 
+       val columnrefitems = Map(
+         "<op>" -> 9,
+         "<pre_op>" -> 10,
+         "<start_date>" -> 11,
+         "<day_c>" -> 12,
+         "<day_b>" -> 13,
+         "<one_off_c>" -> 14,
+         "<day_rate_c>" -> 15,
+         "<one_off_b>" -> 16,
+         "<day_rate_b>" -> 17,
+         "<pdf_type_duration>" -> 18,
+         "<pdf_parameters_durations>" -> 19,
+         "<pdf_type_cost>" -> 20,
+         "<pdf_parameters_cost>" -> 21
        )
-
-      /**
-      * create root task instance
-      */
-      val root = Operation (
-        name = "root",
-        predecessor = List[String](),
-        startdate=None,
-        bcdurext = 0,
-        bcdurbpp = 0,
-        bconeoffcostext = None,
-        bcdayratext = None,
-        bconeoffcostbpp = None,
-        bcdayratebpp = None,
-        pdffuncdur = "",
-        pdfdurargs = Vector[Double](),
-        pdffunccost = "",
-        pdfcostargs = Vector[Double]()
-      )
 
       val workbook = WorkbookFactory.create(new File(filename + ".xlsx"))
       val sheet = workbook.getSheetAt(0)
       var endfile = false
-      var row: Int = 1
-      
+      var row: Int = 5
+      //var row: Int = 1
+
       var opmap: MMap[String,Operation] = MMap("root" -> root)
 
       while (row < sheet.getPhysicalNumberOfRows & endfile!=true) {
@@ -101,13 +100,14 @@ trait FileManager {this: Database =>
           val cpdffunccost = currentrow.getCell(columnrefitems("<pdf_type_cost>"))
           val cpdfcostargs = currentrow.getCell(columnrefitems("<pdf_parameters_cost>"))
 
-          if (cname != null) cname.getCellTypeEnum match {
-            case CellType.STRING => cname.getStringCellValue match {
-              case regexop(res) => name = res
-              case "<END>" => endfile = true
-              case _ => println(f"<op> value at row: ${row} is unreadable")
+          if (cname != null) {
+            if (cname.getCellTypeEnum == CellType.STRING) {
+              if (cname.getStringCellValue == "<END>") 
+                endfile = true
+              else
+                name = regexop.findFirstIn(cname.getStringCellValue).getOrElse("")
             }
-            case _ => println(f"Type <op> at row: ${row} is not matching")
+            else println(f"Type <op> at row: ${row} is not matching")
           }
 
           if(cpredecessor != null)
@@ -246,19 +246,66 @@ trait FileManager {this: Database =>
     /**
      * generate outputfile containing the monte carlo simulation results
      */
-    def write(filename: String, resultsmc: Results) {
+    def write(filename: String, data: Graph[Operation, DiEdge]) {
 
       val myworkbook = new XSSFWorkbook
-      val sheet = myworkbook.createSheet("Summary")
- 
-      def createSummaryTable(sheet: XSSFSheet, results: Results) {
-        val sumtable = sheet.createTable
-        sumtable.setName("Summaryofresult")
-        sumtable.setDisplayName("Summaryofresult")
+      val shsummary = myworkbook.createSheet("Summary")
+      val shresults = myworkbook.createSheet("Results")
+      val columname = List("", "Cost (M$)", "Duration (Days)")
+
+      def getTableTemplate(sheet: XSSFSheet, title: String): XSSFTable={
+        val table = sheet.createTable
+        table.setName(title)
+        table.setDisplayName(title)
+
+        //set table style
+        table.getCTTable.addNewTableStyleInfo
+        table.getCTTable.addNewTableStyleInfo.setName("TableStyleMedium2")
+        table
       }
 
-     
-     
+      def printSummary(sheet: XSSFSheet, op: Operation) {
+
+        val rowname = List("", "min", "mean", "max")
+
+        for((nrow, i) <- rowname.zipWithIndex) {
+          val row = sheet.createRow(i)
+          for ((ncolumn, j) <- columname.zipWithIndex) {
+            val cell = row.createCell(j)
+            (ncolumn, nrow) match {
+              case ("Cost (M$)","min") => cell.setCellValue(op.mcrescost.min)
+              case ("Cost (M$)","mean") => cell.setCellValue(op.mcrescost.mean)
+              case ("Cost (M$)","max") => cell.setCellValue(op.mcrescost.max)
+              case ("Duration (Days)","min") => cell.setCellValue(op.mcresdur.min.toInt)
+              case ("Duration (Days)","mean") => cell.setCellValue(op.mcresdur.mean.toInt)
+              case ("Duration (Days)","max") => cell.setCellValue(op.mcresdur.max.toInt)
+              case ("", _) => cell.setCellValue(nrow) //set row header
+              case (_, "") => cell.setCellValue(ncolumn) //set colum header
+              case _ => cell.setCellValue("")
+            }
+          }
+        }
+      }
+
+      def printResults(sheet: XSSFSheet, op: Operation) {
+
+        var i: Int=1
+        val headerow = sheet.createRow(0)
+        headerow.createCell(0).setCellValue("Run Number")
+        headerow.createCell(1).setCellValue("Cost (M$)")
+        headerow.createCell(2).setCellValue("Duration (Days)")
+
+        for( (rescost, resdur) <- op.mcrescost.rowresults.zip(op.mcresdur.rowresults)) {
+          val row = sheet.createRow(i)
+          row.createCell(0).setCellValue(i)
+          row.createCell(1).setCellValue(rescost)
+          row.createCell(2).setCellValue(resdur)
+          i += 1
+        }
+      }
+      printSummary(shsummary, (data get root).toOuter)
+      printResults(shresults, (data get root).toOuter)
+
       val fileoutstream = new FileOutputStream(filename + "_out.xlsx")
       myworkbook.write(fileoutstream)
       fileoutstream.close

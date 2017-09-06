@@ -15,28 +15,25 @@ trait BusinessModel extends PDFunctions {this: Models =>
       /**
        * perform statistic analysis on generated data
        */
-      def statistic(scenario: String, data: Graph[Operation, DiEdge]): SummaryRes={ 
+      def statistic(scenario: String, data: Graph[Operation, DiEdge]): Graph[Operation, DiEdge] = { 
 
-        val sumres = SummaryRes(scenario)
-        val root = data.nodes.head.toOuter
         val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
+        val costscale = 1000000
 
         traverser.foreach ((node: Operation) => if(node!=root) {
           if (node.mcresdur.rowresults.nonEmpty) {
-            sumres.dur.max += node.mcresdur.rowresults.max  
-            sumres.dur.min += node.mcresdur.rowresults.min
-            sumres.dur.mean += ((node.mcresdur.rowresults.max - node.mcresdur.rowresults.min) / node.mcresdur.rowresults.size)
-            sumres.dur.rowresults = sumres.dur.rowresults.zip(node.mcresdur.rowresults).map{ case(x, y) => x+y }
+            root.mcresdur.max += node.mcresdur.rowresults.max  
+            root.mcresdur.min += node.mcresdur.rowresults.min
+            root.mcresdur.mean += ((node.mcresdur.rowresults.sum) / node.mcresdur.rowresults.size)
           }
 
           if (node.mcrescost.rowresults.nonEmpty) {
-            sumres.cost.max += node.mcrescost.rowresults.max  
-            sumres.cost.min += node.mcrescost.rowresults.min
-            sumres.cost.mean += ((node.mcrescost.rowresults.max - node.mcrescost.rowresults.min) / node.mcrescost.rowresults.size)
-            sumres.cost.rowresults = sumres.cost.rowresults.zip(node.mcrescost.rowresults).map{ case(x, y) => x+y }
+            root.mcrescost.max += node.mcrescost.rowresults.max / costscale 
+            root.mcrescost.min += node.mcrescost.rowresults.min / costscale 
+            root.mcrescost.mean += ((node.mcrescost.rowresults.sum) / node.mcrescost.rowresults.size) / costscale 
           }
         })
-        sumres
+        data
       }
 
       /**
@@ -49,8 +46,10 @@ trait BusinessModel extends PDFunctions {this: Models =>
         @tailrec
         def mc(its: Int) {
 
+          var totalcost: Double = 0
+          var totaldur: Double = 0
+
           if (its > 0) {
-            val root = data.nodes.head.toOuter
             val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
             traverser.foreach((node: Operation) => if(node!=root){
 
@@ -144,7 +143,11 @@ trait BusinessModel extends PDFunctions {this: Models =>
 
                   case _ => println("pdf cost function unknown")
                } 
+               totalcost += rescost
+               totaldur += resdur
             })
+            root.mcrescost.rowresults += totalcost/1000000
+            root.mcresdur.rowresults += totaldur.toInt
             mc(its-1)
           }
         }
