@@ -7,6 +7,7 @@ import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
 import scalax.collection.GraphTraversal.Successors
+import scala.math.exp
 
 trait BusinessModel extends PDFunctions {this: Models =>
    
@@ -17,19 +18,24 @@ trait BusinessModel extends PDFunctions {this: Models =>
        */
       def statistic(scenario: String, data: Graph[Operation, DiEdge]): Graph[Operation, DiEdge] = { 
 
-        val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
         val costscale = 1000000
+        //println("root: "+((data get root).toOuter.mcrescost.rowresults))
+        val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
 
         traverser.foreach ((node: Operation) => if(node!=root) {
+          //println("name :"+node.name)
           if (node.mcresdur.rowresults.nonEmpty) {
-            root.mcresdur.max += node.mcresdur.rowresults.max  
-            root.mcresdur.min += node.mcresdur.rowresults.min
-            root.mcresdur.mean += ((node.mcresdur.rowresults.sum) / node.mcresdur.rowresults.size)
+            //println("node rowresults dur:" +node.mcresdur.rowresults)
+            root.mcresdur.max += node.mcresdur.rowresults.max.toInt  
+            root.mcresdur.min += node.mcresdur.rowresults.min.toInt
+            root.mcresdur.mean += ((node.mcresdur.rowresults.sum) / node.mcresdur.rowresults.size).toInt
           }
 
           if (node.mcrescost.rowresults.nonEmpty) {
+            //println("node rowresults cost:" +node.mcrescost.rowresults)
+            //println("pdf cost args:"+node.pdfcostargs)
             root.mcrescost.max += node.mcrescost.rowresults.max / costscale 
-            root.mcrescost.min += node.mcrescost.rowresults.min / costscale 
+            root.mcrescost.min += node.mcrescost.rowresults.min / costscale  
             root.mcrescost.mean += ((node.mcrescost.rowresults.sum) / node.mcrescost.rowresults.size) / costscale 
           }
         })
@@ -48,106 +54,118 @@ trait BusinessModel extends PDFunctions {this: Models =>
 
           var totalcost: Double = 0
           var totaldur: Double = 0
-
+          val costscale = 1000000
           if (its > 0) {
             val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
             traverser.foreach((node: Operation) => if(node!=root){
+              //println("node :" +node)
 
               var randomvaluedur = Uniform(0,1).sample //generate random number between 0-1 for the duration calculation.
-              var resdur: Double = 0.0 
+              var pdfdur: Double = 0.0 
 
               node.pdffuncdur match {
 
                 case "normal" | "gaussian" => {
                   do{
                      randomvaluedur = Uniform(0,1).sample
-                     resdur = (Gaussian(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) * node.bcdurbpp)
-                  }while(resdur < 0)
+                     pdfdur = Gaussian(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur)
+                  }while(pdfdur < 0)
 
-                  node.mcresdur.rowresults += resdur
+                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
                 }
                 case "log_normal" => {
                   do{
                     randomvaluedur = Uniform(0,1).sample
-                    resdur = (LogNormal(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) * node.bcdurbpp) 
-                  }while(resdur < 0)
+                    pdfdur = LogNormal(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur)
+                  }while(pdfdur < 0)
 
-                  node.mcresdur.rowresults += resdur
+                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
                 }
                 case "inv_log_normal" => {
                   do{
                     randomvaluedur = Uniform(0,1).sample
-                    resdur = 2 - (LogNormal(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) * node.bcdurbpp)
-                  }while(resdur > 2 | resdur < 0)
-
-                  node.mcresdur.rowresults += resdur
+                    //println("invlogdur: " +((LogNormal(node.pdfdurargs(0), node.pdfdurargs(1))).inverseCdf(randomvaluedur)))
+                    pdfdur = 2 - (LogNormal(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur))
+                  }while(pdfdur > 2 | pdfdur < 0)
+                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
                 }
                 case "pareto" => {
                   do{
                     randomvaluedur = Uniform(0,1).sample
-                    resdur = (BPPareto(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) *  node.bcdurbpp)
-                  }while(resdur < 0)
+                    pdfdur = BPPareto(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) 
+                  }while(pdfdur < 0)
 
-                  node.mcresdur.rowresults += resdur
+                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
                 }
                 case _ => println("pdf duration function unknown")
               }
 
-              var randomvaluecost = Uniform(0,1).sample //generate random number between 0-2 for the cost calculation
+              var randomvaluecost = Uniform(0,1).sample //generate random number between 0-1 for the cost calculation
               var rescost: Double = 0.0
-
+              var pdfcost: Double = 0.0
                 node.pdffunccost match {
 
                   case "normal" | "gaussian" => {
-                    do{
+                    do {
                       randomvaluecost = Uniform(0,1).sample 
-                      if(node.bconeoffcostbpp.isDefined)
-                        rescost = (Gaussian(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) * node.bconeoffcostbpp.getOrElse(0.0))
-                      else if(node.bcdayratebpp.isDefined)
-                        rescost = (Gaussian(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) * node.bcdayratebpp.getOrElse(0.0) * resdur)
-                    }while(rescost < 0)
+                      pdfcost = Gaussian(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
+                    } while(pdfcost < 0)
+
+                    if (node.bcdayratebpp.isDefined)
+                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
+                    else
+                      rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0)
 
                     node.mcrescost.rowresults += rescost 
                   }
                   case "log_normal" => {
-                    do{
+                    do {
                       randomvaluecost = Uniform(0,1).sample 
-                      if(node.bconeoffcostbpp.isDefined)
-                        rescost = (LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) * node.bconeoffcostbpp.getOrElse(0.0)) 
-                      else if(node.bcdayratebpp.isDefined)
-                        rescost = (LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) * node.bcdayratebpp.getOrElse(0.0) * resdur)
-                    }while(rescost < 0)
+                      pdfcost = LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
+                    } while(pdfcost < 0)
+
+                    if (node.bcdayratebpp.isDefined)
+                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
+                    else
+                      rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0) 
 
                     node.mcrescost.rowresults += rescost 
                   }
                   case "inv_log_normal" => {
-                    randomvaluecost = Uniform(0,1).sample 
-                    if(node.bconeoffcostbpp.isDefined)
-                      rescost = 2 - (LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) * node.bconeoffcostbpp.getOrElse(0.0))
-                    else if(node.bcdayratebpp.isDefined)
-                      rescost = (2 - LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)) * node.bcdayratebpp.getOrElse(0.0) * resdur
+                    do {
+                      randomvaluecost = Uniform(0,1).sample 
+                      pdfcost  = 2 - LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
+                      if (node.bcdayratebpp.isDefined)
+                        rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
+                      else
+                        rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0)
+ 
+                    } while(rescost < 0)
 
+                   
                     node.mcrescost.rowresults += rescost 
                   }
                   case "pareto" => {
-                    do{
+                    do {
                       randomvaluecost = Uniform(0,1).sample 
-                      if(node.bconeoffcostbpp.isDefined)
-                        rescost = (BPPareto(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) *  node.bconeoffcostbpp.getOrElse(0.0))
-                      else if(node.bcdayratebpp.isDefined)
-                        rescost = (BPPareto(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost) *  node.bconeoffcostbpp.getOrElse(0.0) * resdur)
-                    }while(rescost < 0)
+                      pdfcost = BPPareto(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
+                    } while(pdfcost < 0)
+                    
+                    if (node.bcdayratebpp.isDefined)
+                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
+                    else
+                      rescost = pdfcost *node.bconeoffcostbpp.getOrElse(0.0)
 
                     node.mcrescost.rowresults += rescost 
                   }
 
                   case _ => println("pdf cost function unknown")
                } 
-               totalcost += rescost
-               totaldur += resdur
+               totaldur += node.mcresdur.rowresults.last
+               totalcost += node.mcrescost.rowresults.last
             })
-            root.mcrescost.rowresults += totalcost/1000000
-            root.mcresdur.rowresults += totaldur.toInt
+            root.mcrescost.rowresults += totalcost / costscale 
+            root.mcresdur.rowresults += totaldur
             mc(its-1)
           }
         }

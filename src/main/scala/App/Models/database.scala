@@ -95,6 +95,6 @@ trait Database extends FileManager {this: Models =>
     /**
      * display the current database
      *///println("Database: "+(graphdata.nodes mkString "\n" ))
-    def displayDB = println("Database: "+graphdata)
+    def displayDB = println("Database: "+(graphdata.nodes mkString "\n"))
   }
 }

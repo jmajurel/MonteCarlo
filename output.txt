@@ -1,7 +1,8 @@
 [0m[[0minfo[0m] [0mLoading project definition from /home/jmajurel/MonteCarloSW/project[0m
 [0m[[0minfo[0m] [0mSet current project to Monte Carlo (in build file:/home/jmajurel/MonteCarloSW/)[0m
-[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
 [0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
+[0m[[0minfo[0m] [0mType <op> at row: 5 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -225,4 +226,4 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
 [0m[[0minfo[0m] [0m******* End of the simulation *******[0m
-[0m[[32msuccess[0m] [0mTotal time: 6716 s, completed 06-Sep-2017 13:59:36[0m
+[0m[[32msuccess[0m] [0mTotal time: 53 s, completed 11-Sep-2017 14:37:56[0m
