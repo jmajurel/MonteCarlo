@@ -135,14 +135,13 @@ trait BusinessModel extends PDFunctions {this: Models =>
                     do {
                       randomvaluecost = Uniform(0,1).sample 
                       pdfcost  = 2 - LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
-                      if (node.bcdayratebpp.isDefined)
-                        rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
-                      else
-                        rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0)
- 
-                    } while(rescost < 0)
+                    } while(pdfcost > 2 | pdfcost < 0)
 
-                   
+                    if (node.bcdayratebpp.isDefined)
+                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
+                    else
+                      rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0)
+                    
                     node.mcrescost.rowresults += rescost 
                   }
                   case "pareto" => {
