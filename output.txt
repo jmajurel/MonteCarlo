@@ -1,8 +1,7 @@
 [0m[[0minfo[0m] [0mLoading project definition from /home/jmajurel/MonteCarloSW/project[0m
 [0m[[0minfo[0m] [0mSet current project to Monte Carlo (in build file:/home/jmajurel/MonteCarloSW/)[0m
-[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
 [0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
-[0m[[0minfo[0m] [0mType <op> at row: 5 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -19,7 +18,7 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 11 is not matching[0m
+[0m[[0minfo[0m] [0mType <op> at row: 7 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -36,7 +35,7 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 17 is not matching[0m
+[0m[[0minfo[0m] [0mType <op> at row: 13 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -49,33 +48,7 @@
 [0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 20 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 25 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 28 is not matching[0m
+[0m[[0minfo[0m] [0mType <op> at row: 16 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -90,7 +63,18 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 33 is not matching[0m
+[0m[[0minfo[0m] [0mType <op> at row: 21 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 24 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -105,80 +89,7 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 39 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 45 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 50 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 53 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 58 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 61 is not matching[0m
+[0m[[0minfo[0m] [0mType <op> at row: 29 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -195,6 +106,84 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 35 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 41 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 46 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 49 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 54 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 57 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -207,7 +196,17 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 73 is not matching[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
+[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mType <op> at row: 69 is not matching[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
@@ -225,5 +224,83 @@
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
 [0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
 [0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
-[0m[[0minfo[0m] [0m******* End of the simulation *******[0m
-[0m[[32msuccess[0m] [0mTotal time: 53 s, completed 11-Sep-2017 14:37:56[0m
+[0m[[31merror[0m] [0mException in thread "JavaFX Application Thread" java.util.NoSuchElementException: last of empty ListBuffer[0m
+[0m[[31merror[0m] [0m	at scala.collection.mutable.ListBuffer.last(ListBuffer.scala:401)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.$anonfun$mcSimulator$13(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.$anonfun$mcSimulator$13$adapted(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableOnce.$anonfun$maxBy$1(TraversableOnce.scala:243)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableOnce.$anonfun$maxBy$1$adapted(TraversableOnce.scala:242)[0m
+[0m[[31merror[0m] [0m	at scala.collection.Iterator.foreach(Iterator.scala:929)[0m
+[0m[[31merror[0m] [0m	at scala.collection.Iterator.foreach$(Iterator.scala:929)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.package$AbstractIterator.foreach(package.scala:24)[0m
+[0m[[31merror[0m] [0m	at scala.collection.IterableLike.foreach(IterableLike.scala:71)[0m
+[0m[[31merror[0m] [0m	at scala.collection.IterableLike.foreach$(IterableLike.scala:70)[0m
+[0m[[31merror[0m] [0m	at scala.collection.AbstractIterable.foreach(Iterable.scala:54)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableOnce.maxBy(TraversableOnce.scala:242)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableOnce.maxBy$(TraversableOnce.scala:234)[0m
+[0m[[31merror[0m] [0m	at scala.collection.AbstractTraversable.maxBy(Traversable.scala:104)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.$anonfun$mcSimulator$12(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.$anonfun$mcSimulator$12$adapted(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphTraversal$LayeredTopologicalOrder.$anonfun$foreach$3(GraphTraversal.scala:179)[0m
+[0m[[31merror[0m] [0m	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:59)[0m
+[0m[[31merror[0m] [0m	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:52)[0m
+[0m[[31merror[0m] [0m	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)[0m
+[0m[[31merror[0m] [0m	at scalax.collection.GraphTraversal$LayeredTopologicalOrder.foreach(GraphTraversal.scala:179)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.$anonfun$mcSimulator$11(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.$anonfun$mcSimulator$11$adapted(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at scala.util.Either.fold(Either.scala:118)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.mc$1(businessmodel.scala:169)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.BusinessModel$BusinessModel.mcSimulator(businessmodel.scala:176)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Models$Model.runMonteCarlo(models.scala:17)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Controllers$Controller.actionRun(controllers.scala:14)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.SimuControllerView$SimuControllerView.$anonfun$new$1(simucontrollerview.scala:36)[0m
+[0m[[31merror[0m] [0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)[0m
+[0m[[31merror[0m] [0m	at scalafx.event.EventIncludes$$anon$4.handle(EventIncludes.scala:113)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Node.fireEvent(Node.java:8411)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.control.Button.fire(Button.java:185)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
+[0m[[31merror[0m] [0m	at javafx.event.Event.fireEvent(Event.java:198)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)[0m
+[0m[[31merror[0m] [0m	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:352)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:275)[0m
+[0m[[31merror[0m] [0m	at java.security.AccessController.doPrivileged(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$300(GlassViewEventHandler.java:388)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:387)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.View.notifyMouse(View.java:937)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)[0m
+[0m[[31merror[0m] [0m	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$450(GtkApplication.java:139)[0m
+[0m[[31merror[0m] [0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[32msuccess[0m] [0mTotal time: 224 s, completed 19-Sep-2017 16:09:59[0m

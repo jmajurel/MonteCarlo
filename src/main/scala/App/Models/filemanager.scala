@@ -43,25 +43,25 @@ trait FileManager {this: Database =>
         "<pdf_parameters_cost>" -> 20
        )*/ 
        val columnrefitems = Map(
-         "<op>" -> 9,
-         "<pre_op>" -> 10,
-         "<start_date>" -> 11,
-         "<day_c>" -> 12,
-         "<day_b>" -> 13,
-         "<one_off_c>" -> 14,
-         "<day_rate_c>" -> 15,
-         "<one_off_b>" -> 16,
-         "<day_rate_b>" -> 17,
-         "<pdf_type_duration>" -> 18,
-         "<pdf_parameters_durations>" -> 19,
-         "<pdf_type_cost>" -> 20,
-         "<pdf_parameters_cost>" -> 21
+         "<op>" -> 6,
+         "<pre_op>" -> 7,
+         "<start_date>" -> 8,
+         "<day_c>" -> 9,
+         "<day_b>" -> 10,
+         "<one_off_c>" -> 11,
+         "<day_rate_c>" -> 12,
+         "<one_off_b>" -> 13,
+         "<day_rate_b>" -> 14,
+         "<pdf_type_duration>" -> 15,
+         "<pdf_parameters_durations>" -> 16,
+         "<pdf_type_cost>" -> 17,
+         "<pdf_parameters_cost>" -> 18
        )
 
       val workbook = WorkbookFactory.create(new File(filename + ".xlsx"))
       val sheet = workbook.getSheetAt(0)
       var endfile = false
-      var row: Int = 5
+      var row: Int = 1
       //var row: Int = 1
 
       var opmap: MMap[String,Operation] = MMap("root" -> root)
@@ -273,12 +273,12 @@ trait FileManager {this: Database =>
           for ((ncolumn, j) <- columname.zipWithIndex) {
             val cell = row.createCell(j)
             (ncolumn, nrow) match {
-              case ("Cost (M$)","min") => cell.setCellValue(op.mcrescost.min)
-              case ("Cost (M$)","mean") => cell.setCellValue(op.mcrescost.mean)
-              case ("Cost (M$)","max") => cell.setCellValue(op.mcrescost.max)
-              case ("Duration (Days)","min") => cell.setCellValue(op.mcresdur.min.toInt)
-              case ("Duration (Days)","mean") => cell.setCellValue(op.mcresdur.mean.toInt)
-              case ("Duration (Days)","max") => cell.setCellValue(op.mcresdur.max.toInt)
+              case ("Cost (M$)","min") => cell.setCellValue(op.mcrescost.rowresults.min)
+              case ("Cost (M$)","mean") => cell.setCellValue(op.mcrescost.rowresults.sum/op.mcrescost.rowresults.size)
+              case ("Cost (M$)","max") => cell.setCellValue(op.mcrescost.rowresults.max)
+              case ("Duration (Days)","min") => cell.setCellValue(op.mcresdur.rowresults.min.toInt)
+              case ("Duration (Days)","mean") => cell.setCellValue((op.mcresdur.rowresults.sum/op.mcresdur.rowresults.size).toInt)
+              case ("Duration (Days)","max") => cell.setCellValue(op.mcresdur.rowresults.max.toInt)
               case ("", _) => cell.setCellValue(nrow) //set row header
               case (_, "") => cell.setCellValue(ncolumn) //set colum header
               case _ => cell.setCellValue("")

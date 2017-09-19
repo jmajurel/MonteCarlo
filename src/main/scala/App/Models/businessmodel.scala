@@ -53,7 +53,6 @@ trait BusinessModel extends PDFunctions {this: Models =>
         def mc(its: Int) {
 
           var totalcost: Double = 0
-          var totaldur: Double = 0
           val costscale = 1000000
           if (its > 0) {
             val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
@@ -160,9 +159,17 @@ trait BusinessModel extends PDFunctions {this: Models =>
 
                   case _ => println("pdf cost function unknown")
                } 
-               totaldur += node.mcresdur.rowresults.last
+               //totaldur += node.mcresdur.rowresults.last
                totalcost += node.mcrescost.rowresults.last
             })
+
+            var totaldur: Double = 0
+            data.topologicalSort.fold(
+              cycleNode => println("error totalcalc"),
+              _.toLayered.toOuter.foreach((layer) => if(layer._1>0)
+                totaldur += layer._2.maxBy(_.mcresdur.rowresults.last).mcresdur.rowresults.last
+              )
+            )
             root.mcrescost.rowresults += totalcost / costscale 
             root.mcresdur.rowresults += totaldur
             mc(its-1)
