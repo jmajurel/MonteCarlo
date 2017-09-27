@@ -49,6 +49,23 @@ trait BusinessModel extends PDFunctions {this: Models =>
 
         println("******* Monte Carlo Simulator running *******") 
 
+        def criticalPath(start: data.NodeT):Double ={
+          var totduration: Double = 0
+
+          @tailrec
+          def critialPathTraverser(curr: data.NodeT){
+            if(curr.diSuccessors.isEmpty)
+              totduration
+            else{
+              val next = curr.diSuccessors.maxBy(_.mcresdur.rowresults.last)
+              totduration += next.mcresdur.rowresults.last
+              critialPathTraverser(next)
+            }
+          }
+          critialPathTraverser(start)
+          totduration
+        }
+
         @tailrec
         def mc(its: Int) {
 
@@ -92,6 +109,7 @@ trait BusinessModel extends PDFunctions {this: Models =>
                   do{
                     randomvaluedur = Uniform(0,1).sample
                     pdfdur = BPPareto(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) 
+                    //pdfdur = BPPareto(1, 99).inverseCdf(randomvaluedur) 
                   }while(pdfdur < 0)
 
                   node.mcresdur.rowresults += pdfdur * node.bcdurbpp
@@ -163,15 +181,18 @@ trait BusinessModel extends PDFunctions {this: Models =>
                totalcost += node.mcrescost.rowresults.last
             })
 
-            var totaldur: Double = 0
+            /*var totaldur: Double = 0
             data.topologicalSort.fold(
               cycleNode => println("error totalcalc"),
-              _.toLayered.toOuter.foreach((layer) => if(layer._1>0)
+              _.toLayered.toOuter.foreach((layer) => if(layer._1>0){
+                println(layer._2)
                 totaldur += layer._2.maxBy(_.mcresdur.rowresults.last).mcresdur.rowresults.last
+              }
               )
-            )
+            )*/
+
             root.mcrescost.rowresults += totalcost / costscale 
-            root.mcresdur.rowresults += totaldur
+            root.mcresdur.rowresults += criticalPath(data get root)
             mc(its-1)
           }
         }
