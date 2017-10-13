@@ -8,40 +8,15 @@ import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
 import scalax.collection.GraphTraversal.Successors
 import scala.math.exp
+import java.time.LocalDate
+import java.time.temporal.ChronoUnit
 
 trait BusinessModel extends PDFunctions {this: Models =>
    
   class BusinessModel {
 
-      /**
-       * perform statistic analysis on generated data
-       */
-      def statistic(scenario: String, data: Graph[Operation, DiEdge]): Graph[Operation, DiEdge] = { 
-
-        val costscale = 1000000
-        //println("root: "+((data get root).toOuter.mcrescost.rowresults))
-        val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
-
-        traverser.foreach ((node: Operation) => if(node!=root) {
-          //println("name :"+node.name)
-          if (node.mcresdur.rowresults.nonEmpty) {
-            //println("node rowresults dur:" +node.mcresdur.rowresults)
-            root.mcresdur.max += node.mcresdur.rowresults.max.toInt  
-            root.mcresdur.min += node.mcresdur.rowresults.min.toInt
-            root.mcresdur.mean += ((node.mcresdur.rowresults.sum) / node.mcresdur.rowresults.size).toInt
-          }
-
-          if (node.mcrescost.rowresults.nonEmpty) {
-            //println("node rowresults cost:" +node.mcrescost.rowresults)
-            //println("pdf cost args:"+node.pdfcostargs)
-            root.mcrescost.max += node.mcrescost.rowresults.max / costscale 
-            root.mcrescost.min += node.mcrescost.rowresults.min / costscale  
-            root.mcrescost.mean += ((node.mcrescost.rowresults.sum) / node.mcrescost.rowresults.size) / costscale 
-          }
-        })
-        data
-      }
-
+      //def daysBetween(d1: Date, d2: Date) = ((d2.getTime() - d1.getTime()) / (1000 * 60 * 60 *24)).toInt
+      
       /**
        * contains the Monte Carlo simulator
        */
@@ -49,156 +24,113 @@ trait BusinessModel extends PDFunctions {this: Models =>
 
         println("******* Monte Carlo Simulator running *******") 
 
-        def criticalPath(start: data.NodeT):Double ={
-          var totduration: Double = 0
+        /**
+         * this function applies pdf function on a random number between 0-1
+         */
+        def mcPDFs(pdfunction: String, arg1: Double, arg2: Double): Double={
 
-          @tailrec
-          def critialPathTraverser(curr: data.NodeT){
-            if(curr.diSuccessors.isEmpty)
-              totduration
-            else{
-              val next = curr.diSuccessors.maxBy(_.mcresdur.rowresults.last)
-              totduration += next.mcresdur.rowresults.last
-              critialPathTraverser(next)
-            }
+          val randomval = Uniform(0,1) //generate random number between 0-1 
+          var distval: Double = 0.0 
+ 
+          pdfunction match {
+            case "normal" | "gaussian" => {
+               do {
+                  distval = Gaussian(arg1, arg2).inverseCdf(randomval.sample)
+               } while(distval < 0)
+             }
+             case "log_normal" => {
+               do {
+                 distval = LogNormal(arg1, arg2).inverseCdf(randomval.sample)
+               } while(distval < 0)
+             }
+             case "inv_log_normal" => {
+               do {
+                 distval = 2 - (LogNormal(arg1, arg2).inverseCdf(randomval.sample))
+               } while(distval > 2 | distval < 0)
+             }
+             case "pareto" => {
+               do {
+                 distval = BPPareto(arg1, arg2).inverseCdf(randomval.sample) 
+               } while(distval < 0)
+             }
+             case _ => println(f"pdf function: [${pdfunction}] unknown")
           }
-          critialPathTraverser(start)
-          totduration
+          distval 
+        }
+        /**
+         * This function calculates the duration of a task/operation using its pdf function
+         */
+        def mcDurationCalc(node:Operation): Int = (mcPDFs(node.pdffuncdur, node.pdfdurargs(0), node.pdfdurargs(1)) * node.bcdurbpp).toInt
+
+        /**
+         * This function calculates the cost of a task/operation using its pdf function
+         */
+        def mcCostCalc(node: Operation, duration: Option[Double]): Double = {
+
+         var cost: Double = 0.0
+         val distval = mcPDFs(node.pdffunccost, node.pdfcostargs(0), node.pdfcostargs(1))
+         if (node.bcdayratebpp.isDefined) {
+           cost =  distval * node.bcdayratebpp.getOrElse(0.0) * duration.getOrElse(0.0)
+         }
+         else {
+           cost = distval * node.bconeoffcostbpp.getOrElse(0.0)
+         }
+         cost
         }
 
         @tailrec
         def mc(its: Int) {
 
-          var totalcost: Double = 0
-          val costscale = 1000000
           if (its > 0) {
-            val traverser = (data get root).outerNodeTraverser.withDirection(Successors)
-            traverser.foreach((node: Operation) => if(node!=root){
-              //println("node :" +node)
 
-              var randomvaluedur = Uniform(0,1).sample //generate random number between 0-1 for the duration calculation.
-              var pdfdur: Double = 0.0 
+            var runcost: Double = 0.0
 
-              node.pdffuncdur match {
+            data.topologicalSort.fold(
+              cycleNode => println("Error CycleNode"),
+              _ foreach { node => if(node.toOuter!=root){
 
-                case "normal" | "gaussian" => {
-                  do{
-                     randomvaluedur = Uniform(0,1).sample
-                     pdfdur = Gaussian(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur)
-                  }while(pdfdur < 0)
+                val duration = mcDurationCalc(node.toOuter)
+                val cost = mcCostCalc(node.toOuter, Some(duration))
+                var temp: LocalDate = null
 
-                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
+                if(node.diPredecessors.find(_.toOuter==root) == None){ 
+                  val longestpred = node.diPredecessors.maxBy(_.toOuter.mcres.last.endate)(_ compareTo _).toOuter
+
+                  node.toOuter.predefstartdate match {
+                    case None => {
+                      temp = LocalDate.from(longestpred.mcres.last.endate).plusDays(1)
+                    }
+                    case Some(predefstartdate) => {
+                      if(predefstartdate.isBefore(longestpred.mcres.last.endate))
+                        temp = LocalDate.from(longestpred.mcres.last.endate).plusDays(1)
+                      else 
+                        temp = LocalDate.from(predefstartdate)
+                    }
+                  }
                 }
-                case "log_normal" => {
-                  do{
-                    randomvaluedur = Uniform(0,1).sample
-                    pdfdur = LogNormal(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur)
-                  }while(pdfdur < 0)
+                else { 
+                  temp = LocalDate.from(node.toOuter.predefstartdate.get)
+                }
 
-                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
-                }
-                case "inv_log_normal" => {
-                  do{
-                    randomvaluedur = Uniform(0,1).sample
-                    //println("invlogdur: " +((LogNormal(node.pdfdurargs(0), node.pdfdurargs(1))).inverseCdf(randomvaluedur)))
-                    pdfdur = 2 - (LogNormal(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur))
-                  }while(pdfdur > 2 | pdfdur < 0)
-                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
-                }
-                case "pareto" => {
-                  do{
-                    randomvaluedur = Uniform(0,1).sample
-                    pdfdur = BPPareto(node.pdfdurargs(0), node.pdfdurargs(1)).inverseCdf(randomvaluedur) 
-                    //pdfdur = BPPareto(1, 99).inverseCdf(randomvaluedur) 
-                  }while(pdfdur < 0)
+                val startdate = LocalDate.from(temp) 
+                val endate = LocalDate.from(startdate).plusDays(duration)
 
-                  node.mcresdur.rowresults += pdfdur * node.bcdurbpp
-                }
-                case _ => println("pdf duration function unknown")
+                //println(f"node name: ${node.name}, startdate: ${startdate}, endate: ${endate}")
+                runcost += cost
+                node.mcres += new MCResult(startdate, endate, duration, cost)
               }
-
-              var randomvaluecost = Uniform(0,1).sample //generate random number between 0-1 for the cost calculation
-              var rescost: Double = 0.0
-              var pdfcost: Double = 0.0
-                node.pdffunccost match {
-
-                  case "normal" | "gaussian" => {
-                    do {
-                      randomvaluecost = Uniform(0,1).sample 
-                      pdfcost = Gaussian(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
-                    } while(pdfcost < 0)
-
-                    if (node.bcdayratebpp.isDefined)
-                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
-                    else
-                      rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0)
-
-                    node.mcrescost.rowresults += rescost 
-                  }
-                  case "log_normal" => {
-                    do {
-                      randomvaluecost = Uniform(0,1).sample 
-                      pdfcost = LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
-                    } while(pdfcost < 0)
-
-                    if (node.bcdayratebpp.isDefined)
-                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
-                    else
-                      rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0) 
-
-                    node.mcrescost.rowresults += rescost 
-                  }
-                  case "inv_log_normal" => {
-                    do {
-                      randomvaluecost = Uniform(0,1).sample 
-                      pdfcost  = 2 - LogNormal(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
-                    } while(pdfcost > 2 | pdfcost < 0)
-
-                    if (node.bcdayratebpp.isDefined)
-                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
-                    else
-                      rescost = pdfcost * node.bconeoffcostbpp.getOrElse(0.0)
-                    
-                    node.mcrescost.rowresults += rescost 
-                  }
-                  case "pareto" => {
-                    do {
-                      randomvaluecost = Uniform(0,1).sample 
-                      pdfcost = BPPareto(node.pdfcostargs(0), node.pdfcostargs(1)).inverseCdf(randomvaluecost)
-                    } while(pdfcost < 0)
-                    
-                    if (node.bcdayratebpp.isDefined)
-                      rescost = pdfcost * node.bcdayratebpp.getOrElse(0.0) * node.mcresdur.rowresults.last
-                    else
-                      rescost = pdfcost *node.bconeoffcostbpp.getOrElse(0.0)
-
-                    node.mcrescost.rowresults += rescost 
-                  }
-
-                  case _ => println("pdf cost function unknown")
-               } 
-               //totaldur += node.mcresdur.rowresults.last
-               totalcost += node.mcrescost.rowresults.last
             })
 
-            /*var totaldur: Double = 0
-            data.topologicalSort.fold(
-              cycleNode => println("error totalcalc"),
-              _.toLayered.toOuter.foreach((layer) => if(layer._1>0){
-                println(layer._2)
-                totaldur += layer._2.maxBy(_.mcresdur.rowresults.last).mcresdur.rowresults.last
-              }
-              )
-            )*/
-
-            root.mcrescost.rowresults += totalcost / costscale 
-            root.mcresdur.rowresults += criticalPath(data get root)
+            totalcost += runcost
+            val startdatescen = data.nodes.filter(_.toOuter!=root).minBy(_.toOuter.mcres.last.startdate)(_ compareTo _).toOuter.mcres.last.startdate
+            val endatescen = data.nodes.filter(_.toOuter!=root).maxBy(_.toOuter.mcres.last.endate)(_ compareTo _).toOuter.mcres.last.endate
+            totaldur += ChronoUnit.DAYS.between(startdatescen, endatescen) 
             mc(its-1)
           }
         }
-      mc(runs)
-      println("******* End of the simulation *******") 
-      data
+        mc(runs)
+        println("******* End of the simulation *******") 
+        data
     }
   }
 }

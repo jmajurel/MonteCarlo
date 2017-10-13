@@ -8,6 +8,7 @@ import java.io.{File, FileInputStream, FileOutputStream}
 import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
+import java.time._
 
 trait FileManager {this: Database =>
   
@@ -20,7 +21,6 @@ trait FileManager {this: Database =>
 
       /* useful regex which analyse the text */
       val regexop = raw"([a-zA-Z]+\d+(?:\-\d+)?)".r 
-      val regexpre = raw"([a-zA-Z]+\d+(?:\-\d+)?)".r
       val regexpdfarg = raw"(\d+(?:\.\d+)?),(\d+(?:\.\d+)?)".r
       
       /**
@@ -53,7 +53,7 @@ trait FileManager {this: Database =>
          "<one_off_b>" -> 13,
          "<day_rate_b>" -> 14,
          "<pdf_type_duration>" -> 15,
-         "<pdf_parameters_durations>" -> 16,
+         "<pdf_parameters_duration>" -> 16,
          "<pdf_type_cost>" -> 17,
          "<pdf_parameters_cost>" -> 18
        )
@@ -74,7 +74,7 @@ trait FileManager {this: Database =>
 
           var name: String = ""
           var predecessor = List[String]() 
-          var startdate: Option[String] = None
+          var predefstartdate : Option[LocalDate] = None
           var bcdurext:Double = 0
           var bcdurbpp: Double = 0
           var bconeoffcostext: Option[Double] = None
@@ -88,7 +88,7 @@ trait FileManager {this: Database =>
 
           val cname = currentrow.getCell(columnrefitems("<op>"))
           val cpredecessor = currentrow.getCell(columnrefitems("<pre_op>"))
-          val cstartdate = currentrow.getCell(columnrefitems("<start_date>"))
+          val cpredefstartdate = currentrow.getCell(columnrefitems("<start_date>"))
           val cbcdurext = currentrow.getCell(columnrefitems("<day_c>"))
           val cbcdurbpp = currentrow.getCell(columnrefitems("<day_b>"))
           val cbconeoffcostext = currentrow.getCell(columnrefitems("<one_off_c>"))
@@ -96,133 +96,246 @@ trait FileManager {this: Database =>
           val cbconeoffcostbpp = currentrow.getCell(columnrefitems("<one_off_b>"))
           val cbcdayratebpp = currentrow.getCell(columnrefitems("<day_rate_b>"))
           val cpdffuncdur = currentrow.getCell(columnrefitems("<pdf_type_duration>"))
-          val cpdfdurargs = currentrow.getCell(columnrefitems("<pdf_parameters_durations>"))
+          val cpdfdurargs = currentrow.getCell(columnrefitems("<pdf_parameters_duration>"))
           val cpdffunccost = currentrow.getCell(columnrefitems("<pdf_type_cost>"))
           val cpdfcostargs = currentrow.getCell(columnrefitems("<pdf_parameters_cost>"))
 
           if (cname != null) {
-            if (cname.getCellTypeEnum == CellType.STRING) {
-              if (cname.getStringCellValue == "<END>") 
-                endfile = true
-              else
-                name = regexop.findFirstIn(cname.getStringCellValue).getOrElse("")
-            }
-            else println(f"Type <op> at row: ${row} is not matching")
-          }
-
-          if(cpredecessor != null)
-            if(cpredecessor.getCellTypeEnum == CellType.STRING) {
-              var predecessors = cpredecessor.getStringCellValue
-              if(predecessors == "<END>") endfile = true
-              else predecessor = regexpre.findAllIn(predecessors).toList
-            }
-
-          if(cstartdate != null)
-            if(cstartdate.getCellTypeEnum == CellType.STRING){
-               cstartdate.getStringCellValue match {
-                 case "<END>" => endfile = true
-                 case default => startdate = Some(default)
+            cname.getCellTypeEnum match {
+              case CellType.STRING => {
+                if(cname.getStringCellValue == "<END>") 
+                {
+                  println(f"End of file detected at row: [${row}]")
+                  endfile = true
+                }
+                else name = regexop.findFirstIn(cname.getStringCellValue).getOrElse("")
               }
+              case CellType.BLANK =>
+                println(f"Blank [<op>] at row: [${row}]")
+              case _ => 
+                println(f"Type [<op>] at row: [${row}] is not matching")
             }
+          }
+          else println(f"Cell: [<op>] at row: [${row}], column: [${columnrefitems("<op>")}] doesn't exist")
+
+          if(cpredecessor != null) {
+            cpredecessor.getCellTypeEnum match {
+              case CellType.STRING => {
+                var predecessors = cpredecessor.getStringCellValue
+                if(predecessors == "<END>"){
+                  println(f"End of file detected at row: [${row}]")
+                  endfile = true
+                }
+                else predecessor = regexop.findAllIn(predecessors).toList
+              }
+              case CellType.BLANK =>
+                println(f"Blank [<pre_op>] at row: [${row}]")
+              case _ => 
+                println(f"Type [<pre_op>] at row: [${row}] is not matching")
+            }
+          }
+          else println(f"Cell: [<pre_op>] at row: [${row}], column: [${columnrefitems("<pre_op>")}] doesn't exist")
+
+          if(cpredefstartdate != null)
+            cpredefstartdate.getCellTypeEnum match {
+              case CellType.STRING =>
+                if(cpredefstartdate.getStringCellValue == "<END>"){
+                  println(f"End of file detected at row: [${row}]")
+                  endfile = true
+                }
+              case CellType.NUMERIC => {
+                val date = cpredefstartdate.getDateCellValue
+                predefstartdate = Some(date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate())
+              }
+              case CellType.BLANK =>
+                println(f"Blank [<start_date>] at row: [${row}]")
+              case _ =>
+                println(f"Unreadable [<start_date>] at row: [${row}]")
+            }
+          else println(f"Cell: [<start_date>] at row: [${row}], column: [${columnrefitems("<start_date>")}] doesn't exist")
 
           if(cbcdurext != null)
             cbcdurext.getCellTypeEnum match {
-              case CellType.NUMERIC => bcdurext = cbcdurext.getNumericCellValue
-              case CellType.STRING => {
-                if(cbcdurext.getStringCellValue == "<END>") 
+              case CellType.NUMERIC => 
+                bcdurext = cbcdurext.getNumericCellValue
+              case CellType.STRING => 
+                if(cbcdurext.getStringCellValue == "<END>"){
+                  println(f"End of file detected at row: [${row}]")
                   endfile = true
-              }
-              case _ => println("cannot read 'cbcdurext'")
+                }
+              case CellType.BLANK =>
+                println(f"Blank [<day_ext>] at row: [${row}]")
+              case _ => 
+                println(f"Unreadable [<day_ext>] at row: [${row}]")
             }
+          else println(f"Cell: [<day_ext>] at row: [${row}], column: [${columnrefitems("<day_c>")}] doesn't exist")
 
           if(cbcdurbpp != null)
             cbcdurbpp.getCellTypeEnum match {
-              case CellType.NUMERIC => bcdurbpp = cbcdurbpp.getNumericCellValue
-              case CellType.STRING => {
-                if(cbcdurbpp.getStringCellValue == "<END>") 
+              case CellType.NUMERIC => 
+                bcdurbpp = cbcdurbpp.getNumericCellValue
+              case CellType.STRING => 
+                if(cbcdurbpp.getStringCellValue == "<END>"){
+                  println(f"End of file detected at row: [${row}]")
                   endfile = true
-              }
-              case _ => println("cannot read 'cbcdurbpp'")
+                }
+              case CellType.BLANK =>
+                println(f"Blank [<day_b>] at row: [${row}]")
+              case _ => 
+                println(f"Unreadable [<day_b>] at row: [${row}]")
             }
+          else println(f"Cell: [<day_b>] at row: [${row}], column: [${columnrefitems("<day_b>")}] doesn't exist")
 
           if(cbconeoffcostext != null)
             cbconeoffcostext.getCellTypeEnum match { 
-              case CellType.NUMERIC => bconeoffcostext = Some(cbconeoffcostext.getNumericCellValue)
-              case CellType.STRING => {
-                if (cbconeoffcostext.getStringCellValue == "<END>") 
+              case CellType.NUMERIC => 
+                bconeoffcostext = Some(cbconeoffcostext.getNumericCellValue)
+              case CellType.STRING => 
+                if (cbconeoffcostext.getStringCellValue == "<END>"){
+                  println(f"End of file detected at row: [${row}]")
                   endfile = true
-              }
-              case _ => println("cannot read 'cbconeoffcostext'")
+                }
+              case CellType.BLANK =>
+                println(f"Blank [<one_off_ext>] at row: [${row}]")
+              case _ => 
+                println(f"Unreadable [<one_off_ext>] at row: [${row}]")
             }
+          else println(f"Cell: [<one_off_ext>] at row: [${row}], column: [${columnrefitems("<one_off_c>")}] doesn't exist")
 
           if(cbcdayratext != null)
             cbcdayratext.getCellTypeEnum match {
-              case CellType.NUMERIC => bcdayratext = Some(cbcdayratext.getNumericCellValue)
-              case CellType.STRING => {
-                if(cbcdayratext.getStringCellValue == "<END>") 
+              case CellType.NUMERIC => 
+                bcdayratext = Some(cbcdayratext.getNumericCellValue)
+              case CellType.STRING => 
+                if(cbcdayratext.getStringCellValue == "<END>"){
+                  println(f"End of file detected at row: [${row}]")
                   endfile = true
-              }
-              case _ => println("cannot read 'cbcdayratext'")
+                }
+              case CellType.BLANK =>
+                println(f"Blank [<day_rate_ext>] at row: [${row}]")
+              case _ => 
+                println(f"Unreadable [<day_rate_ext>] at row: [${row}]")
             }
+          else println(f"Cell: [<day_rate_ext>] at row: [${row}], column: [${columnrefitems("<day_rate_c>")}] doesn't exist")
 
           if(cbconeoffcostbpp != null)
             cbconeoffcostbpp.getCellTypeEnum match {
-              case CellType.NUMERIC => bconeoffcostbpp = Some(cbconeoffcostbpp.getNumericCellValue)
-              case CellType.STRING => {
-                if (cbconeoffcostbpp.getStringCellValue == "<END>") 
+              case CellType.NUMERIC => 
+                bconeoffcostbpp = Some(cbconeoffcostbpp.getNumericCellValue)
+              case CellType.STRING => 
+                if (cbconeoffcostbpp.getStringCellValue == "<END>"){ 
+                  println(f"End of file detected at row: [${row}]")
                   endfile = true
-              }
-              case _ => println("cannot read 'cbconeoffcostbpp'")
+                }
+              case CellType.BLANK =>
+                println(f"Blank [bconeoffcostbpp] at row: [${row}]")
+              case _ => 
+                println(f"Unreadable [<one_off_b>] at row: [${row}]")
             }
+          else println(f"Cell: [<one_off_b>] at row: [${row}], column: [${columnrefitems("<one_off_b>")}] doesn't exist")
 
           if(cbcdayratebpp != null)
             cbcdayratebpp.getCellTypeEnum match {
-              case CellType.NUMERIC => bcdayratebpp = Some(cbcdayratebpp.getNumericCellValue)
-              case CellType.STRING => {
-                if (cbcdayratebpp.getStringCellValue == "<END>") 
+              case CellType.NUMERIC => 
+                bcdayratebpp = Some(cbcdayratebpp.getNumericCellValue)
+              case CellType.STRING => 
+                if (cbcdayratebpp.getStringCellValue == "<END>"){ 
+                  println(f"End of file detected at row: [${row}]")
                   endfile = true
-              }
-              case _ => println("cannot read 'cbcdayratebpp'")
+                }
+              case CellType.BLANK =>
+                println(f"Blank [<day_rate_b>] at row: [${row}]")
+              case _ => 
+                println(f"Unreadable [<day_rate_b>] at row: [${row}]")
             }
+          else println(f"Cell: [<day_rate_b>] at row: [${row}], column: [${columnrefitems("<day_rate_b>")}] doesn't exist")
 
           if(cpdffuncdur != null)
-            if(cpdffuncdur.getCellTypeEnum == CellType.STRING){
-              cpdffuncdur.getStringCellValue() match {
-                case "<END>" => endfile = true
-                case func => pdffuncdur=func.toLowerCase  
+            cpdffuncdur.getCellTypeEnum match {
+              case CellType.STRING => {
+                cpdffuncdur.getStringCellValue match {
+                  case "<END>" => {
+                    println(f"End of file detected at row: [${row}]")
+                    endfile = true
+                  }
+                  case func => 
+                    pdffuncdur=func.toLowerCase  
+                }
               }
+              case CellType.BLANK =>
+                println(f"Blank [<pdf_type_duration>] at row: [${row}]")
+              case _ =>
+                println(f"Unreadable [<pdf_type_duration>] at row: [${row}]")
             }
+          else println(f"Cell: [<pdf_type_duration>] at row: [${row}], column: [${columnrefitems("<pdf_type_duration>")}] doesn't exist")
 
           if(cpdfdurargs != null)
-            if(cpdfdurargs.getCellTypeEnum() == CellType.STRING){
-              cpdfdurargs.getStringCellValue() match {
-                case "<END>" => endfile = true
-                case regexpdfarg(mean,std) => pdfdurargs = Vector(mean.toDouble,std.toDouble)
+            cpdfdurargs.getCellTypeEnum match {
+              case CellType.STRING => {
+                cpdfdurargs.getStringCellValue match {
+                  case "<END>" => { 
+                    println(f"End of file detected at row: [${row}]")
+                    endfile = true
+                  }
+                  case regexpdfarg(mean,std) => 
+                    pdfdurargs = Vector(mean.toDouble,std.toDouble)
+                  case _ => 
+                    println(f"Unloadable [<pdf_parameters_duration>] at row: [${row}]")
+                }
               }
+              case CellType.BLANK =>
+                println(f"Blank [<pdf_parameters_duration>] at row: [${row}]")
+              case _ =>
+                println(f"Unreadable [<pdf_parameters_duration>] at row: [${row}]")
             }
+          else println(f"Cell: [<pdf_parameters_duration>] at row: [${row}], column: [${columnrefitems("<pdf_parameters_duration>")}] doesn't exist")
 
           if(cpdffunccost != null)
-            if(cpdffunccost.getCellTypeEnum() == CellType.STRING){
-              cpdffunccost.getStringCellValue() match {
-                case "<END>" => endfile = true
-                case func => pdffunccost = func.toLowerCase
+            cpdffunccost.getCellTypeEnum match {
+              case CellType.STRING => {
+                cpdffunccost.getStringCellValue match {
+                  case "<END>" => { 
+                    println(f"End of file detected at row: [${row}]")
+                    endfile = true
+                  }
+                  case func => 
+                    pdffunccost = func.toLowerCase
+                }
               }
+              case CellType.BLANK =>
+                println(f"Blank [<pdf_type_cost>] at row: [${row}]")
+              case _ =>
+                println(f"Unreadable [<pdf_type_cost>] at row: [${row}]")
             }
+          else println(f"Cell: [<pdf_type_cost>] at row: [${row}], column: [${columnrefitems("<pdf_type_cost>")}] doesn't exist")
 
           if(cpdfcostargs != null)
-            if(cpdfcostargs.getCellTypeEnum()==CellType.STRING){
-              cpdfcostargs.getStringCellValue() match {
-                case "<END>" => endfile = true
-                case regexpdfarg(mean, std) => pdfcostargs = Vector(mean.toDouble, std.toDouble) 
+            cpdfcostargs.getCellTypeEnum match {
+              case CellType.STRING => {
+                cpdfcostargs.getStringCellValue match {
+                  case "<END>" => {
+                    println(f"End of file detected at row: [${row}]")
+                    endfile = true
+                  }
+                  case regexpdfarg(mean, std) => 
+                    pdfcostargs = Vector(mean.toDouble, std.toDouble) 
+                  case _ =>
+                    println(f"Unloadable [<pdf_parameters_cost>] at row: [${row}]")
+                }
               }
+              case CellType.BLANK =>
+                println(f"Blank [<pdf_parameters_cost>] at row: [${row}]")
+              case _ =>
+                println(f"Unreadable [<pdf_parameters_cost>] at row: [${row}]")
             }
+          else println(f"Cell: [<pdf_parameters_cost>] at row: [${row}], column: [${columnrefitems("<pdf_parameters_cost>")}] doesn't exist")
 
           if (endfile == false & name != "") { 
 
             val newOperation = Operation(
               name,
               predecessor,
-              startdate, 
+              predefstartdate, 
               bcdurext,
               bcdurbpp, 
               bconeoffcostext,
@@ -246,12 +359,13 @@ trait FileManager {this: Database =>
     /**
      * generate outputfile containing the monte carlo simulation results
      */
-    def write(filename: String, data: Graph[Operation, DiEdge]) {
+    def write(filename: String, costs: List[Double], durations: List[Double]) {
 
       val myworkbook = new XSSFWorkbook
       val shsummary = myworkbook.createSheet("Summary")
       val shresults = myworkbook.createSheet("Results")
       val columname = List("", "Cost (M$)", "Duration (Days)")
+
 
       def getTableTemplate(sheet: XSSFSheet, title: String): XSSFTable={
         val table = sheet.createTable
@@ -264,7 +378,7 @@ trait FileManager {this: Database =>
         table
       }
 
-      def printSummary(sheet: XSSFSheet, op: Operation) {
+      def printSummary(sheet: XSSFSheet, costs: List[Double], durations: List[Double]) {
 
         val rowname = List("", "min", "mean", "max")
 
@@ -273,12 +387,12 @@ trait FileManager {this: Database =>
           for ((ncolumn, j) <- columname.zipWithIndex) {
             val cell = row.createCell(j)
             (ncolumn, nrow) match {
-              case ("Cost (M$)","min") => cell.setCellValue(op.mcrescost.rowresults.min)
-              case ("Cost (M$)","mean") => cell.setCellValue(op.mcrescost.rowresults.sum/op.mcrescost.rowresults.size)
-              case ("Cost (M$)","max") => cell.setCellValue(op.mcrescost.rowresults.max)
-              case ("Duration (Days)","min") => cell.setCellValue(op.mcresdur.rowresults.min.toInt)
-              case ("Duration (Days)","mean") => cell.setCellValue((op.mcresdur.rowresults.sum/op.mcresdur.rowresults.size).toInt)
-              case ("Duration (Days)","max") => cell.setCellValue(op.mcresdur.rowresults.max.toInt)
+              case ("Cost (M$)","min") => cell.setCellValue(costs.min/1000000)
+              case ("Cost (M$)","mean") => cell.setCellValue(costs.sum/costs.size/1000000)
+              case ("Cost (M$)","max") => cell.setCellValue(costs.max/1000000)
+              case ("Duration (Days)","min") => cell.setCellValue(durations.min.toInt)
+              case ("Duration (Days)","mean") => cell.setCellValue((durations.sum/durations.size).toInt)
+              case ("Duration (Days)","max") => cell.setCellValue(durations.max.toInt)
               case ("", _) => cell.setCellValue(nrow) //set row header
               case (_, "") => cell.setCellValue(ncolumn) //set colum header
               case _ => cell.setCellValue("")
@@ -287,24 +401,24 @@ trait FileManager {this: Database =>
         }
       }
 
-      def printResults(sheet: XSSFSheet, op: Operation) {
+      def printResults(sheet: XSSFSheet, costs: List[Double], durations: List[Double]) {
 
         var i: Int=1
         val headerow = sheet.createRow(0)
         headerow.createCell(0).setCellValue("Run Number")
         headerow.createCell(1).setCellValue("Cost (M$)")
         headerow.createCell(2).setCellValue("Duration (Days)")
-
-        for( (rescost, resdur) <- op.mcrescost.rowresults.zip(op.mcresdur.rowresults)) {
+        for((cost, dur) <- costs.zip(durations)){
           val row = sheet.createRow(i)
           row.createCell(0).setCellValue(i)
-          row.createCell(1).setCellValue(rescost)
-          row.createCell(2).setCellValue(resdur)
+          row.createCell(1).setCellValue(cost/1000000)
+          row.createCell(2).setCellValue(dur)
           i += 1
         }
       }
-      printSummary(shsummary, (data get root).toOuter)
-      printResults(shresults, (data get root).toOuter)
+
+      printSummary(shsummary, costs, durations)
+      printResults(shresults, costs, durations)
 
       val fileoutstream = new FileOutputStream(filename + "_out.xlsx")
       myworkbook.write(fileoutstream)

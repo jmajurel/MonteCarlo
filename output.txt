@@ -1,252 +1,856 @@
 [0m[[0minfo[0m] [0mLoading project definition from /home/jmajurel/MonteCarloSW/project[0m
 [0m[[0minfo[0m] [0mSet current project to Monte Carlo (in build file:/home/jmajurel/MonteCarloSW/)[0m
-[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /home/jmajurel/MonteCarloSW/target/scala-2.12/classes...[0m
 [0m[[0minfo[0m] [0mRunning com.montecarlo.Main [0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 7 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 13 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 16 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 21 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 24 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 29 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 35 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 41 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 46 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 49 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 54 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 57 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mType <op> at row: 69 is not matching[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdurbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbcdayratebpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostext'[0m
-[0m[[0minfo[0m] [0mcannot read 'cbconeoffcostbpp'[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [1], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [1], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [1], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [2], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [2], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [2], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [3], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [3], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [3], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [4], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [4], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [4], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [5], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [5], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [5], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [6], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [6], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [6], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [7], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [7], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [7], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [8], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [8], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [8], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [9], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [9], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [9], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [10], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [10], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [10], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [11], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [11], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [11], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [12], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [12], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [12], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [13], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [13], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [13], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [14], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [14], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [14], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [15], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [15], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [15], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [16], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [16], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [16], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [17], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [17], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [17], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [17], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [17], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [18], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [18], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [18], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [18], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [18], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [19], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [19], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [19], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [20], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [20], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [20], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [21], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [21], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [21], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [22], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [22], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [22], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [23], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [23], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [23], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [24], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [24], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [24], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [25], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [25], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [25], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [26], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [26], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [26], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [27], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [27], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [27], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [28], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [28], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [28], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [29], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [29], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [29], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [30], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [30], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [30], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [31], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [31], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [31], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [32], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [32], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [32], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [33], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [33], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [33], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [34], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [34], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [34], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [35], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [35], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [35], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [35], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [36], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [36], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [36], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [37], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [37], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [37], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [37], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [37], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [38], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [38], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [38], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [39], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [39], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [39], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [40], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [40], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [40], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [40], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [40], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [41], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [41], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [41], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [42], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [42], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [42], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [42], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [42], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [43], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [43], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [43], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [44], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [44], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [44], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [44], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [44], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [45], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [45], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [45], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [46], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [46], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [46], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [46], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [46], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [47], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [47], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [47], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [48], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [48], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [48], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [49], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [49], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [49], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [49], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [49], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [50], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [50], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [50], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [51], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [51], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [51], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [52], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [52], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [52], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [53], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [53], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [53], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [54], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [54], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [54], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [55], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [55], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [55], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [56], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [56], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [56], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [57], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [57], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [57], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [58], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [58], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [58], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [59], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [59], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [59], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [60], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [60], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [60], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [61], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [61], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [61], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [62], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [62], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [62], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [63], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [63], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [63], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [64], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [64], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [64], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [65], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [65], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [65], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [66], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [66], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [66], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [66], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [66], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [67], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [67], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [67], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [68], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [68], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [68], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [69], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [69], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [69], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [70], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [70], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [70], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [71], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [71], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [71], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [72], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [72], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [72], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [73], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [73], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [73], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [74], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [74], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [74], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [74], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [74], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [75], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [75], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [75], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [76], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [76], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [76], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [76], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [76], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [77], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [77], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [77], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [78], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [78], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [78], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [78], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [78], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [79], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [79], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [79], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [80], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [80], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [80], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [80], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [80], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [81], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [81], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [81], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [81], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [81], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [82], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [82], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [82], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [83], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [83], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [83], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [84], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [84], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [84], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [85], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [85], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [85], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [85], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [85], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [86], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [86], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [86], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [87], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [87], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [87], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [87], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [87], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [88], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [88], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [88], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [89], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [89], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [89], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [90], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [90], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [90], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [91], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [91], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [91], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [92], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [92], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [92], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [93], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_b>] at row: [93], column: [10] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [93], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [93], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [94], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [94], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [94], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [95], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [95], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [95], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [96], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [96], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [96], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [97], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [97], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [97], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [97], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [97], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [98], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [98], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [98], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [99], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [99], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [99], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [100], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [100], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [100], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [100], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [100], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [101], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [101], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [101], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [101], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [102], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [102], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [102], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [102], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [103], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [103], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [103], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [103], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [104], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [104], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [104], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [104], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [105], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [105], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [105], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [105], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [106], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [106], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [106], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [106], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [107], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [107], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [107], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [107], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [108], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [108], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [108], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [108], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [109], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [109], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [109], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [109], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [110], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [110], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [110], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [110], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [111], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [111], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [111], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [111], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [112], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [112], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [112], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [112], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [112], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [113], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [113], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [113], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [113], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [114], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [114], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [114], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [114], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
 [0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
-[0m[[0minfo[0m] [0mNodes(Operation(EP1-1,List(),None,0.0,130.0,None,None,Some(1000000.0),None,pareto,Vector(1.0, 20.934414),log_normal,Vector(0.006896, 0.083042)), Operation(EP2,List(),None,60.0,50.0,Some(2400000.0),None,Some(2400000.0),None,pareto,Vector(1.0, 16.431037),log_normal,Vector(0.006896, 0.083042)), Operation(OP1-1,List(),None,3.0,3.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP4-1,List(),None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 5.128534),log_normal,Vector(0.006896, 0.083042)), Operation(EP3-1,List(),None,180.0,180.0,Some(1.0E7),None,Some(1.0E7),None,pareto,Vector(1.0, 4.818842),log_normal,Vector(0.006896, 0.083042)), Operation(OP2-1,List(),None,3.0,3.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP1-2,List(OP1-1),None,1.0,1.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 4.321928),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP4-2,List(OP4-1),None,8.0,8.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 5.128534),log_normal,Vector(0.006896, 0.083042)), Operation(OP8-1,List(EP3-1),None,4.0,4.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 13.425135),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP2-2,List(OP2-1),None,1.0,1.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 4.321928),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP1-4,List(OP1-2),None,2.0,2.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 7.388385),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP1-3,List(OP1-2),None,4.0,4.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 7.388385),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP4-3,List(OP4-2),None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 5.128534),log_normal,Vector(0.006896, 0.083042)), Operation(OP8-2,List(OP8-1),None,1.0,1.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 4.321928),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP2-3,List(OP2-2),None,4.0,4.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 3.715838),log_normal,Vector(0.006896, 0.083042)), Operation(OP2-4,List(OP2-2),None,3.0,3.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 3.0),log_normal,Vector(0.006896, 0.083042)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP1-5,List(OP1-3),None,2.0,2.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP4-4,List(OP4-3),None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 5.128534),log_normal,Vector(0.006896, 0.083042)), Operation(OP8-3,List(OP8-2),None,27.0,27.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 17.432225),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP2-5,List(OP2-3),None,2.0,2.0,None,Some(99000.0),None,Some(99000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP5-1,List(OP4-4),None,4.0,4.0,None,Some(0.0),None,Some(0.0),pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)), Operation(OP8-4,List(OP8-3),None,2.0,2.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 13.425135),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP5-2,List(OP5-1),None,2.0,2.0,None,Some(0.0),None,Some(0.0),pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP6-2,List(OP5-2),None,3.0,3.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP6-1,List(OP5-2, EP2),None,16.0,16.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 25.434327),log_normal,Vector(0.029991, 0.173179)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP6-3,List(OP6-2),None,1.0,1.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 4.321928),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP6-4,List(OP6-1, OP6-3),None,32.0,32.0,None,Some(209250.0),None,Some(209250.0),pareto,Vector(1.0, 19.042628),log_normal,Vector(0.006896, 0.083042)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP7-1,List(OP6-4),None,18.0,18.0,None,Some(209250.0),None,Some(209250.0),pareto,Vector(1.0, 19.433792),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP7-2,List(OP6-4),None,8.0,8.0,None,Some(128000.0),None,Some(128000.0),pareto,Vector(1.0, 22.434667),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP7-4,List(OP7-1),None,18.0,18.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 19.433792),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP7-3,List(OP7-2),None,18.0,18.0,None,Some(128000.0),None,Some(128000.0),pareto,Vector(1.0, 19.433792),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP7-5,List(OP7-4),None,4.0,4.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 13.425135),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP9-1,List(OP7-4),None,1.0,1.0,Some(90000.0),None,Some(90000.0),None,pareto,Vector(1.0, 7.388385),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(SY1-1,List(OP9-1),None,16.0,16.0,Some(1500000.0),None,Some(1500000.0),None,pareto,Vector(1.0, 8.600846),log_normal,Vector(0.006896, 0.083042)), Operation(OP9-2,List(OP9-1),None,43.0,43.0,Some(7170000.0),None,Some(7170000.0),None,pareto,Vector(1.0, 37.426673),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(SY3-1,List(SY1-1),None,2.0,2.0,None,Some(200000.0),None,Some(200000.0),pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)), Operation(SY2,List(SY1-1),None,7.0,7.0,Some(66970.0),None,Some(66970.0),None,pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)), Operation(SY3-2,List(SY1-1),None,2.0,2.0,Some(23550.0),None,Some(23550.0),None,pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(SY4-1,List(SY3-1, SY3-2),None,2.0,2.0,Some(0.0),Some(0.0),Some(0.0),Some(0.0),pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)), Operation(SY4-2,List(SY3-1, SY3-2),None,2.0,2.0,None,None,None,None,pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(SY5,List(SY4-2),None,14.0,14.0,Some(64889.0),None,Some(64889.0),None,pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(SY6,List(SY5),None,0.0,0.0,Some(8875364.0),None,Some(8875364.0),None,pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP10-1,List(SY6),None,43.0,43.0,Some(7170000.0),None,Some(7170000.0),None,pareto,Vector(1.0, 37.426673),inv_log_normal,Vector(0.006896, 0.083042)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP10-2,List(OP10-1),None,31.0,31.0,Some(2940000.0),None,Some(2940000.0),None,pareto,Vector(1.0, 25.434327),log_normal,Vector(0.001986, 0.044564)), Operation(OP11-2,List(OP10-1),None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 99.0),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP11-1,List(OP10-1),None,2.0,2.0,None,Some(128000.0),None,Some(128000.0),pareto,Vector(1.0, 22.434667),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP11-3,List(OP10-1),None,4.0,4.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 13.425135),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP11-6,List(OP10-1, OP11-1, OP11-2, OP11-3),None,18.0,18.0,None,Some(128000.0),None,Some(128000.0),pareto,Vector(1.0, 9.318851),log_normal,Vector(0.006896, 0.083042)), Operation(OP11-4,List(OP10-1, OP11-1, OP11-2, OP11-3),None,1.0,1.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 4.321928),inv_log_normal,Vector(0.006896, 0.083042)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP11-5,List(OP11-4),None,18.0,18.0,None,Some(209250.0),None,Some(209250.0),pareto,Vector(1.0, 9.318851),log_normal,Vector(0.006896, 0.083042)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP11-8,List(OP11-5),None,32.0,32.0,None,Some(72000.0),None,Some(72000.0),pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)), Operation(OP11-7,List(OP11-5),None,32.0,32.0,None,Some(209250.0),None,Some(209250.0),pareto,Vector(1.0, 14.531302),log_normal,Vector(0.006896, 0.083042)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP11-10,List(OP11-7, OP11-8),None,2.0,2.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP12-1,List(OP11-7, OP11-8),None,24.0,24.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 23.93462),log_normal,Vector(0.006896, 0.083042)), Operation(OP11-9,List(OP11-7, OP11-8),None,6.0,6.0,None,Some(198000.0),None,Some(198000.0),pareto,Vector(1.0, 19.433792),inv_log_normal,Vector(0.001986, 0.044564)), Operation(OP11-11,List(OP11-7, OP11-8),None,2.0,2.0,None,Some(72000.0),None,Some(72000.0),pareto,Vector(1.0, 10.413344),inv_log_normal,Vector(0.001986, 0.044564)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP12-2,List(OP12-1),None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 7.388385),log_normal,Vector(0.006896, 0.083042)), Operation(OP12-3,List(OP12-1),None,4.0,4.0,None,Some(0.0),None,Some(0.0),pareto,Vector(1.0, 99.0),normal,Vector(1.0, 0.1)))[0m
-[0m[[0minfo[0m] [0mNodes(Operation(OP12-4,List(OP12-2, OP12-3),None,4.0,4.0,None,Some(11250.0),None,Some(11250.0),pareto,Vector(1.0, 99.0),log_normal,Vector(0.006896, 0.083042)), Operation(OP13,List(OP12-2, OP12-3),None,60.0,60.0,None,Some(40000.0),None,Some(40000.0),pareto,Vector(1.0, 99.0),log_normal,Vector(0.029991, 0.173179)))[0m
 [0m[[0minfo[0m] [0m******* End of the simulation *******[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [1], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [1], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [1], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [2], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [2], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [2], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [3], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [3], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [3], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [4], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [4], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [4], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [5], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [5], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [5], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [6], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [6], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [6], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [7], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [7], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [7], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [8], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [8], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [8], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [9], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [9], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [9], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [10], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [10], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [10], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [11], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [11], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [11], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [12], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [12], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [12], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [13], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [13], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [13], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [14], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [14], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [14], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [15], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [15], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [15], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [16], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [16], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [16], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [17], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [17], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [17], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [17], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [17], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [18], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [18], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [18], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [18], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [18], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [19], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [19], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [19], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [20], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [20], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [20], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [21], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [21], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [21], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [22], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [22], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [22], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [23], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [23], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [23], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [24], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [24], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [24], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [25], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [25], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [25], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [26], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [26], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [26], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [27], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [27], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [27], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<pre_op>] at row: [28], column: [7] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [28], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [28], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [29], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [29], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [29], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [30], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [30], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [30], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [31], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [31], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [31], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [32], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [32], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [32], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [33], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [33], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [33], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [34], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [34], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [34], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [35], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [35], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [35], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [35], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [36], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [36], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [36], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [37], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [37], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [37], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [37], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [37], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [38], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [38], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [38], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [39], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [39], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [39], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [40], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [40], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [40], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [40], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [40], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [41], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [41], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [41], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [42], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [42], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [42], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [42], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [42], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [43], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [43], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [43], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [44], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [44], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [44], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [44], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [44], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [45], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [45], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [45], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [46], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [46], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [46], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [46], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [46], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [47], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [47], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [47], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [48], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [48], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [48], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [49], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [49], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [49], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [49], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [49], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [50], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [50], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [50], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [51], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [51], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [51], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [52], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [52], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [52], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [53], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [53], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [53], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [54], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [54], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [54], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [55], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [55], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [55], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [56], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [56], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [56], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [57], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [57], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [57], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [58], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [58], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [58], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [59], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [59], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [59], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [60], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [60], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [60], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [61], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [61], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [61], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [62], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [62], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [62], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [63], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [63], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [63], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [64], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [64], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [64], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [65], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [65], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [65], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [66], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [66], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [66], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [66], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [66], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [67], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [67], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [67], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [68], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [68], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [68], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [69], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [69], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [69], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [70], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [70], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [70], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [71], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [71], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [71], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [72], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [72], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [72], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [73], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [73], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [73], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [74], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [74], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [74], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [74], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [74], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [75], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [75], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [75], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [76], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [76], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [76], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [76], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [76], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [77], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [77], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [77], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [78], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [78], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [78], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [78], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [78], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [79], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [79], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [79], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [80], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [80], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [80], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [80], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [80], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [81], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [81], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [81], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [81], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [81], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [82], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [82], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [82], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [83], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [83], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [83], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [84], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [84], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [84], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [85], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [85], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [85], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [85], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [85], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [86], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [86], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [86], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [87], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [87], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [87], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [87], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [87], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [88], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [88], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [88], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [89], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [89], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [89], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [90], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [90], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [90], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [91], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [91], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [91], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [92], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [92], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [92], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [93], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_b>] at row: [93], column: [10] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [93], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [93], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [94], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [94], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [94], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [95], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [95], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [95], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [96], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [96], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [96], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [97], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [97], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [97], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [97], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [97], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [98], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [98], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [98], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [99], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [99], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [99], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [100], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_ext>] at row: [100], column: [9] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [100], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [100], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [100], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [101], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [101], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [101], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [101], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [102], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [102], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [102], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [102], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [103], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [103], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [103], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [103], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [104], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [104], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [104], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [104], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [105], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [105], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [105], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [105], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [106], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [106], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [106], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [106], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [107], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [107], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [107], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [107], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [108], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [108], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [108], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [108], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [109], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [109], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [109], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [109], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [110], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [110], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [110], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [110], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [111], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [111], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [111], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [111], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [112], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [112], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [112], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [112], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [112], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [113], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [113], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [113], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_b>] at row: [113], column: [13] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<start_date>] at row: [114], column: [8] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<one_off_ext>] at row: [114], column: [11] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_ext>] at row: [114], column: [12] doesn't exist[0m
+[0m[[0minfo[0m] [0mCell: [<day_rate_b>] at row: [114], column: [14] doesn't exist[0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0mEnd of file detected at row: [115][0m
+[0m[[0minfo[0m] [0m******* Monte Carlo Simulator running *******[0m
+[0m[[0minfo[0m] [0m******* End of the simulation *******[0m
+[0m[[31merror[0m] [0mException in thread "JavaFX Application Thread" java.lang.OutOfMemoryError: GC overhead limit exceeded[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Xobj.ensureParent(Xobj.java:614)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Xobj.getNormal(Xobj.java:661)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Cur.getNormal(Cur.java:2464)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Cur.skip(Cur.java:1269)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Cur.moveNode(Cur.java:1840)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Cur.createHelper(Cur.java:287)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Cur.createElement(Cur.java:231)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Cur.createElement(Cur.java:226)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Xobj.insertElement(Xobj.java:2116)[0m
+[0m[[31merror[0m] [0m	at org.apache.xmlbeans.impl.store.Xobj.add_element_user(Xobj.java:2197)[0m
+[0m[[31merror[0m] [0m	at org.openxmlformats.schemas.spreadsheetml.x2006.main.impl.CTRowImpl.addNewC(Unknown Source)[0m
+[0m[[31merror[0m] [0m	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:240)[0m
+[0m[[31merror[0m] [0m	at org.apache.poi.xssf.usermodel.XSSFRow.createCell(XSSFRow.java:198)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.FileManager$FileManager.$anonfun$write$6(filemanager.scala:414)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.FileManager$FileManager.$anonfun$write$6$adapted(filemanager.scala:411)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.FileManager$FileManager$$Lambda$448/1144736724.apply(Unknown Source)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:789)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableLike$WithFilter$$Lambda$359/545263710.apply(Unknown Source)[0m
+[0m[[31merror[0m] [0m	at scala.collection.immutable.List.foreach(List.scala:389)[0m
+[0m[[31merror[0m] [0m	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:788)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.FileManager$FileManager.printResults$1(filemanager.scala:411)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.FileManager$FileManager.write(filemanager.scala:421)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Database$Database.extractIO(database.scala:97)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Models$Model.runMonteCarlo(models.scala:19)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.Controllers$Controller.actionRun(controllers.scala:15)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.SimuControllerView$SimuControllerView.$anonfun$new$1(simucontrollerview.scala:36)[0m
+[0m[[31merror[0m] [0m	at com.montecarlo.SimuControllerView$SimuControllerView$$Lambda$142/191408666.apply$mcV$sp(Unknown Source)[0m
+[0m[[31merror[0m] [0m	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)[0m
+[0m[[31merror[0m] [0m	at scalafx.event.EventIncludes$$anon$4.handle(EventIncludes.scala:113)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)[0m
+[0m[[31merror[0m] [0m	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
