@@ -1,9 +1,22 @@
 package com.montecarlo
 
-trait Models extends GanttModel{ this: MVC =>
-  
-  class Model{
-    
-    var gantmodel = new GanttModel()
+
+trait Models extends Database with GanttModel with BusinessModel { this: MVC =>
+
+  class Model {
+
+    val database = new Database()
+    val ganttmodel = new GanttModel()
+    val businessmodel = new BusinessModel()
+
+    /**
+     * run the montecarlo simulation
+     */
+    def runMonteCarlo(scenario:String, numberofrun: Int) {
+      database.loadIO(scenario)
+      //database.displayDB
+      database.writeDB(businessmodel.mcSimulator(numberofrun, database.readDB))
+      database.extractIO(scenario)
+    }
   }
 }

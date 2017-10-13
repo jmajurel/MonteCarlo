@@ -1,16 +1,18 @@
 package com.montecarlo
-import akka.actor.{Actor, Props}
 
 trait Controllers { mvc: MVC =>
-  object Controller{
-    def props(message: String, viewActor: ActorRef): Props = Props(new Controller(message, viewActor)) 
-  }
-  class Controller extends Actor{ 
-    println("Hi Guys I am the Controller")
-    def receive = {
 
+  class Controller { 
 
-
+    /**
+     * Send message to the model to run mc simulation
+     */
+    def actionRun { 
+      //val scenario = "MC_Ops_b4_tow_dev_test_BPP"
+      //val scenario = "Scenario_Operations_Overview_DEV"
+      val scenario = "2a_SING_Scala"
+      val nbofrun = 100000
+      model.runMonteCarlo(scenario, nbofrun)
     }
   }
 }

@@ -7,11 +7,11 @@ import scalafx.geometry.Insets
 import scalafx.scene.layout.{BorderPane,VBox}
 
 
+trait Views extends GanttView with OutputsView with SimuControllerView with ManagerView with GeneralView { this: MVC =>
 
-trait Views extends GanttView with OutputsView with SimuControllerView with ManagerView with GeneralView{ this: MVC =>
-  
   class View {
-    
+    //controller.actionRun 
+
     val rootPane = new BorderPane
     
     val outputs = new OutputsView()
