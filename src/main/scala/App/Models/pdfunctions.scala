@@ -1,4 +1,5 @@
 package com.montecarlo
+
 import scala.math.exp
 import scala.math.pow
 

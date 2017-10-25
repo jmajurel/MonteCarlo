@@ -1,7 +1,7 @@
 package com.montecarlo
 
 
-trait Models extends Database with GanttModel with BusinessModel { this: MVC =>
+trait Models extends Database with GanttModel with BusinessModel { //this: MVC =>
 
   class Model {
 

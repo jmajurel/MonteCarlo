@@ -2,7 +2,6 @@ package com.montecarlo
 
 import scalafx.Includes._
 import scalafx.application.JFXApp
-import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.layout.{BorderPane,VBox}
 

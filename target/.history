@@ -60,3 +60,80 @@ run
 exit
 run
 exit
+reloead
+reload
+test
+exit
+test
+reload
+test
+exit
+test
+run
+test
+reload
+test
+last test:test
+reload
+test
+reload
+test
+reload
+test
+reload
+test
+show classpathTypes
+show classDirectory
+show test:unmanagedJars
+reload
+show test:unmanagedJars
+test
+show test:fullClasspath
+test
+last test:test
+test
+reload
+test
+exit
+test
+reload
+test
+reload
+test
+reload
+test
+reload
+test
+reload
+test
+reload
+test
+reload
+test
+reload
+test
+last test:test
+run
+test
+run
+test
+run
+exit
+reload
+test
+run
+exit
+run
+test
+run
+test
+run
+test
+run
+last compile:run
+run
+test
+run
+test
+reload
+exit

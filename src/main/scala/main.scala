@@ -3,10 +3,9 @@ package com.montecarlo
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.scene.Scene
-import scalafx.scene.Scene
 import scalafx.scene.image.Image
 
-object Main extends JFXApp {
+class App extends JFXApp {
 
   var mvc = new MVC
   val imageicon = new Image(Dependencies.pathbppicon, requestedWidth = 125, requestedHeight = 125, preserveRatio = true, smooth = true)
@@ -20,5 +19,11 @@ object Main extends JFXApp {
     scene = new Scene {
       root = mvc.view.rootPane
     }
+  }
+}
+object Main {
+  def main(args: Array[String]){
+    val app = new App
+    app.main(args)
   }
 }
