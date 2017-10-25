@@ -8,6 +8,7 @@ import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
 import scalax.collection.GraphTraversal.Successors
 import scala.math.exp
+import scala.math.abs
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
 
@@ -51,6 +52,21 @@ trait BusinessModel extends PDFunctions {this: Models =>
              case "pareto" => {
                do {
                  distval = BPPareto(arg1, arg2).inverseCdf(randomval.sample) 
+               } while(distval < 0)
+             }
+             case "half_normal" => {
+                do {
+                  distval = Gaussian(arg1, arg2).inverseCdf(randomval.sample)
+                } while(distval < 0 | distval < arg1)
+             }
+             case "inv_half_normal" => {
+                do {
+                  distval = Gaussian(arg1, arg2).inverseCdf(randomval.sample)
+                } while(distval < 0 | distval > arg1)
+             }
+             case "extreme" => {
+                do {
+                  distval = BPPExtreme(arg1, arg2).inverseCdf(randomval.sample)
                } while(distval < 0)
              }
              case _ => println(f"pdf function: [${pdfunction}] unknown")
