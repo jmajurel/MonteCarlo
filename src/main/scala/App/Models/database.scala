@@ -4,7 +4,7 @@ import scala.collection.mutable.ListBuffer
 import scalax.collection.Graph
 import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
-import java.time.LocalDate
+import java.time.LocalDateTime
 
 trait Database extends FileManager {this: Models =>
 
@@ -20,9 +20,9 @@ trait Database extends FileManager {this: Models =>
   }*/ 
 
   class MCResult (
-    val startdate: LocalDate,
-    val endate: LocalDate,
-    val duration: Int,
+    val startdate: LocalDateTime,
+    val endate: LocalDateTime,
+    val duration: Double,
     val cost: Double
   )
 
@@ -32,9 +32,9 @@ trait Database extends FileManager {this: Models =>
   case class Operation (
     val name:String, 
     val predecessor: List[String],
-    val predefstartdate: Option[LocalDate],      
-    val bcdurext:Double,
-    val bcdurbpp: Double,
+    val predefstartdate: Option[LocalDateTime],      
+    val bcdurext: Int,
+    val bcdurbpp: Int,
     val bconeoffcostext: Option[Double],
     val bcdayratext: Option[Double],    
     val bconeoffcostbpp: Option[Double],
