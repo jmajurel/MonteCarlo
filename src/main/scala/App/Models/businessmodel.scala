@@ -8,7 +8,9 @@ import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
 import scalax.collection.GraphTraversal.Successors
 import scala.math.exp
-import java.time.LocalDate
+import scala.math.abs
+import scala.math.ceil
+import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
 
 trait BusinessModel extends PDFunctions {this: Models =>
@@ -16,6 +18,11 @@ trait BusinessModel extends PDFunctions {this: Models =>
   class BusinessModel {
 
       //def daysBetween(d1: Date, d2: Date) = ((d2.getTime() - d1.getTime()) / (1000 * 60 * 60 *24)).toInt
+
+      /**
+       * Convert decimal number of days to number of seconds
+       */
+      def convertDaysToSec(days: Double): Double = days*24*60*60
       
       /**
        * contains the Monte Carlo simulator
@@ -30,27 +37,50 @@ trait BusinessModel extends PDFunctions {this: Models =>
         def mcPDFs(pdfunction: String, arg1: Double, arg2: Double): Double={
 
           val randomval = Uniform(0,1) //generate random number between 0-1 
+          //val randomval = 0.5
           var distval: Double = 0.0 
  
           pdfunction match {
             case "normal" | "gaussian" => {
                do {
                   distval = Gaussian(arg1, arg2).inverseCdf(randomval.sample)
+                  //distval = Gaussian(arg1, arg2).inverseCdf(randomval)
                } while(distval < 0)
              }
              case "log_normal" => {
                do {
                  distval = LogNormal(arg1, arg2).inverseCdf(randomval.sample)
+                 //distval = LogNormal(arg1, arg2).inverseCdf(randomval)
                } while(distval < 0)
              }
              case "inv_log_normal" => {
                do {
                  distval = 2 - (LogNormal(arg1, arg2).inverseCdf(randomval.sample))
+                 //distval = 2 - (LogNormal(arg1, arg2).inverseCdf(randomval))
                } while(distval > 2 | distval < 0)
              }
              case "pareto" => {
                do {
                  distval = BPPareto(arg1, arg2).inverseCdf(randomval.sample) 
+                 //distval = BPPareto(arg1, arg2).inverseCdf(randomval) 
+               } while(distval < 0)
+             }
+             case "half_normal" => {
+                do {
+                  distval = Gaussian(arg1, arg2).inverseCdf(randomval.sample)
+                  //distval = Gaussian(arg1, arg2).inverseCdf(randomval)
+                } while(distval < 0 | distval < arg1)
+             }
+             case "inv_half_normal" => {
+                do {
+                  distval = Gaussian(arg1, arg2).inverseCdf(randomval.sample)
+                  //distval = Gaussian(arg1, arg2).inverseCdf(randomval)
+                } while(distval < 0 | distval > arg1)
+             }
+             case "extreme" => {
+                do {
+                  distval = BPPExtreme(arg1, arg2).inverseCdf(randomval.sample)
+                  //distval = BPPExtreme(arg1, arg2).inverseCdf(randomval)
                } while(distval < 0)
              }
              case _ => println(f"pdf function: [${pdfunction}] unknown")
@@ -60,7 +90,7 @@ trait BusinessModel extends PDFunctions {this: Models =>
         /**
          * This function calculates the duration of a task/operation using its pdf function
          */
-        def mcDurationCalc(node:Operation): Int = (mcPDFs(node.pdffuncdur, node.pdfdurargs(0), node.pdfdurargs(1)) * node.bcdurbpp).toInt
+        def mcDurationCalc(node:Operation): Double = (mcPDFs(node.pdffuncdur, node.pdfdurargs(0), node.pdfdurargs(1)) * node.bcdurbpp)
 
         /**
          * This function calculates the cost of a task/operation using its pdf function
@@ -91,29 +121,29 @@ trait BusinessModel extends PDFunctions {this: Models =>
 
                 val duration = mcDurationCalc(node.toOuter)
                 val cost = mcCostCalc(node.toOuter, Some(duration))
-                var temp: LocalDate = null
+                var temp: LocalDateTime = null
 
                 if(node.diPredecessors.find(_.toOuter==root) == None){ 
                   val longestpred = node.diPredecessors.maxBy(_.toOuter.mcres.last.endate)(_ compareTo _).toOuter
 
                   node.toOuter.predefstartdate match {
                     case None => {
-                      temp = LocalDate.from(longestpred.mcres.last.endate).plusDays(1)
+                      temp = LocalDateTime.from(longestpred.mcres.last.endate).plusSeconds(1)
                     }
                     case Some(predefstartdate) => {
                       if(predefstartdate.isBefore(longestpred.mcres.last.endate))
-                        temp = LocalDate.from(longestpred.mcres.last.endate).plusDays(1)
+                        temp = LocalDateTime.from(longestpred.mcres.last.endate).plusSeconds(1)
                       else 
-                        temp = LocalDate.from(predefstartdate)
+                        temp = LocalDateTime.from(predefstartdate)
                     }
                   }
                 }
                 else { 
-                  temp = LocalDate.from(node.toOuter.predefstartdate.get)
+                  temp = LocalDateTime.from(node.toOuter.predefstartdate.get)
                 }
 
-                val startdate = LocalDate.from(temp) 
-                val endate = LocalDate.from(startdate).plusDays(duration)
+                val startdate = LocalDateTime.from(temp) 
+                val endate = LocalDateTime.from(startdate).plusSeconds(convertDaysToSec(duration).toLong)
 
                 //println(f"node name: ${node.name}, startdate: ${startdate}, endate: ${endate}")
                 runcost += cost
