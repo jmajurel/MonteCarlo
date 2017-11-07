@@ -74,9 +74,9 @@ trait FileManager {this: Database =>
 
           var name: String = ""
           var predecessor = List[String]() 
-          var predefstartdate : Option[LocalDate] = None
-          var bcdurext:Double = 0
-          var bcdurbpp: Double = 0
+          var predefstartdate : Option[LocalDateTime] = None
+          var bcdurext: Int = 0
+          var bcdurbpp: Int = 0
           var bconeoffcostext: Option[Double] = None
           var bcdayratext: Option[Double] = None
           var bconeoffcostbpp: Option[Double] = None
@@ -145,7 +145,7 @@ trait FileManager {this: Database =>
                 }
               case CellType.NUMERIC => {
                 val date = cpredefstartdate.getDateCellValue
-                predefstartdate = Some(date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate())
+                predefstartdate = Some(date.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime())
               }
               case CellType.BLANK =>
                 println(f"Blank [<start_date>] at row: [${row}]")
@@ -157,7 +157,7 @@ trait FileManager {this: Database =>
           if(cbcdurext != null)
             cbcdurext.getCellTypeEnum match {
               case CellType.NUMERIC => 
-                bcdurext = cbcdurext.getNumericCellValue
+                bcdurext = cbcdurext.getNumericCellValue.toInt
               case CellType.STRING => 
                 if(cbcdurext.getStringCellValue == "<END>"){
                   println(f"End of file detected at row: [${row}]")
@@ -173,7 +173,7 @@ trait FileManager {this: Database =>
           if(cbcdurbpp != null)
             cbcdurbpp.getCellTypeEnum match {
               case CellType.NUMERIC => 
-                bcdurbpp = cbcdurbpp.getNumericCellValue
+                bcdurbpp = cbcdurbpp.getNumericCellValue.toInt
               case CellType.STRING => 
                 if(cbcdurbpp.getStringCellValue == "<END>"){
                   println(f"End of file detected at row: [${row}]")

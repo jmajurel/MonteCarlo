@@ -60,6 +60,7 @@ run
 exit
 run
 exit
+<<<<<<< HEAD
 reloead
 reload
 test
@@ -136,4 +137,17 @@ test
 run
 test
 reload
+=======
+run
+exit
+run
+exit
+run
+exit
+run
+exit
+run
+exit
+run
+>>>>>>> develop
 exit
