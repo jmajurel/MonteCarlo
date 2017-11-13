@@ -1,6 +1,8 @@
-package com.montecarlo
+package com.montecarlo.controller
 
-trait Controllers { mvc: MVC =>
+import com.montecarlo.mvc.MVC
+
+trait Controllers {this: MVC =>
 
   class Controller { 
 

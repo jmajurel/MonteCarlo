@@ -1,4 +1,6 @@
-package com.montecarlo
+package com.montecarlo.view
+
+import com.montecarlo.model.ProjectData
 
 import scalafx.Includes._
 import scalafx.application.JFXApp
@@ -12,11 +14,11 @@ import scalafx.scene.layout.{BorderPane,VBox,HBox}
 import scalafx.scene.text.{Font, FontWeight, Text}
 import scalafx.embed.swing.SwingNode
 import scalafx.geometry.Pos
-
 import java.awt.Dimension
 import javafx.scene.layout.{Border,BorderStroke,CornerRadii,BorderWidths,BorderStrokeStyle}
 import javax.swing.SwingUtilities
 import scalafx.scene.paint.Color
+
 
 trait GeneralView { this: Views =>
 

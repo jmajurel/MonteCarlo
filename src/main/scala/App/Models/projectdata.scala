@@ -1,4 +1,4 @@
-package com.montecarlo
+package com.montecarlo.model
 
 object ProjectData{
   val BPPPROJECT = "L56719 Jubilee"

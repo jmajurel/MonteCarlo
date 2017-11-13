@@ -1,10 +1,10 @@
-package com.montecarlo
+package com.montecarlo.model
 
 import scala.math.exp
 import scala.math.pow
 import scala.math.log
 
-trait PDFunctions {this: BusinessModel =>
+trait PDFunctions {//this: BusinessModel =>
 
   /**
    * perform the inverse pareto calculation

@@ -19,9 +19,9 @@ object Dependencies {
   lazy val graphcore = "org.scala-graph" %% "graph-core" % "1.11.5"
   
   lazy val scalatest = "org.scalatest" % "scalatest_2.12" % "3.0.4" % "test"
-  lazy val junit = "org.junit" % "jupiter" % "5.0.1" % "test"
   lazy val testfxcore = "org.testfx" % "testfx-core" % "4.0.1-alpha" % "test"
   lazy val testfxjunit = "org.testfx" % "testfx-junit" % "4.0.1-alpha" % "test" 
+  lazy val testbreeze = "org.scalanlp" %% "breeze" % "0.13.2" % "test"
 
   // Projects
   val projectDeps = Seq(
@@ -36,8 +36,8 @@ object Dependencies {
     breezeviz,
     graphcore,
     scalatest,
-    junit,
     testfxcore, 
-    testfxjunit
+    testfxjunit,
+    testbreeze
   )
 }

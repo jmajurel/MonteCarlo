@@ -1,4 +1,4 @@
-package com.montecarlo
+package com.montecarlo.view
 
 import scalafx.Includes._
 import scalafx.scene.control.{TextField,Button,TabPane}

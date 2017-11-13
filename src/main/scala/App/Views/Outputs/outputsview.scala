@@ -1,4 +1,6 @@
-package com.montecarlo
+package com.montecarlo.view
+
+import com.montecarlo.model.{ProjectData, Estimations}
 
 import scalafx.geometry.Insets
 import scalafx.Includes._

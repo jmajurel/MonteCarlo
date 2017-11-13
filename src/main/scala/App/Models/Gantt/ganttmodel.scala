@@ -1,4 +1,4 @@
-package com.montecarlo
+package com.montecarlo.model
 
 trait GanttModel { this: Models =>
   

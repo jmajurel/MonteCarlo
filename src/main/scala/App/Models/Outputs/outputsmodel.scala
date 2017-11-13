@@ -1,8 +1,8 @@
-package com.montecarlo
+package com.montecarlo.model
 
-trait OutputsModel { this: Models =>
+/*trait OutputsModel { this: Models =>
   class OutputsModel{
     
     
   }
-}
+}*/

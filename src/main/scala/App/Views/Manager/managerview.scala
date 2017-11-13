@@ -1,4 +1,6 @@
-package com.montecarlo
+package com.montecarlo.view
+
+import com.montecarlo.model.ProjectData
 
 import scalafx.Includes._
 import scalafx.scene.control.{TabPane,Tab,CheckBox,TextField,Label,ChoiceBox}
@@ -9,6 +11,7 @@ import scalafx.scene.shape.Rectangle
 import scalafx.scene.text.{Font,FontWeight,Text}
 import scalafx.collections.ObservableBuffer
 import javafx.scene.layout.{Border,BorderStroke,CornerRadii,BorderWidths,BorderStrokeStyle}
+
 
 trait ManagerView { this: Views =>
 

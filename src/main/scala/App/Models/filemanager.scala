@@ -1,4 +1,4 @@
-package com.montecarlo
+package com.montecarlo.model
 
 import scala.collection.mutable.{Map => MMap}
 import org.apache.poi.ss.usermodel.{WorkbookFactory, DataFormatter, DataFormat, Row, Cell, CellType}
@@ -10,7 +10,7 @@ import scalax.collection.GraphPredef._
 import scalax.collection.GraphEdge._
 import java.time._
 
-trait FileManager {this: Database =>
+trait FileManager {//this: Database =>
   
   class FileManager {
 
@@ -62,9 +62,8 @@ trait FileManager {this: Database =>
       val sheet = workbook.getSheetAt(0)
       var endfile = false
       var row: Int = 1
-      //var row: Int = 1
 
-      var opmap: MMap[String,Operation] = MMap("root" -> root)
+      var opmap: MMap[String,Operation] = MMap()
 
       while (row < sheet.getPhysicalNumberOfRows & endfile!=true) {
 
