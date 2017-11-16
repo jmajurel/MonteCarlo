@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker 'maven:3-alpine' }
+  agent { docker 'hseeberger/scala-sbt'}
   stages {
     stage('build') {
       steps {
