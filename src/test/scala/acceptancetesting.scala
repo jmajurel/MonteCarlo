@@ -77,7 +77,7 @@ class AcceptanceTesting extends AcceptanceSpec with BeforeAndAfter {
       Then("The total cost estimation is correct")
         val costs = mvc.model.database.readDBCosts
         val meancost = (costs.sum/costs.size/1000000)
-        meancost should be (23.0 +- 1)
+        meancost should be (23.0 +- 0.1)
     }
     scenario("Test ID: #03, User wants correct time estimate") {
       Given("A reference input file")
@@ -85,7 +85,7 @@ class AcceptanceTesting extends AcceptanceSpec with BeforeAndAfter {
       Then("The total time estimation is correct")
         val durations = mvc.model.database.readDBDurations
         val meandur = (durations.sum/durations.size).toInt
-        meandur should be (290 +- 10)
+        meandur should be (295 +- 1)
     }
   }
 }

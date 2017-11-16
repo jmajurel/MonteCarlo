@@ -268,3 +268,5 @@ clean
 test
 clean
 exit
+test
+exit
