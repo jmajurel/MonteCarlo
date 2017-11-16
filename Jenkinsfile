@@ -1,17 +1,22 @@
 pipeline {
   agent { docker 'hseeberger/scala-sbt'}
   stages {
-    stage('compile') {
+    stage('Build') {
       steps {
         sh 'sbt compile'
       }
     }
-    stage('test') {
+    stage('Test') {
       steps {
         sh 'sbt test'
       }
+      post {
+        always {
+	  junit 'target/test-reports/*.xml'
+	}
+      }
     }
-    stage('package') {
+    stage('Deliver') {
       steps {
         sh 'sbt package'
       }
