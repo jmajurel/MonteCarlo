@@ -1,9 +1,19 @@
 pipeline {
   agent { docker 'hseeberger/scala-sbt'}
   stages {
-    stage('build') {
+    stage('compile') {
       steps {
-        sh 'sbt build'
+        sh 'sbt compile'
+      }
+    }
+    stage('test') {
+      steps {
+        sh 'sbt test'
+      }
+    }
+    stage('package') {
+      steps {
+        sh 'sbt package'
       }
     }
   }
