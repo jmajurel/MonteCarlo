@@ -1,5 +1,8 @@
 pipeline {
-  agent { docker 'hseeberger/scala-sbt'}
+  agent { 
+    docker 'hseeberger/scala-sbt'
+    args '-v /root/.m2:/root/.m2'
+  }
   stages {
     stage('Build') {
       steps {
