@@ -1,4 +1,6 @@
-package com.montecarlo
+package com.montecarlo.view
+
+import com.montecarlo.mvc.MVC
 
 import scalafx.Includes._
 import scalafx.scene.control.{TextField,Label,Button,Slider}
@@ -10,7 +12,7 @@ import scalafx.scene.image.Image
 import scalafx.scene.image.ImageView
 import scalafx.event.{EventHandler, ActionEvent}
 
-trait SimuControllerView { this: MVC =>
+trait SimuControllerView {this: MVC =>
 
   class SimuControllerView {
 

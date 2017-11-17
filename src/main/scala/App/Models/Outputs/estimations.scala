@@ -1,6 +1,6 @@
-package com.montecarlo
+package com.montecarlo.model
 
-object Estimations{
+object Estimations {
 
   val basecrondallesti = Seq(
       (1.0, 99000.0),

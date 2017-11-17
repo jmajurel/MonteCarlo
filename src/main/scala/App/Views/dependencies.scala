@@ -1,4 +1,4 @@
-package com.montecarlo
+package com.montecarlo.view
 
 object Dependencies{
   val pathbppicon = getClass.getResource("/icons/BPP.png").toString()

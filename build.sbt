@@ -12,7 +12,10 @@ lazy val root = (project in file("."))
     name := "Monte Carlo",
     libraryDependencies ++= projectDeps,
     unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar")),
-    fork in run := true
+    //fullClasspath in Test += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar")),
+    fork := true
+    //fork in test := true
+
   )
 resolvers += "Sonatype Releases" at "https://oss.sonatype.org/content/repositories/releases/"
   
