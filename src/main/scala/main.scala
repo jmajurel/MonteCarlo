@@ -14,7 +14,7 @@ class MonteCarloApp extends JFXApp {
   val imageicon = new Image(Dependencies.pathbppicon, requestedWidth = 125, requestedHeight = 125, preserveRatio = true, smooth = true)
   
   stage = new JFXApp.PrimaryStage {
-   title.value = "Monte Carlo SW - Demo01"
+    title.value = "Monte Carlo SW - Demo01"
     width = 1100
     height = 800
     icons += imageicon	
