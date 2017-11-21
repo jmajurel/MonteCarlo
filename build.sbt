@@ -11,7 +11,7 @@ lazy val root = (project in file("."))
     ),
     name := "Monte Carlo",
     libraryDependencies ++= projectDeps,
-    unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar")),
+    unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jke/lib/ext/jfxrt.jar")),
     assemblyJarName in assembly := ("BPPMonteCarlo_" + version.value + ".jar"),
     fullClasspath in assembly += file(System.getenv("JAVA_HOME") + "/jre/lib/ext/jfxrt.jar"),
     mainClass in assembly := Some("com.montecarlo.Main"),

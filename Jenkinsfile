@@ -23,9 +23,8 @@ pipeline {
     }
     stage('Deliver') {
       steps {
-        sh 'sbt package'
+        sh 'sbt assembly'
       }
     }
   }
 }
-

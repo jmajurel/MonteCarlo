@@ -361,3 +361,14 @@ run
 assembly
 run
 exit
+run
+reload
+run
+exit
+clean
+run
+reload
+run
+clean
+run
+exit
